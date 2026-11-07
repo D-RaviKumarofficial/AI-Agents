@@ -1,0 +1,117 @@
+/*
+ * Chat widget styles. Every class is prefixed `cw-` so it cannot clash with the host app.
+ * Override any of these variables on `.cw-widget` (or an ancestor) to restyle it:
+ *
+ *   --cw-primary, --cw-primary-hover, --cw-on-primary   main colour, its hover, and text on it
+ *   --cw-surface, --cw-surface-alt, --cw-border         panel, assistant bubble, borders
+ *   --cw-text, --cw-text-muted                          body and secondary text
+ *   --cw-accent, --cw-accent-hover, --cw-on-accent      pill buttons inside replies
+ *   --cw-danger-bg, --cw-danger-border, --cw-danger-text
+ *   --cw-focus                                          focus ring colour
+ *   --cw-font, --cw-heading-font, --cw-radius
+ *   --cw-right, --cw-bottom, --cw-z, --cw-panel-width, --cw-panel-height
+ *
+ * Default colour pairs meet WCAG AA (4.5:1): #fff on #00734f, #121212 on #f2f7f5, #00734b on #d9ede6.
+ */
+.cw-widget {
+  --cw-primary: #00734f;
+  --cw-primary-hover: #005b3d;
+  --cw-on-primary: #fff;
+  --cw-surface: #fff;
+  --cw-surface-alt: #f2f7f5;
+  --cw-border: #dbe3e0;
+  --cw-text: #121212;
+  --cw-text-muted: #4b4c4d;
+  --cw-accent: #d9ede6;
+  --cw-accent-hover: #c4dfd5;
+  --cw-on-accent: #00734b;
+  --cw-danger-bg: #fff0ed;
+  --cw-danger-border: #edcec5;
+  --cw-danger-text: #9b332b;
+  --cw-focus: #cc9b38;
+  --cw-font: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --cw-heading-font: var(--cw-font);
+  --cw-radius: 24px;
+  --cw-right: 24px;
+  --cw-bottom: 24px;
+  --cw-z: 30;
+  --cw-panel-width: 420px;
+  --cw-panel-height: 620px;
+
+  position: fixed;
+  right: var(--cw-right);
+  bottom: var(--cw-bottom);
+  z-index: var(--cw-z);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+  font-family: var(--cw-font);
+  color: var(--cw-text);
+}
+.cw-widget *, .cw-widget *::before, .cw-widget *::after { box-sizing: border-box; }
+.cw-sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+.cw-launcher { width: 60px; height: 60px; display: grid; place-items: center; padding: 0; border: 0; border-radius: 50%; background: var(--cw-primary); color: var(--cw-on-primary); cursor: pointer; box-shadow: 0 8px 24px rgb(0 0 0 / 25%); transition: background-color .2s ease, transform .2s ease; }
+.cw-launcher:hover { background: var(--cw-primary-hover); transform: scale(1.06); }
+.cw-launcher:focus-visible, .cw-panel button:focus-visible, .cw-panel a:focus-visible, .cw-panel input:focus-visible { outline: 3px solid var(--cw-focus); outline-offset: 2px; }
+
+.cw-panel { width: min(var(--cw-panel-width), calc(100vw - 32px)); height: min(var(--cw-panel-height), calc(100dvh - 130px)); display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--cw-border); border-radius: var(--cw-radius); background: var(--cw-surface); color: var(--cw-text); box-shadow: 0 16px 60px rgb(0 0 0 / 25%); }
+.cw-panel[hidden] { display: none; }
+.cw-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; padding: 18px 20px 14px; border-bottom: 1px solid var(--cw-border); background: linear-gradient(180deg, var(--cw-surface-alt), var(--cw-surface)); }
+.cw-header h2 { margin: 0 0 4px; font: 700 20px/1.2 var(--cw-heading-font); color: var(--cw-text); }
+.cw-subtitle { margin: 0; font-size: 13px; line-height: 1.4; color: var(--cw-text-muted); }
+.cw-header-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.cw-clear { border: 1px solid var(--cw-border); background: transparent; border-radius: 10px; padding: 5px 12px; font: 500 14px var(--cw-font); color: var(--cw-text-muted); cursor: pointer; }
+.cw-clear:hover { background: rgb(74 68 89 / 8%); }
+.cw-close { width: 32px; height: 32px; padding: 0; border: 0; border-radius: 50%; background: var(--cw-surface-alt); color: var(--cw-text); font-size: 20px; line-height: 1; cursor: pointer; }
+.cw-close:hover { background: rgb(74 68 89 / 14%); }
+
+.cw-log { flex: 1; min-height: 0; overflow-y: auto; padding: 16px 20px; display: flex; flex-direction: column; gap: 12px; }
+.cw-message { display: flex; flex-direction: column; gap: 8px; max-width: 92%; }
+.cw-message--user { align-self: flex-end; align-items: flex-end; }
+.cw-message--assistant { align-self: flex-start; }
+.cw-bubble { margin: 0; padding: 10px 14px; border-radius: 18px; font: 400 15px/1.5 var(--cw-font); white-space: pre-line; overflow-wrap: anywhere; }
+.cw-message--user .cw-bubble { background: var(--cw-primary); color: var(--cw-on-primary); border-bottom-right-radius: 6px; }
+.cw-message--assistant .cw-bubble { background: var(--cw-surface-alt); color: var(--cw-text); border-bottom-left-radius: 6px; }
+
+.cw-items { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.cw-item { display: flex; flex-direction: column; gap: 6px; padding: 12px 14px; border: 1px solid var(--cw-border); border-radius: 14px; background: var(--cw-surface); font: 400 14px/1.4 var(--cw-font); }
+.cw-badge { align-self: flex-start; padding: 2px 10px; border: 1px solid var(--cw-border); border-radius: 8px; font-size: 13px; color: var(--cw-text); }
+.cw-item-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.cw-item-actions button, .cw-suggestions button { border: 0; border-radius: 16px; padding: 6px 14px; background: var(--cw-accent); color: var(--cw-on-accent); font: 700 14px var(--cw-font); cursor: pointer; transition: background-color .3s cubic-bezier(.66, 0, .35, 1.03); }
+.cw-item-actions button:hover, .cw-suggestions button:hover:not(:disabled) { background: var(--cw-accent-hover); }
+.cw-item-actions a { color: var(--cw-on-accent); font-size: 14px; text-decoration: underline; }
+
+.cw-status { margin: 0; font-size: 14px; color: var(--cw-text-muted); }
+.cw-error { margin: 0; padding: 10px 14px; border: 1px solid var(--cw-danger-border); border-radius: 12px; background: var(--cw-danger-bg); color: var(--cw-danger-text); font-size: 14px; }
+.cw-suggestions { display: flex; flex-wrap: wrap; gap: 8px; padding: 8px 20px 2px; }
+.cw-suggestions button { background: var(--cw-surface); border: 1px solid var(--cw-border); font-weight: 500; }
+.cw-suggestions button:disabled { opacity: .5; cursor: not-allowed; }
+
+.cw-form { display: flex; gap: 10px; padding: 12px 20px 18px; border-top: 1px solid var(--cw-border); }
+.cw-form input { flex: 1; min-width: 0; height: 44px; padding: 0 14px; border: 1px solid var(--cw-border); border-radius: 12px; background: var(--cw-surface-alt); font: 400 16px var(--cw-font); color: var(--cw-text); }
+.cw-form input::placeholder { color: #5c6572; }
+.cw-mic { flex-shrink: 0; width: 44px; height: 44px; display: grid; place-items: center; padding: 0; border: 1px solid var(--cw-border); border-radius: 12px; background: var(--cw-surface); color: var(--cw-primary); cursor: pointer; transition: background-color .2s ease; }
+.cw-mic:hover:not(:disabled) { background: var(--cw-accent); }
+.cw-mic:disabled { opacity: .5; cursor: not-allowed; }
+.cw-mic--recording { background: var(--cw-danger-bg); border-color: var(--cw-danger-border); color: var(--cw-danger-text); animation: cw-pulse 1.4s ease-in-out infinite; }
+.cw-voice-status { display: flex; align-items: center; gap: 8px; margin: 0; padding: 8px 20px 0; font-size: 14px; line-height: 1.4; color: var(--cw-text); }
+.cw-voice-status--error { color: var(--cw-danger-text); }
+.cw-rec-dot { width: 10px; height: 10px; flex-shrink: 0; border-radius: 50%; background: var(--cw-danger-text); animation: cw-pulse 1.4s ease-in-out infinite; }
+@keyframes cw-pulse { 50% { opacity: .45; } }
+.cw-send { border: 0; border-radius: 12px; padding: 0 20px; background: var(--cw-primary); color: var(--cw-on-primary); font: 700 15px var(--cw-font); cursor: pointer; }
+.cw-send:hover:not(:disabled) { background: var(--cw-primary-hover); }
+.cw-send:disabled { opacity: .5; cursor: not-allowed; }
+
+@media (prefers-reduced-motion: reduce) {
+  .cw-launcher, .cw-item-actions button, .cw-suggestions button { transition: none; }
+  .cw-launcher:hover { transform: none; }
+  .cw-mic--recording, .cw-rec-dot { animation: none; }
+}
+@media (max-width: 760px) {
+  .cw-widget { --cw-right: 12px; --cw-bottom: 12px; }
+  .cw-panel { width: calc(100vw - 24px); height: calc(100dvh - 96px); border-radius: 20px; }
+  .cw-header, .cw-log, .cw-form { padding-left: 14px; padding-right: 14px; }
+  .cw-suggestions, .cw-voice-status { padding-left: 14px; padding-right: 14px; }
+}

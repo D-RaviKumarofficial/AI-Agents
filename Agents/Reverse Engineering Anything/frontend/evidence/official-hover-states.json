@@ -1,0 +1,213 @@
+{
+  "source": "https://www.dubaipolice.gov.ae/app/services",
+  "checkedAt": "2026-11-06",
+  "states": [
+    {
+      "control": "View",
+      "before": {
+        "tag": "BUTTON",
+        "bg": "rgb(217, 237, 230)",
+        "color": "rgb(0, 115, 75)",
+        "shadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "0.3s cubic-bezier(0.66, 0, 0.35, 1.03)",
+        "border": "0px solid rgb(229, 229, 229)"
+      },
+      "after": {
+        "tag": "BUTTON",
+        "bg": "rgb(196, 223, 213)",
+        "color": "rgb(0, 115, 75)",
+        "shadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "0.3s cubic-bezier(0.66, 0, 0.35, 1.03)",
+        "border": "0px solid rgb(229, 229, 229)"
+      }
+    },
+    {
+      "control": "Start Service",
+      "before": {
+        "tag": "BUTTON",
+        "bg": "rgb(217, 237, 230)",
+        "color": "rgb(0, 115, 75)",
+        "shadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "0.3s cubic-bezier(0.66, 0, 0.35, 1.03)",
+        "border": "0px solid rgb(229, 229, 229)"
+      },
+      "after": {
+        "tag": "BUTTON",
+        "bg": "rgb(196, 223, 213)",
+        "color": "rgb(0, 115, 75)",
+        "shadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "0.3s cubic-bezier(0.66, 0, 0.35, 1.03)",
+        "border": "0px solid rgb(229, 229, 229)"
+      }
+    },
+    {
+      "control": "Information",
+      "before": {
+        "tag": "BUTTON",
+        "bg": "rgb(235, 235, 236)",
+        "color": "rgb(75, 76, 77)",
+        "shadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "0.3s cubic-bezier(0.66, 0, 0.35, 1.03)",
+        "border": "0px solid rgb(229, 229, 229)"
+      },
+      "after": {
+        "tag": "BUTTON",
+        "bg": "rgba(74, 68, 89, 0.08)",
+        "color": "rgb(23, 23, 23)",
+        "shadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "0.3s cubic-bezier(0.66, 0, 0.35, 1.03)",
+        "border": "0px solid rgb(229, 229, 229)"
+      }
+    },
+    {
+      "control": "Individuals (17)",
+      "before": {
+        "tag": "BUTTON",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(75, 76, 77)",
+        "shadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "all",
+        "border": "0px solid rgb(229, 229, 229)"
+      },
+      "after": {
+        "tag": "BUTTON",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(75, 76, 77)",
+        "shadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "all",
+        "border": "0px solid rgb(229, 229, 229)"
+      }
+    },
+    {
+      "control": "Home",
+      "before": {
+        "tag": "A",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(18, 18, 18)",
+        "shadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "border": "0px none rgb(18, 18, 18)"
+      },
+      "after": {
+        "tag": "A",
+        "bg": "rgba(0, 0, 0, 0.04)",
+        "color": "rgb(18, 18, 18)",
+        "shadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "border": "0px none rgb(18, 18, 18)"
+      }
+    },
+    {
+      "control": "Inquiries and Follow-up",
+      "before": {
+        "tag": "A",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(18, 18, 18)",
+        "shadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "border": "1px solid rgba(0, 0, 0, 0)"
+      },
+      "after": {
+        "tag": "A",
+        "bg": "rgba(0, 0, 0, 0.04)",
+        "color": "rgb(18, 18, 18)",
+        "shadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "border": "1px solid rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "control": "English",
+      "before": {
+        "tag": "BUTTON",
+        "bg": "rgb(230, 238, 236)",
+        "color": "rgb(18, 18, 18)",
+        "shadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "all",
+        "border": "0px solid rgb(229, 229, 229)"
+      },
+      "after": {
+        "tag": "BUTTON",
+        "bg": "rgb(230, 238, 236)",
+        "color": "rgb(18, 18, 18)",
+        "shadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "all",
+        "border": "0px solid rgb(229, 229, 229)"
+      }
+    },
+    {
+      "control": "Sign In",
+      "before": {
+        "tag": "BUTTON",
+        "bg": "rgb(230, 238, 236)",
+        "color": "rgb(26, 26, 26)",
+        "shadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "0.2s ease-in-out",
+        "border": "1px solid rgb(235, 235, 236)"
+      },
+      "after": {
+        "tag": "BUTTON",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(26, 26, 26)",
+        "shadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "0.2s ease-in-out",
+        "border": "0px none rgb(26, 26, 26)"
+      }
+    },
+    {
+      "control": "SOS",
+      "before": {
+        "tag": "BUTTON",
+        "bg": "rgb(217, 45, 32)",
+        "color": "rgb(255, 255, 255)",
+        "shadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "all",
+        "border": "0px solid rgb(229, 229, 229)"
+      },
+      "after": {
+        "tag": "BUTTON",
+        "bg": "rgb(217, 45, 32)",
+        "color": "rgb(255, 255, 255)",
+        "shadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "all",
+        "border": "0px solid rgb(229, 229, 229)"
+      }
+    }
+  ]
+}

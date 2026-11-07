@@ -1,0 +1,2 @@
+/* React mount point must not affect the original layout. */
+#root{display:contents}

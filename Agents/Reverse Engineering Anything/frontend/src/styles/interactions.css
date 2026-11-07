@@ -1,0 +1,96 @@
+/* Verified against https://www.dubaipolice.gov.ae/app/services on 2026-11-06.
+   Green actions: 300ms background + 500ms upward sweep/label/arrow motion.
+   No card lift or audience-tag hover was observed. */
+.motion-button {
+  --arrow-size: 24px;
+  --label-offset: 16px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color .3s cubic-bezier(.66,0,.35,1.03), border-radius .3s cubic-bezier(.66,0,.35,1.03);
+}
+.motion-button .button-sweep {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 100%;
+  background: rgb(0 127 84 / 10%);
+  transform: translateY(115%) scale(1.5,1.25);
+  transition: transform .5s cubic-bezier(.66,0,.35,1.03);
+}
+.motion-button .button-content {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  z-index: 1;
+  transition: transform .5s cubic-bezier(.4,0,.2,1);
+}
+.motion-button--arrow .button-content { gap: 0; transform: translateX(var(--label-offset)); }
+.motion-button .button-arrow {
+  display: inline-flex;
+  flex-shrink: 0;
+  width: var(--arrow-size);
+  height: var(--arrow-size);
+  margin-inline-start: 8px;
+  opacity: 0;
+  transform: translateX(20px) scale(1.25);
+  transition: transform .5s cubic-bezier(.4,0,.2,1), opacity .5s cubic-bezier(.4,0,.2,1);
+}
+.button-arrow svg { display: block; width: 100%; height: 100%; }
+.service-tile > .motion-button { color: #00734b; font-weight: 700; }
+.featured-actions .motion-button { --arrow-size: 16px; --label-offset: 12px; }
+.motion-button--gray .button-sweep { background: rgb(0 0 0 / 10%); }
+
+.sidebar nav a, .sidebar nav .services-toggle, .contact-nav {
+  transition: background-color .15s cubic-bezier(.4,0,.2,1);
+}
+#header-signin { transition: background-color .2s ease-in-out; }
+#header-language { position: relative; }
+#header-language .language-label { display: inline-block; transition: transform .3s ease-in-out; }
+#header-language .language-chevron {
+  position: absolute;
+  bottom: -3px;
+  left: calc(50% - 8px);
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+  transform: translateY(-2px);
+  transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+  pointer-events: none;
+}
+
+/* Don't leave mouse-hover states stuck after tapping on touchscreens. */
+@media (hover: hover) and (pointer: fine) {
+  .motion-button--green:not(:disabled):hover { background: #c4dfd5; }
+  .motion-button--gray:not(:disabled):hover { background: rgb(74 68 89 / 8%); color: #4b4c4d; }
+  .motion-button:not(:disabled):hover .button-sweep { transform: translateY(0) scale(1.5,1.25); }
+  .motion-button:not(:disabled):hover .button-content { transform: translateX(0); }
+  .motion-button:not(:disabled):hover .button-arrow { opacity: 1; transform: translateX(0) scale(1); }
+  .sidebar nav #home-nav:hover, .sidebar nav #dashboard-nav:hover,
+  .sidebar nav #services-toggle:hover, #category-nav a:not(.active):hover,
+  .contact-nav:hover { background-color: rgb(0 0 0 / 4%); }
+  #category-nav a.active:hover, .sidebar nav a.page-active:hover { background-color: rgb(0 135 85 / 12%); }
+  #header-signin:hover { background-color: transparent; }
+  #header-language:hover .language-label { transform: translateY(-2px); }
+  #header-language:hover .language-chevron { opacity: 1; transform: translateY(0); }
+  .chooser-tool:hover, .dialog-close:hover { background: rgb(74 68 89 / 8%); }
+}
+/* Keyboard users receive the same action cues without losing the focus ring. */
+.motion-button:not(:disabled):focus-visible .button-sweep { transform: translateY(0) scale(1.5,1.25); }
+.motion-button:not(:disabled):focus-visible .button-content { transform: translateX(0); }
+.motion-button:not(:disabled):focus-visible .button-arrow { opacity: 1; transform: translateX(0) scale(1); }
+.motion-button:not(:disabled):active { border-radius: 12px; }
+.motion-button:disabled .button-sweep, .motion-button:disabled .button-arrow { opacity: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-button, .motion-button .button-sweep, .motion-button .button-content,
+  .motion-button .button-arrow, #header-language .language-label,
+  #header-language .language-chevron { transition: none; }
+}
+body.reduce-motion .motion-button, body.reduce-motion .motion-button *,
+body.reduce-motion #header-language * { transition: none; }

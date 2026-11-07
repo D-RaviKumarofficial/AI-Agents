@@ -1,0 +1,1199 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "eCrime Demo API",
+    "description": "Synthetic backend for the reconstructed services demo. No data reaches any authority.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "tags": [
+          "default"
+        ],
+        "summary": "Service information",
+        "description": "Describe this service.",
+        "operationId": "info__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "boolean"
+                      }
+                    ]
+                  },
+                  "type": "object",
+                  "title": "Response Info  Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "tags": [
+          "default"
+        ],
+        "summary": "Liveness",
+        "description": "Report that the process is running.",
+        "operationId": "health_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthOut"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ready": {
+      "get": {
+        "tags": [
+          "default"
+        ],
+        "summary": "Readiness",
+        "description": "Verify that the database is reachable.",
+        "operationId": "ready_ready_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthOut"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/catalog": {
+      "get": {
+        "tags": [
+          "v1"
+        ],
+        "summary": "Captured service catalog",
+        "description": "Return the static catalog captured from the reference site.",
+        "operationId": "get_catalog_v1_catalog_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Get Catalog V1 Catalog Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/reports": {
+      "post": {
+        "tags": [
+          "v1"
+        ],
+        "summary": "Create Report",
+        "description": "Store a simulated E-Crime report. Nothing is sent to any authority.",
+        "operationId": "create_report_v1_reports_post",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReportCreate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReportOut"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "v1"
+        ],
+        "summary": "List Reports",
+        "description": "List stored simulated reports.",
+        "operationId": "list_reports_v1_reports_get",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 200,
+              "minimum": 1,
+              "default": 50,
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0,
+              "title": "Offset"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReportList"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/submissions": {
+      "post": {
+        "tags": [
+          "v1"
+        ],
+        "summary": "Create Submission",
+        "description": "Store a simulated service request. Nothing is sent to any authority.",
+        "operationId": "create_submission_v1_submissions_post",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubmissionCreate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubmissionOut"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "v1"
+        ],
+        "summary": "List Submissions",
+        "description": "List stored simulated service requests.",
+        "operationId": "list_submissions_v1_submissions_get",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 200,
+              "minimum": 1,
+              "default": 50,
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0,
+              "title": "Offset"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubmissionList"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/reset": {
+      "post": {
+        "tags": [
+          "v1"
+        ],
+        "summary": "Reset",
+        "description": "Delete all simulated reports and submissions.",
+        "operationId": "reset_v1_reset_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResetOut"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/chat": {
+      "post": {
+        "tags": [
+          "v1"
+        ],
+        "summary": "Ask the services assistant",
+        "description": "Answer a question about services with the language model. 503 if it is unavailable. Nothing is stored.",
+        "operationId": "chat_v1_chat_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChatRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChatResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/chat/stream": {
+      "post": {
+        "tags": [
+          "v1"
+        ],
+        "summary": "Ask the services assistant, streamed word by word",
+        "description": "Same as `/chat`, but the answer arrives as Server-Sent Events: `delta` pieces, then `done` (or `error`).\n\nA missing model is reported as a normal 503 before the stream starts. Nothing is stored.",
+        "operationId": "chat_stream_v1_chat_stream_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChatRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/speech/transcribe": {
+      "post": {
+        "tags": [
+          "speech"
+        ],
+        "summary": "Turn a recording into text",
+        "description": "Recognise the speech in a recording (webm, ogg, mp4/m4a, wav, mp3 or flac) with faster-whisper.\n\nSend the audio file as the request body with its `Content-Type`. Runs on this machine: no AWS, nothing is stored.\nReturns 413 if the file is too large, 415 for a non-audio type, 422 if it is empty, too short, too long or cannot be\nread, and 503 if the speech model is unavailable.",
+        "operationId": "transcribe_v1_speech_transcribe_post",
+        "parameters": [
+          {
+            "name": "language",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "maxLength": 12
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Language code such as en, ar or ta. Leave out to detect it.",
+              "title": "Language"
+            },
+            "description": "Language code such as en, ar or ta. Leave out to detect it."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TranscriptionOut"
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "The recording is larger than the limit (10 MB by default). `AUDIO_TOO_LARGE`",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "The request is not declared as audio. `UNSUPPORTED_AUDIO_TYPE`",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Empty, unreadable, too short or too long recording (`AUDIO_INVALID`, `AUDIO_TOO_LONG`), or an unknown `language` (`UNSUPPORTED_LANGUAGE`).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "The speech model could not be loaded or failed. `SPEECH_UNAVAILABLE`",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "description": "The audio file itself (the raw bytes), for example a browser recording.",
+          "content": {
+            "audio/webm": {
+              "schema": {
+                "type": "string",
+                "format": "binary"
+              }
+            },
+            "audio/ogg": {
+              "schema": {
+                "type": "string",
+                "format": "binary"
+              }
+            },
+            "audio/mp4": {
+              "schema": {
+                "type": "string",
+                "format": "binary"
+              }
+            },
+            "audio/mpeg": {
+              "schema": {
+                "type": "string",
+                "format": "binary"
+              }
+            },
+            "audio/wav": {
+              "schema": {
+                "type": "string",
+                "format": "binary"
+              }
+            },
+            "audio/flac": {
+              "schema": {
+                "type": "string",
+                "format": "binary"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AccessLevel": {
+        "type": "string",
+        "enum": [
+          "uae_pass_required",
+          "guest_available",
+          "unknown"
+        ],
+        "title": "AccessLevel",
+        "description": "What was observed about signing in to a service's initial form."
+      },
+      "AnswerSource": {
+        "type": "string",
+        "enum": [
+          "model",
+          "safety"
+        ],
+        "title": "AnswerSource",
+        "description": "Where an answer came from: the language model, or the fixed emergency (safety) reply."
+      },
+      "ChatRequest": {
+        "properties": {
+          "message": {
+            "type": "string",
+            "maxLength": 500,
+            "minLength": 1,
+            "title": "Message"
+          },
+          "history": {
+            "items": {
+              "$ref": "#/components/schemas/ChatTurn"
+            },
+            "type": "array",
+            "maxItems": 20,
+            "title": "History",
+            "default": []
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "message"
+        ],
+        "title": "ChatRequest",
+        "description": "A user message, with optional earlier turns."
+      },
+      "ChatResponse": {
+        "properties": {
+          "reply": {
+            "type": "string",
+            "title": "Reply"
+          },
+          "services": {
+            "items": {
+              "$ref": "#/components/schemas/ServiceRef"
+            },
+            "type": "array",
+            "title": "Services",
+            "default": []
+          },
+          "source": {
+            "$ref": "#/components/schemas/AnswerSource"
+          }
+        },
+        "type": "object",
+        "required": [
+          "reply",
+          "source"
+        ],
+        "title": "ChatResponse",
+        "description": "The assistant's answer and the services it is about."
+      },
+      "ChatTurn": {
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "user",
+              "assistant"
+            ],
+            "title": "Role"
+          },
+          "text": {
+            "type": "string",
+            "maxLength": 1200,
+            "minLength": 1,
+            "title": "Text"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "role",
+          "text"
+        ],
+        "title": "ChatTurn",
+        "description": "One earlier message in the conversation, sent by the browser so the model keeps context."
+      },
+      "ErrorResponse": {
+        "properties": {
+          "error_code": {
+            "type": "string",
+            "title": "Error Code"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          },
+          "trace_id": {
+            "type": "string",
+            "title": "Trace Id"
+          },
+          "details": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Details",
+            "default": {}
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "error_code",
+          "message",
+          "trace_id"
+        ],
+        "title": "ErrorResponse",
+        "description": "Standard error body returned by all failing endpoints."
+      },
+      "EvidenceFile": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "size": {
+            "type": "integer",
+            "title": "Size"
+          },
+          "type": {
+            "type": "string",
+            "title": "Type"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "name",
+          "size",
+          "type"
+        ],
+        "title": "EvidenceFile",
+        "description": "Evidence file metadata only. File contents are never uploaded."
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "HealthOut": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "storage": {
+            "type": "string",
+            "title": "Storage",
+            "default": "sqlite"
+          },
+          "demoOnly": {
+            "type": "boolean",
+            "title": "Demoonly",
+            "default": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "status"
+        ],
+        "title": "HealthOut",
+        "description": "Liveness/readiness response."
+      },
+      "ReportCreate": {
+        "properties": {
+          "demoOnly": {
+            "type": "boolean",
+            "title": "Demoonly",
+            "default": false
+          },
+          "person": {
+            "$ref": "#/components/schemas/ReportPersonIn"
+          },
+          "incident": {
+            "$ref": "#/components/schemas/ReportIncidentIn"
+          },
+          "evidence": {
+            "items": {
+              "$ref": "#/components/schemas/EvidenceFile"
+            },
+            "type": "array",
+            "title": "Evidence",
+            "default": []
+          },
+          "consent": {
+            "type": "boolean",
+            "title": "Consent",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "person",
+          "incident"
+        ],
+        "title": "ReportCreate",
+        "description": "Body for creating a simulated report."
+      },
+      "ReportIncidentIn": {
+        "properties": {
+          "category": {
+            "type": "string",
+            "title": "Category",
+            "default": ""
+          },
+          "date": {
+            "type": "string",
+            "title": "Date",
+            "default": ""
+          },
+          "platform": {
+            "type": "string",
+            "title": "Platform",
+            "default": ""
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+            "default": ""
+          },
+          "amount": {
+            "type": "string",
+            "title": "Amount",
+            "default": ""
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "ReportIncidentIn",
+        "description": "Incident description (synthetic)."
+      },
+      "ReportList": {
+        "properties": {
+          "reports": {
+            "items": {
+              "$ref": "#/components/schemas/ReportOut"
+            },
+            "type": "array",
+            "title": "Reports"
+          },
+          "total": {
+            "type": "integer",
+            "title": "Total"
+          },
+          "limit": {
+            "type": "integer",
+            "title": "Limit"
+          },
+          "offset": {
+            "type": "integer",
+            "title": "Offset"
+          }
+        },
+        "type": "object",
+        "required": [
+          "reports",
+          "total",
+          "limit",
+          "offset"
+        ],
+        "title": "ReportList",
+        "description": "Paginated reports."
+      },
+      "ReportOut": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "reference": {
+            "type": "string",
+            "title": "Reference"
+          },
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "createdAt": {
+            "type": "string",
+            "title": "Createdat"
+          },
+          "demoOnly": {
+            "type": "boolean",
+            "const": true,
+            "title": "Demoonly",
+            "default": true
+          },
+          "consent": {
+            "type": "boolean",
+            "const": true,
+            "title": "Consent",
+            "default": true
+          },
+          "person": {
+            "$ref": "#/components/schemas/ReportPersonIn"
+          },
+          "incident": {
+            "$ref": "#/components/schemas/ReportIncidentIn"
+          },
+          "evidence": {
+            "items": {
+              "$ref": "#/components/schemas/EvidenceFile"
+            },
+            "type": "array",
+            "title": "Evidence"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "reference",
+          "status",
+          "createdAt",
+          "person",
+          "incident",
+          "evidence"
+        ],
+        "title": "ReportOut",
+        "description": "A stored simulated report."
+      },
+      "ReportPersonIn": {
+        "properties": {
+          "fullName": {
+            "type": "string",
+            "title": "Fullname",
+            "default": ""
+          },
+          "email": {
+            "type": "string",
+            "title": "Email",
+            "default": ""
+          },
+          "phone": {
+            "type": "string",
+            "title": "Phone",
+            "default": ""
+          },
+          "residency": {
+            "type": "string",
+            "title": "Residency",
+            "default": ""
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "ReportPersonIn",
+        "description": "Reporter contact details (synthetic)."
+      },
+      "ResetOut": {
+        "properties": {
+          "reset": {
+            "type": "boolean",
+            "title": "Reset"
+          }
+        },
+        "type": "object",
+        "required": [
+          "reset"
+        ],
+        "title": "ResetOut",
+        "description": "Result of clearing all simulated data."
+      },
+      "ServiceRef": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "groupId": {
+            "type": "string",
+            "title": "Groupid"
+          },
+          "groupName": {
+            "type": "string",
+            "title": "Groupname"
+          },
+          "access": {
+            "$ref": "#/components/schemas/AccessLevel"
+          },
+          "officialUrl": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Officialurl"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "groupId",
+          "groupName",
+          "access"
+        ],
+        "title": "ServiceRef",
+        "description": "A service that a reply refers to."
+      },
+      "SubmissionCreate": {
+        "properties": {
+          "serviceId": {
+            "type": "string",
+            "title": "Serviceid"
+          },
+          "variant": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Variant"
+          },
+          "values": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Values",
+            "default": {}
+          },
+          "demoOnly": {
+            "type": "boolean",
+            "title": "Demoonly",
+            "default": false
+          },
+          "consent": {
+            "type": "boolean",
+            "title": "Consent",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "serviceId"
+        ],
+        "title": "SubmissionCreate",
+        "description": "Body for creating a simulated service request."
+      },
+      "SubmissionList": {
+        "properties": {
+          "submissions": {
+            "items": {
+              "$ref": "#/components/schemas/SubmissionOut"
+            },
+            "type": "array",
+            "title": "Submissions"
+          },
+          "total": {
+            "type": "integer",
+            "title": "Total"
+          },
+          "limit": {
+            "type": "integer",
+            "title": "Limit"
+          },
+          "offset": {
+            "type": "integer",
+            "title": "Offset"
+          }
+        },
+        "type": "object",
+        "required": [
+          "submissions",
+          "total",
+          "limit",
+          "offset"
+        ],
+        "title": "SubmissionList",
+        "description": "Paginated submissions."
+      },
+      "SubmissionOut": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "reference": {
+            "type": "string",
+            "title": "Reference"
+          },
+          "serviceId": {
+            "type": "string",
+            "title": "Serviceid"
+          },
+          "serviceName": {
+            "type": "string",
+            "title": "Servicename"
+          },
+          "variant": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Variant"
+          },
+          "values": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Values"
+          },
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "createdAt": {
+            "type": "string",
+            "title": "Createdat"
+          },
+          "demoOnly": {
+            "type": "boolean",
+            "const": true,
+            "title": "Demoonly",
+            "default": true
+          },
+          "consent": {
+            "type": "boolean",
+            "const": true,
+            "title": "Consent",
+            "default": true
+          },
+          "officialSubmission": {
+            "type": "boolean",
+            "const": false,
+            "title": "Officialsubmission",
+            "default": false
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "reference",
+          "serviceId",
+          "serviceName",
+          "variant",
+          "values",
+          "status",
+          "createdAt"
+        ],
+        "title": "SubmissionOut",
+        "description": "A stored simulated service request."
+      },
+      "TranscriptionOut": {
+        "properties": {
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "language": {
+            "type": "string",
+            "title": "Language"
+          },
+          "languageProbability": {
+            "type": "number",
+            "title": "Languageprobability"
+          },
+          "durationSeconds": {
+            "type": "number",
+            "title": "Durationseconds"
+          },
+          "processingMs": {
+            "type": "integer",
+            "title": "Processingms"
+          }
+        },
+        "type": "object",
+        "required": [
+          "text",
+          "language",
+          "languageProbability",
+          "durationSeconds",
+          "processingMs"
+        ],
+        "title": "TranscriptionOut",
+        "description": "The text recognised in a recording."
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+/* Service directory proportions measured from the supplied official screenshot.
+   Keep these after the legacy theme's desktop/mobile overrides. */
+.catalog-toolbar {
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+.catalog-search { width: 186px; }
+.catalog-search label { font-size: 16px; }
+.catalog-search-box { height: 44px; padding: 0 15px; }
+.catalog-search-box svg { width: 20px; height: 20px; }
+.catalog-search-box input { font-size: 16px; }
+.audience-tabs { gap: 10px; }
+.audience-tabs button {
+  min-height: 40px;
+  padding: 8px 18px;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.service-grid { gap: 28px; }
+.service-tile {
+  min-width: 0;
+  min-height: 436px;
+  padding: 36px;
+  border-radius: 36px;
+}
+.service-tile .tile-icon {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  margin-bottom: 28px;
+}
+.service-tile .tile-icon svg { width: 42px; height: 42px; }
+.service-tile h2 {
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  overflow-wrap: break-word;
+}
+.service-tile p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 22px;
+}
+.service-tile .audience-label {
+  /* Tags follow the description, while buttons align at the bottom of each row. */
+  margin: 0 0 26px;
+  gap: 8px;
+}
+.service-tile .audience-label span {
+  padding: 5px 8px;
+  font-size: 16px;
+  line-height: 1.4;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+.service-tile > button {
+  align-self: stretch;
+  width: 100%;
+  min-width: 0;
+  min-height: 62px;
+  margin-top: auto;
+  padding: 12px 20px;
+  border-radius: 32px;
+  font-size: 18px;
+}
+
+@media (min-width: 1251px) {
+  .topbar { padding-right: 72px; }
+  /* Use the space remaining beside the 336px sidebar, not viewport width. */
+  .service-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+}
+@media (min-width: 761px) and (max-width: 1450px) {
+  .featured-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 1250px) {
+  .service-tile { padding: 28px; min-height: 420px; }
+  .service-grid { gap: 24px; }
+}
+@media (max-width: 760px) {
+  .catalog-toolbar { gap: 20px; margin-bottom: 30px; }
+  .catalog-search { width: 100%; }
+  .catalog-search-box { max-width: 300px; }
+  .audience-tabs { gap: 7px; }
+  .audience-tabs button { padding: 8px 12px; font-size: 15px; }
+  .service-grid { gap: 20px; }
+  .service-tile { min-height: 0; padding: 28px; border-radius: 32px; }
+  .service-tile > button { margin-top: auto; min-height: 54px; }
+}

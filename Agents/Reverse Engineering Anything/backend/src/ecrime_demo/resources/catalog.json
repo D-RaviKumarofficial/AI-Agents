@@ -1,0 +1,2137 @@
+{
+  "observedAt": "2026-11-04",
+  "source": "https://www.dubaipolice.gov.ae/app/services/",
+  "sidebar": [
+    {
+      "id": "all",
+      "name": "All"
+    },
+    {
+      "id": "inquiries-follow-up",
+      "name": "Inquiries and Follow-up"
+    },
+    {
+      "id": "report_complaint",
+      "name": "Criminal Reports and Complaints"
+    },
+    {
+      "id": "certificate_permit",
+      "name": "Permits and Certificates"
+    },
+    {
+      "id": "traffic",
+      "name": "Traffic Services"
+    },
+    {
+      "id": "business_organization",
+      "name": "Business and Corporates"
+    },
+    {
+      "id": "community",
+      "name": "Community Engagement"
+    },
+    {
+      "id": "emergency",
+      "name": "Emergency and Response"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Inquiries and Follow-up",
+      "description": "Comprehensive service for applications status, Reports, and inquiries",
+      "audiences": [
+        "Individuals",
+        "Business"
+      ],
+      "id": "inquiries-and-follow-up",
+      "category": "inquiries-follow-up",
+      "services": [
+        {
+          "name": "Document Verification",
+          "description": "This service enables users to verify the authenticity and validity of electronic documents issued by Dubai Police that do not require an official stamp.",
+          "audiences": [],
+          "id": "document-verification",
+          "evidenceId": "ev_2519fe0628325fadefa94dad86b688a5319e9588e2fdcc212844e270a630d206",
+          "coverage": "guest-fields",
+          "fields": [
+            {
+              "id": "referenceNumber",
+              "label": "Reference Number",
+              "type": "text",
+              "options": [],
+              "required": true,
+              "provenance": "observed-guest-label"
+            },
+            {
+              "id": "securityCode",
+              "label": "Security Code",
+              "type": "number",
+              "options": [],
+              "required": true,
+              "provenance": "observed-guest-label"
+            }
+          ],
+          "groupId": "inquiries-and-follow-up",
+          "fieldObservation": {
+            "file": "document-guest-capture.json",
+            "step": "document-guest-fields",
+            "evidenceId": "ev_4b4fdb4f254d4076888781aaae8600f989bdf10b4d14cbe3e137624709243a05",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/document-inquiry",
+          "pageSnapshot": "\n    - text: Submit Review Verification Application Details Reference Number\n    - textbox \"Reference Number\"\n    - text: Security Code\n    - spinbutton \"Security Code\"\n    - button \"Back\"\n    - button \"Next\"",
+          "informationSnapshot": "\n    - heading \"Document Verification\" [level=1]\n    - button \"Close\"\n    - text: Fees Free of Charge Duration Instant\n    - paragraph: This service enables users to verify the authenticity and validity of electronic documents issued by Dubai Police that do not require an official stamp.\n    - img \"Beneficiaries\"\n    - heading \"Beneficiaries\" [level=2]\n    - list:\n      - listitem:  Business Sector\n      - listitem:  Government Entities\n    - img \"Service Channels\"\n    - heading \"Service Channels\" [level=2]\n    - list:\n      - listitem:  Dubai Police App\n      - listitem:  Dubai Police Website\n    - img \"Working Hours\"\n    - heading \"Working Hours\" [level=2]\n    - text: Digital Channels 24/7\n    - img \"Contact Details\"\n    - heading \"Contact Details\" [level=2]\n    - list:\n      - listitem: Call Center 901\n      - listitem: Email mail@dubaipolice.gov.ae\n      - listitem: P.O. Box 1493 Dubai- United Arab Emirates\n"
+        },
+        {
+          "name": "Fast Track",
+          "description": "This service enables users to book an appointment in advance before visiting service centers to complete their transactions in person. It also allows them to modify or cancel their appointment, ensuring a more flexible experience that saves time and eliminates waiting",
+          "audiences": [],
+          "id": "fast-track",
+          "evidenceId": "ev_2519fe0628325fadefa94dad86b688a5319e9588e2fdcc212844e270a630d206",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "inquiries-and-follow-up",
+          "fieldObservation": {
+            "file": "guest-fields-0-capture.json",
+            "step": "fields-fast-track",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/fast-track"
+        },
+        {
+          "name": "Attaching Documents",
+          "description": "This service enables users to attach the required documents to support their applications or electronic transactions with Dubai Police . It allows relevant files to be uploaded directly .",
+          "audiences": [],
+          "id": "attaching-documents",
+          "evidenceId": "ev_2519fe0628325fadefa94dad86b688a5319e9588e2fdcc212844e270a630d206",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "inquiries-and-follow-up",
+          "fieldObservation": {
+            "file": "guest-fields-0-capture.json",
+            "step": "fields-attaching-documents",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/service-attachment"
+        },
+        {
+          "name": "Circulars and travel bans",
+          "description": "This service enables users to inquire about circulars related to financial cases and travel bans issued against them by the competent security authorities.",
+          "audiences": [],
+          "id": "circulars-and-travel-bans",
+          "evidenceId": "ev_2519fe0628325fadefa94dad86b688a5319e9588e2fdcc212844e270a630d206",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "inquiries-and-follow-up",
+          "fieldObservation": {
+            "file": "guest-fields-0-capture.json",
+            "step": "fields-circulars-and-travel-bans",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/financial-cases"
+        },
+        {
+          "name": "Submit an Inquiry",
+          "description": "This service enables users to submit their inquiries about the services, procedures and requirements approved by Dubai Police.",
+          "audiences": [],
+          "id": "submit-an-inquiry",
+          "evidenceId": "ev_2519fe0628325fadefa94dad86b688a5319e9588e2fdcc212844e270a630d206",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "inquiries-and-follow-up",
+          "fieldObservation": {
+            "file": "guest-inquiry-capture.json",
+            "step": "render-inquiry",
+            "evidenceId": "ev_c549ee8d82060dfa081c34fd5057ee23996c59ead0a9a33d0b1d824fd5625406",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/submit-inquiry"
+        },
+        {
+          "name": "Application Status",
+          "description": "This service allows users to track the status of their application using the reference number.",
+          "audiences": [],
+          "id": "application-status",
+          "evidenceId": "ev_2519fe0628325fadefa94dad86b688a5319e9588e2fdcc212844e270a630d206",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "inquiries-and-follow-up",
+          "fieldObservation": {
+            "file": "guest-fields-0-capture.json",
+            "step": "fields-application-status",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/application-status"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "Report Criminal Complaint",
+      "description": "A service to file various crime reports and related complaints",
+      "audiences": [
+        "Individuals",
+        "Business"
+      ],
+      "id": "report-criminal-complaint",
+      "category": "report_complaint",
+      "services": [
+        {
+          "name": "File Criminal Complaint",
+          "description": "This service enables users to submit criminal complaints of all kinds and to coordinate with the competent authorities to refer the complaint file to the judicial authorities after verifying the validity of the complaint.",
+          "audiences": [],
+          "id": "file-criminal-complaint",
+          "evidenceId": "ev_2519fe0628325fadefa94dad86b688a5319e9588e2fdcc212844e270a630d206",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "report-criminal-complaint",
+          "fieldObservation": {
+            "file": "guest-fields-0-capture.json",
+            "step": "fields-file-criminal-complaint",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/open-criminal-case"
+        },
+        {
+          "name": "Bounce Cheque Report",
+          "description": "This service enables users to report bounced checks, settle the dispute amicably if possible, or refer the case directly to the competent authorities.",
+          "audiences": [],
+          "id": "bounce-cheque-report",
+          "evidenceId": "ev_2519fe0628325fadefa94dad86b688a5319e9588e2fdcc212844e270a630d206",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "report-criminal-complaint",
+          "fieldObservation": {
+            "file": "guest-missing-0-capture.json",
+            "step": "fields-bounce-cheque-report",
+            "evidenceId": "ev_f8432312f94c33ff6d43c5e0aec6c2ecdb728c1b00d381bedb51379aa17737d9",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/report-bounce-cheques"
+        },
+        {
+          "name": "Reporting E-Crime",
+          "description": "This service allows individuals impacted by various types of criminal offenses to file complaints to the competent authorities who then refer the cases to the judicial authorities to ensure their rights are upheld.",
+          "audiences": [],
+          "id": "reporting-e-crime",
+          "evidenceId": "ev_2519fe0628325fadefa94dad86b688a5319e9588e2fdcc212844e270a630d206",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "report-criminal-complaint",
+          "fieldObservation": {
+            "file": "guest-ecrime-capture.json",
+            "step": "render-ecrime",
+            "evidenceId": "ev_974719f76d0cfe88a3fcc653256d164f6b7555888051b43bf8c387d1291044ec",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/ecrime"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "Lost & Found",
+      "description": "This service enables users to report lost property or hand over found items to Dubai Police for restoration to their rightful owners following verification. It also allows them to track their application status and obtain an official ‘Loss Certificate’",
+      "audiences": [
+        "Individuals"
+      ],
+      "id": "lost-found",
+      "category": "report_complaint",
+      "services": [
+        {
+          "id": "report-lost-item",
+          "name": "Report Lost Item",
+          "description": "Enter your lost item details to help us locate it.",
+          "fields": [],
+          "coverage": "sign-in-required",
+          "groupId": "lost-found",
+          "fieldObservation": {
+            "file": "lost-form-capture.json",
+            "step": "visible-fields",
+            "evidenceId": "ev_2e3f83725a112ce07594438827d32c161f3e1481c73a1c356a326e870d4e52ff",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/lost-and-found/report-lost-item"
+        },
+        {
+          "id": "report-found-item",
+          "name": "Report Found Item",
+          "description": "Enter the found item details to help us return it to its rightful owner.",
+          "fields": [],
+          "coverage": "public-description",
+          "groupId": "lost-found"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "Request a Certificate",
+      "description": "A Service to obtain various official certificates issued by Dubai Police",
+      "audiences": [
+        "Individuals"
+      ],
+      "id": "request-a-certificate",
+      "category": "certificate_permit",
+      "services": [
+        {
+          "name": "Police Clearance Certificate",
+          "description": "This service aims to enable individuals to obtain a certificate proving that they have no criminal record within the United Arab Emirates.",
+          "audiences": [],
+          "id": "police-clearance-certificate",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "guest-fields",
+          "fields": [
+            {
+              "id": "userType",
+              "label": "User Type",
+              "type": "select",
+              "options": [
+                "Citizen / Resident inside UAE"
+              ],
+              "required": true,
+              "provenance": "observed-guest-label",
+              "disabled": true,
+              "value": "Citizen / Resident inside UAE",
+              "note": "Select your user type using the tabs above."
+            },
+            {
+              "id": "emiratesId",
+              "label": "Emirates ID",
+              "type": "text",
+              "options": [],
+              "required": true,
+              "provenance": "observed-guest-label",
+              "syntheticId": true,
+              "note": "Enter a test ID starting with DEMO, e.g. DEMO-ID-001. Do not enter a real Emirates ID."
+            },
+            {
+              "id": "emailAddress",
+              "label": "Email Address",
+              "type": "email",
+              "options": [],
+              "required": true,
+              "provenance": "observed-guest-label"
+            },
+            {
+              "id": "purpose",
+              "label": "Purpose of Certificate",
+              "type": "select",
+              "options": [
+                "Work",
+                "Marriage",
+                "Study",
+                "Naturalization",
+                "Immigration",
+                "Permit or License",
+                "Name Modification",
+                "Rehabilitation",
+                "PRO Card",
+                "Issue Permits Occupation",
+                "Nomination",
+                "Real Estate Broker",
+                "Financial Broker",
+                "Issuing a representative permit - Ministry of Labour",
+                "Renewal of a Representative permit - Ministry of Labour",
+                "Issuing a Representative permit - Naturalization and Residency Department",
+                "Renewal of a Representative permit - Naturalization and Residency Department",
+                "Driving trainer permit",
+                "Pharmacist permit",
+                "Issue safari license",
+                "Renew safari license",
+                "Add a partner in the license",
+                "Renewing license of airline company",
+                "Issuing trade license",
+                "Child adoption",
+                "Restriction transfer",
+                "Extract a commercial License outside the country",
+                "Visit visa outside the country",
+                "Residence transfer",
+                "To study outside the country",
+                "For Marriage outside the country",
+                "Licensing a security company",
+                "For outside country purpose",
+                "Pension payment",
+                "Appointment",
+                "Weapon Licensing",
+                "Residence",
+                "Issuing Security Guard Card",
+                "Renewing Security Guard Card",
+                "Extract a fishing boat license",
+                "Renew a fishing boat license",
+                "Register in the Accountants Log",
+                "Register in the Lawyers Log",
+                "Register in the Accountants course",
+                "Register in the Lawyers course",
+                "Open a driving license file",
+                "Get a personal loan",
+                "Update personal information",
+                "Renew the residency",
+                "Outside the country by email",
+                "Register in the translators course",
+                "Register in the senior leaders course",
+                "Extract excursion boat license",
+                "Renew excursion boat license",
+                "Transfer residency from passport to another",
+                "Member nomination for committee board",
+                "A Tour Guide",
+                "Practical Training",
+                "Collaborators"
+              ],
+              "required": true,
+              "provenance": "observed-guest-label"
+            },
+            {
+              "id": "requestingEntity",
+              "label": "Requesting Entity",
+              "type": "select",
+              "options": [
+                "Government Sector",
+                "Private Sector"
+              ],
+              "required": true,
+              "provenance": "observed-guest-label"
+            },
+            {
+              "id": "certificateLanguage",
+              "label": "Certificate Language",
+              "type": "select",
+              "options": [
+                "Arabic",
+                "English"
+              ],
+              "required": true,
+              "provenance": "observed-guest-label"
+            },
+            {
+              "id": "terms",
+              "label": "Terms and Conditions",
+              "type": "checkbox",
+              "options": [],
+              "required": true,
+              "provenance": "observed-guest-label",
+              "note": "Accept the terms and conditions to continue."
+            }
+          ],
+          "groupId": "request-a-certificate",
+          "fieldObservation": {
+            "file": "clearance-guest-capture.json",
+            "step": "guest-fields",
+            "evidenceId": "ev_f12408ce2946b981d7864e8eca45cc635b017870f59c92be4f3b55666947e5b1",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/police-clearance-certificate",
+          "informationSnapshot": "\n    - heading \"Police Clearance Certificate\" [level=1]\n    - button \"Close\"\n    - text: Fees Required AED Duration 5 Working Days\n    - paragraph: This service aims to enable individuals to obtain a certificate proving that they have no criminal record within the United Arab Emirates.\n    - img \"Payment Methods\"\n    - heading \"Payment Methods\" [level=2]\n    - text: Cash or Debit Card At service centres and Smart Police Stations\n    - img \"Cash\"\n    - img \"Debit Card\"\n    - text: Debit or Credit Card\n    - img \"Credit Card\"\n    - img \"Debit Card\"\n    - text: Apple Pay\n    - img \"Apple Pay\"\n    - img \"Working Hours\"\n    - heading \"Service Fees\" [level=2]\n    - text: Citizen 100 AED Resident AED 200 from Outside the UAE AED 300 or $ 88 Knowledge and Innovation Dirhams AED 20 Additional fee if applied through service centers in person AED 100\n    - img \"Beneficiaries\"\n    - heading \"Required Documents\" [level=2]\n    - text: From outside the UAE\n    - list:\n      - listitem: Personal photo\n      - listitem: Passport copy\n      - listitem: Copy of previous residence visa\n    - img \"Beneficiaries\"\n    - heading \"Beneficiaries\" [level=2]\n    - list:\n      - listitem:  Individuals\n    - img \"Service Channels\"\n    - heading \"Service Channels\" [level=2]\n    - list:\n      - listitem:  Dubai Police App\n      - listitem:  Dubai Police Website\n      - listitem:  Call Centre\n      - listitem:  DubaiNow\n      - listitem:  Smart Police Stations\n      - listitem:  Police Stations\n    - img \"Working Hours\"\n    - heading \"Working Hours\" [level=2]\n    - text: Digital Channels 24/7 Police Station 7:30 am-10:00 pm Smart Police Stations 24/7\n    - img \"Beneficiaries\"\n    - heading \"Terms and Conditions\" [level=2]\n    - list:\n      - listitem: You can apply through a valid or expired Emirates ID number\n      - listitem: The applicant is responsible for ensuring the accuracy of the information sumbitted\n      - listitem: The misuse of this certificate will lead to legal action taken against you\n      - listitem: The applicant must not be wanted by any authority or have a criminal record, which would prevent them from obtaining the certificate\n      - listitem: If the certificate is requested from outside the UAE, the applicant must have previously entered the UAE\n      - listitem: Applicants who do not have an Emirates ID must visit a service center during official working hours in person to have their fingerprints taken (Al Qusais Police Station, Ports Police Station, Al Rashidiya Police Station, Jebel Ali Police Station)\n      - listitem: If the applicant is outside the UAE and does not have a ten-print fingerprint they must send a ten-print fingerprint copy certified by the UAE Embassy\n      - listitem: Fees paid and non-refundable\n      - listitem: The certificate is valid for 3 months from the date of issuance\n    - img \"Contact Details\"\n    - heading \"Contact Details\" [level=2]\n    - list:\n      - listitem: Call Center 901\n      - listitem: Email mail@dubaipolice.gov.ae\n      - listitem: P.O. Box 1493 Dubai- United Arab Emirates\n    - img \"Service Delivery Channels\"\n    - heading \"Service Delivery Channels\" [level=2]\n    - paragraph:\n      - text: •\n      - strong: Email\n      - text: \": The digital version of the certificate will be sent to your registered email address as soon as it is issued. •\"\n      - strong: Personal Dashboard\n      - text: \": Log in to your Dubai Police account, navigate to \\\"My Requests\\\" section in your personal dashboard, search for your request, and then download the certificate directly. •\"\n      - strong: Direct Inquiry\n      - text: \": You can download the certificate through \\\"Application Status\\\" service using only your reference number.\"\n",
+          "pageSnapshot": "\n    - text: Application Details Review Payment Confirmation Applicant Details User Type\n    - combobox \"User Type Outside UAE\": Outside UAE\n    - paragraph\n    - text: Do you have an Emirates ID?\n    - combobox \"Do you have an Emirates ID? Select\": Select\n    - paragraph\n    - text: Name\n    - textbox \"Name\"\n    - text: Nationality\n    - combobox \"Nationality Select\": Select\n    - paragraph\n    - text: Mobile Number\n    - spinbutton \"Mobile Number\"\n    - text: Email Address\n    - textbox \"Email Address\":\n      - /placeholder: abc@zyz.com\n    - text: Application Details Purpose of Certificate\n    - combobox \"Purpose of Certificate\"\n    - button \"Open\"\n    - paragraph:\n      - alert: Required\n    - text: Certificate Language\n    - combobox \"Certificate Language Select\": Select\n    - alert: Required\n    - text: Certificate Required By\n    - combobox \"Certificate Required By Select\": Select\n    - paragraph\n    - text: Required Attachments Files (PNG,JPG, or PDF,DOC), with a maximum of 5 MB per file. Personal Photo\n    - button \"Personal Photo\"\n    - text: No file selected Choose File\n    - paragraph: \"png, jpg, jpeg or pdf (Max file size: 5MB)\"\n    - text: Passport Copy\n    - button \"Passport Copy\"\n    - text: No file selected Choose File\n    - paragraph: \"png, jpg, jpeg or pdf (Max file size: 5MB)\"\n    - text: Previous Residency Photocopy\n    - button \"Previous Residency Photocopy\"\n    - text: No file selected Choose File\n    - paragraph: \"png, jpg, jpeg or pdf (Max file size: 5MB)\"\n    - text: Biometric Form\n    - heading \"No Emirates ID? Download the biometric form and submit via post.\" [level=6]\n    - button \"Download\"\n    - paragraph\n    - checkbox \"Terms and Conditions\"\n    - text: Terms and Conditions\n    - paragraph\n    - button \"Back\" [disabled]\n    - button \"Next\" [disabled]\n\n    - text: Application Details Review Payment Confirmation Applicant Details User Type\n    - combobox \"User Type Visitor inside UAE (doesn't hold Emirates ID)\": Visitor inside UAE (doesn't hold Emirates ID)\n    - paragraph\n    - text: Unified Number\n    - spinbutton \"Unified Number\"\n    - text: Email Address\n    - textbox \"Email Address\":\n      - /placeholder: abc@zyz.com\n    - text: Application Details Purpose of Certificate\n    - combobox \"Purpose of Certificate\"\n    - button \"Open\"\n    - paragraph:\n      - alert: Required\n    - text: Requesting Entity\n    - combobox \"Requesting Entity Select\": Select\n    - alert: Required\n    - text: Certificate Language\n    - combobox \"Certificate Language Select\": Select\n    - alert: Required\n    - checkbox \"Terms and Conditions\"\n    - text: Terms and Conditions\n    - paragraph\n    - button \"Back\" [disabled]\n    - button \"Next\"",
+          "variants": [
+            {
+              "id": "inside-uae",
+              "name": "Citizen / Resident inside UAE",
+              "fields": [
+                {
+                  "id": "userType",
+                  "label": "User Type",
+                  "type": "select",
+                  "options": [
+                    "Citizen / Resident inside UAE"
+                  ],
+                  "required": true,
+                  "provenance": "observed-guest-label",
+                  "disabled": true,
+                  "value": "Citizen / Resident inside UAE",
+                  "note": "Select your user type using the tabs above."
+                },
+                {
+                  "id": "emiratesId",
+                  "label": "Emirates ID",
+                  "type": "text",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label",
+                  "syntheticId": true,
+                  "note": "Enter a test ID starting with DEMO, e.g. DEMO-ID-001. Do not enter a real Emirates ID."
+                },
+                {
+                  "id": "emailAddress",
+                  "label": "Email Address",
+                  "type": "email",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label"
+                },
+                {
+                  "id": "purpose",
+                  "label": "Purpose of Certificate",
+                  "type": "select",
+                  "options": [
+                    "Work",
+                    "Marriage",
+                    "Study",
+                    "Naturalization",
+                    "Immigration",
+                    "Permit or License",
+                    "Name Modification",
+                    "Rehabilitation",
+                    "PRO Card",
+                    "Issue Permits Occupation",
+                    "Nomination",
+                    "Real Estate Broker",
+                    "Financial Broker",
+                    "Issuing a representative permit - Ministry of Labour",
+                    "Renewal of a Representative permit - Ministry of Labour",
+                    "Issuing a Representative permit - Naturalization and Residency Department",
+                    "Renewal of a Representative permit - Naturalization and Residency Department",
+                    "Driving trainer permit",
+                    "Pharmacist permit",
+                    "Issue safari license",
+                    "Renew safari license",
+                    "Add a partner in the license",
+                    "Renewing license of airline company",
+                    "Issuing trade license",
+                    "Child adoption",
+                    "Restriction transfer",
+                    "Extract a commercial License outside the country",
+                    "Visit visa outside the country",
+                    "Residence transfer",
+                    "To study outside the country",
+                    "For Marriage outside the country",
+                    "Licensing a security company",
+                    "For outside country purpose",
+                    "Pension payment",
+                    "Appointment",
+                    "Weapon Licensing",
+                    "Residence",
+                    "Issuing Security Guard Card",
+                    "Renewing Security Guard Card",
+                    "Extract a fishing boat license",
+                    "Renew a fishing boat license",
+                    "Register in the Accountants Log",
+                    "Register in the Lawyers Log",
+                    "Register in the Accountants course",
+                    "Register in the Lawyers course",
+                    "Open a driving license file",
+                    "Get a personal loan",
+                    "Update personal information",
+                    "Renew the residency",
+                    "Outside the country by email",
+                    "Register in the translators course",
+                    "Register in the senior leaders course",
+                    "Extract excursion boat license",
+                    "Renew excursion boat license",
+                    "Transfer residency from passport to another",
+                    "Member nomination for committee board",
+                    "A Tour Guide",
+                    "Practical Training",
+                    "Collaborators"
+                  ],
+                  "required": true,
+                  "provenance": "observed-guest-label"
+                },
+                {
+                  "id": "requestingEntity",
+                  "label": "Requesting Entity",
+                  "type": "select",
+                  "options": [
+                    "Government Sector",
+                    "Private Sector"
+                  ],
+                  "required": true,
+                  "provenance": "observed-guest-label"
+                },
+                {
+                  "id": "certificateLanguage",
+                  "label": "Certificate Language",
+                  "type": "select",
+                  "options": [
+                    "Arabic",
+                    "English"
+                  ],
+                  "required": true,
+                  "provenance": "observed-guest-label"
+                },
+                {
+                  "id": "terms",
+                  "label": "Terms and Conditions",
+                  "type": "checkbox",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label",
+                  "note": "Accept the terms and conditions to continue."
+                }
+              ]
+            },
+            {
+              "id": "outside-uae",
+              "name": "Outside UAE",
+              "fields": [
+                {
+                  "id": "userType",
+                  "label": "User Type",
+                  "type": "select",
+                  "options": [
+                    "Outside UAE"
+                  ],
+                  "required": true,
+                  "provenance": "observed-guest-label",
+                  "disabled": true,
+                  "value": "Outside UAE",
+                  "note": "Select your user type using the tabs above."
+                },
+                {
+                  "id": "hasEmiratesId",
+                  "label": "Do you have an Emirates ID?",
+                  "type": "text",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label",
+                  "sourceType": "combobox",
+                  "note": "Enter your answer."
+                },
+                {
+                  "id": "name",
+                  "label": "Name",
+                  "type": "text",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label"
+                },
+                {
+                  "id": "nationality",
+                  "label": "Nationality",
+                  "type": "text",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label",
+                  "sourceType": "combobox",
+                  "note": "Enter your nationality."
+                },
+                {
+                  "id": "mobileNumber",
+                  "label": "Mobile Number",
+                  "type": "number",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label"
+                },
+                {
+                  "id": "emailAddress",
+                  "label": "Email Address",
+                  "type": "email",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label"
+                },
+                {
+                  "id": "purpose",
+                  "label": "Purpose of Certificate",
+                  "type": "select",
+                  "options": [
+                    "Work",
+                    "Marriage",
+                    "Study",
+                    "Naturalization",
+                    "Immigration",
+                    "Permit or License",
+                    "Name Modification",
+                    "Rehabilitation",
+                    "PRO Card",
+                    "Issue Permits Occupation",
+                    "Nomination",
+                    "Real Estate Broker",
+                    "Financial Broker",
+                    "Issuing a representative permit - Ministry of Labour",
+                    "Renewal of a Representative permit - Ministry of Labour",
+                    "Issuing a Representative permit - Naturalization and Residency Department",
+                    "Renewal of a Representative permit - Naturalization and Residency Department",
+                    "Driving trainer permit",
+                    "Pharmacist permit",
+                    "Issue safari license",
+                    "Renew safari license",
+                    "Add a partner in the license",
+                    "Renewing license of airline company",
+                    "Issuing trade license",
+                    "Child adoption",
+                    "Restriction transfer",
+                    "Extract a commercial License outside the country",
+                    "Visit visa outside the country",
+                    "Residence transfer",
+                    "To study outside the country",
+                    "For Marriage outside the country",
+                    "Licensing a security company",
+                    "For outside country purpose",
+                    "Pension payment",
+                    "Appointment",
+                    "Weapon Licensing",
+                    "Residence",
+                    "Issuing Security Guard Card",
+                    "Renewing Security Guard Card",
+                    "Extract a fishing boat license",
+                    "Renew a fishing boat license",
+                    "Register in the Accountants Log",
+                    "Register in the Lawyers Log",
+                    "Register in the Accountants course",
+                    "Register in the Lawyers course",
+                    "Open a driving license file",
+                    "Get a personal loan",
+                    "Update personal information",
+                    "Renew the residency",
+                    "Outside the country by email",
+                    "Register in the translators course",
+                    "Register in the senior leaders course",
+                    "Extract excursion boat license",
+                    "Renew excursion boat license",
+                    "Transfer residency from passport to another",
+                    "Member nomination for committee board",
+                    "A Tour Guide",
+                    "Practical Training",
+                    "Collaborators"
+                  ],
+                  "required": true,
+                  "provenance": "observed-guest-label"
+                },
+                {
+                  "id": "certificateLanguage",
+                  "label": "Certificate Language",
+                  "type": "select",
+                  "options": [
+                    "Arabic",
+                    "English"
+                  ],
+                  "required": true,
+                  "provenance": "observed-guest-label"
+                },
+                {
+                  "id": "certificateRequiredBy",
+                  "label": "Certificate Required By",
+                  "type": "text",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label",
+                  "sourceType": "combobox",
+                  "note": "Enter the requesting organisation."
+                },
+                {
+                  "id": "personal-photo",
+                  "label": "Personal Photo",
+                  "type": "file",
+                  "options": [],
+                  "required": false,
+                  "provenance": "observed-guest-label",
+                  "note": "Optional. Only the file name, size and type are recorded; file contents are not uploaded."
+                },
+                {
+                  "id": "passport-copy",
+                  "label": "Passport Copy",
+                  "type": "file",
+                  "options": [],
+                  "required": false,
+                  "provenance": "observed-guest-label",
+                  "note": "Optional. Only the file name, size and type are recorded; file contents are not uploaded."
+                },
+                {
+                  "id": "previous-residency-photocopy",
+                  "label": "Previous Residency Photocopy",
+                  "type": "file",
+                  "options": [],
+                  "required": false,
+                  "provenance": "observed-guest-label",
+                  "note": "Optional. Only the file name, size and type are recorded; file contents are not uploaded."
+                },
+                {
+                  "id": "terms",
+                  "label": "Terms and Conditions",
+                  "type": "checkbox",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label",
+                  "note": "Accept the terms and conditions to continue."
+                }
+              ]
+            },
+            {
+              "id": "visitor",
+              "name": "Visitor inside UAE (doesn't hold Emirates ID)",
+              "fields": [
+                {
+                  "id": "userType",
+                  "label": "User Type",
+                  "type": "select",
+                  "options": [
+                    "Visitor inside UAE (doesn't hold Emirates ID)"
+                  ],
+                  "required": true,
+                  "provenance": "observed-guest-label",
+                  "disabled": true,
+                  "value": "Visitor inside UAE (doesn't hold Emirates ID)",
+                  "note": "Select your user type using the tabs above."
+                },
+                {
+                  "id": "unifiedNumber",
+                  "label": "Unified Number",
+                  "type": "number",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label"
+                },
+                {
+                  "id": "emailAddress",
+                  "label": "Email Address",
+                  "type": "email",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label"
+                },
+                {
+                  "id": "purpose",
+                  "label": "Purpose of Certificate",
+                  "type": "select",
+                  "options": [
+                    "Work",
+                    "Marriage",
+                    "Study",
+                    "Naturalization",
+                    "Immigration",
+                    "Permit or License",
+                    "Name Modification",
+                    "Rehabilitation",
+                    "PRO Card",
+                    "Issue Permits Occupation",
+                    "Nomination",
+                    "Real Estate Broker",
+                    "Financial Broker",
+                    "Issuing a representative permit - Ministry of Labour",
+                    "Renewal of a Representative permit - Ministry of Labour",
+                    "Issuing a Representative permit - Naturalization and Residency Department",
+                    "Renewal of a Representative permit - Naturalization and Residency Department",
+                    "Driving trainer permit",
+                    "Pharmacist permit",
+                    "Issue safari license",
+                    "Renew safari license",
+                    "Add a partner in the license",
+                    "Renewing license of airline company",
+                    "Issuing trade license",
+                    "Child adoption",
+                    "Restriction transfer",
+                    "Extract a commercial License outside the country",
+                    "Visit visa outside the country",
+                    "Residence transfer",
+                    "To study outside the country",
+                    "For Marriage outside the country",
+                    "Licensing a security company",
+                    "For outside country purpose",
+                    "Pension payment",
+                    "Appointment",
+                    "Weapon Licensing",
+                    "Residence",
+                    "Issuing Security Guard Card",
+                    "Renewing Security Guard Card",
+                    "Extract a fishing boat license",
+                    "Renew a fishing boat license",
+                    "Register in the Accountants Log",
+                    "Register in the Lawyers Log",
+                    "Register in the Accountants course",
+                    "Register in the Lawyers course",
+                    "Open a driving license file",
+                    "Get a personal loan",
+                    "Update personal information",
+                    "Renew the residency",
+                    "Outside the country by email",
+                    "Register in the translators course",
+                    "Register in the senior leaders course",
+                    "Extract excursion boat license",
+                    "Renew excursion boat license",
+                    "Transfer residency from passport to another",
+                    "Member nomination for committee board",
+                    "A Tour Guide",
+                    "Practical Training",
+                    "Collaborators"
+                  ],
+                  "required": true,
+                  "provenance": "observed-guest-label"
+                },
+                {
+                  "id": "requestingEntity",
+                  "label": "Requesting Entity",
+                  "type": "select",
+                  "options": [
+                    "Government Sector",
+                    "Private Sector"
+                  ],
+                  "required": true,
+                  "provenance": "observed-guest-label"
+                },
+                {
+                  "id": "certificateLanguage",
+                  "label": "Certificate Language",
+                  "type": "select",
+                  "options": [
+                    "Arabic",
+                    "English"
+                  ],
+                  "required": true,
+                  "provenance": "observed-guest-label"
+                },
+                {
+                  "id": "terms",
+                  "label": "Terms and Conditions",
+                  "type": "checkbox",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label",
+                  "note": "Accept the terms and conditions to continue."
+                }
+              ]
+            }
+          ],
+          "variantEvidenceId": "ev_fd2d80fbe564a31b363b76e75409f7e9a7e6ca6ce5335b08f1e1071b967c036c"
+        },
+        {
+          "name": "TWIMC Certificate",
+          "description": "This service enables users to obtain an official certificate that outlines the facts and circumstances recorded in reports of damage, natural disasters, or traffic accidents. The certificate specifies the status of the parties involved and the resulting damages, enabling users to complete the necessary legal procedures with relevant entities such as judicial authorities and insurance companies.",
+          "audiences": [],
+          "id": "twimc-certificate",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "request-a-certificate",
+          "fieldObservation": {
+            "file": "guest-fields-1-capture.json",
+            "step": "fields-twimc-certificate",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/twimc-certificate"
+        },
+        {
+          "name": "TWIMC Inmate Certificate",
+          "description": "This service aims to enable the inmate, their sponsor, or a family member (upon the inmate’s approval) to obtain an official “To Whom It May Concern” certificate confirming the completion or ongoing execution of the judicial sentence in Dubai’s correctional and penal institutions. The certificate is valid for a period of time, facilitating the completion of official, financial, and social transactions in accordance with applicable regulations.",
+          "audiences": [],
+          "id": "twimc-inmate-certificate",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "request-a-certificate",
+          "fieldObservation": {
+            "file": "guest-fields-1-capture.json",
+            "step": "fields-twimc-inmate-certificate",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/TWIMC-inmate-certificate"
+        },
+        {
+          "name": "Traffic Clearance Certificate",
+          "description": "This service enables users to obtain a clearance certificate confirming that the vehicle owner has settled all traffic violations and that there are no recorded accidents, traffic points, or active restrictions in Dubai against the vehicle or the driver’s license.",
+          "audiences": [],
+          "id": "traffic-clearance-certificate",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "request-a-certificate",
+          "fieldObservation": {
+            "file": "guest-fields-1-capture.json",
+            "step": "fields-traffic-clearance-certificate",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/traffic-clearance-certificate"
+        },
+        {
+          "name": "Traffic Status Certificate",
+          "description": "This service enables users to obtain a certificate detailing the vehicle’s traffic record, including fines, black points, and registered accidents, along with the driver’s involvement in each.",
+          "audiences": [],
+          "id": "traffic-status-certificate",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "request-a-certificate",
+          "fieldObservation": {
+            "file": "guest-fields-1-capture.json",
+            "step": "fields-traffic-status-certificate",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/traffic-status-certificate"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "Request a Permit",
+      "description": "A Service to obtain various official permits issued by Dubai Police",
+      "audiences": [
+        "Individuals",
+        "Business"
+      ],
+      "id": "request-a-permit",
+      "category": "certificate_permit",
+      "services": [
+        {
+          "name": "Corpse Entry Permit",
+          "description": "This service allows UAE citizens and residents to obtain a permit for the entry of a deceased person into the country, subject to prior approval from the relevant authorities",
+          "audiences": [],
+          "id": "corpse-entry-permit",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "request-a-permit",
+          "fieldObservation": {
+            "file": "guest-fields-1-capture.json",
+            "step": "fields-corpse-entry-permit",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/corpse-entry"
+        },
+        {
+          "name": "Visit a Detainee or Inmate Permit",
+          "description": "This service provides the necessary permit for virtual meetings with detainees or inmates held within the Emirate of Dubai, in accordance with applicable procedures and regulations.",
+          "audiences": [],
+          "id": "visit-a-detainee-or-inmate-permit",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "guest-fields",
+          "fields": [
+            {
+              "id": "searchBy",
+              "label": "Search By",
+              "type": "select",
+              "options": [
+                "Unified Number"
+              ],
+              "required": true,
+              "provenance": "observed-guest-label",
+              "disabled": true,
+              "value": "Unified Number"
+            },
+            {
+              "id": "unifiedNumber",
+              "label": "Unified Number",
+              "type": "number",
+              "options": [],
+              "required": true,
+              "provenance": "observed-guest-label"
+            }
+          ],
+          "groupId": "request-a-permit",
+          "fieldObservation": {
+            "file": "detainee-guest-capture.json",
+            "step": "guest-fields",
+            "evidenceId": "ev_76bf2ad2ecb332b461c1981b4555ab73cad9a6627a86e036e4abc1213ae566d0",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/detainee-visit/schedule",
+          "informationSnapshot": "\n    - heading \"Visit a Detainee or Inmate Permit\" [level=1]\n    - button \"Close\"\n    - text: Fees Free of Charge Duration 1 Working Days\n    - paragraph: This service provides the necessary permit for virtual meetings with detainees or inmates held within the Emirate of Dubai, in accordance with applicable procedures and regulations.\n    - img \"Beneficiaries\"\n    - heading \"Beneficiaries\" [level=2]\n    - list:\n      - listitem:  Individuals\n    - img \"Service Channels\"\n    - heading \"Service Channels\" [level=2]\n    - list:\n      - listitem:  Dubai Police App\n      - listitem:  Dubai Police Website\n      - listitem:  Police Stations\n    - img \"Working Hours\"\n    - heading \"Working Hours\" [level=2]\n    - text: Digital Channels 24/7 Police Station 9:00am-12:00pm\n    - img \"Beneficiaries\"\n    - heading \"Terms and Conditions\" [level=2]\n    - list:\n      - listitem: Lawyers can visit inmates on Thursday’s mornings of each week, through (virtual meeting) based on prior request and approval\n      - listitem: If the visitor is from outside the UAE, he or she must present evidence of kinship with the inmate\n      - listitem: Visitor needs proof of kinship with the detainee if its a drug related case\n    - img \"Contact Details\"\n    - heading \"Contact Details\" [level=2]\n    - list:\n      - listitem: Call Center 901\n      - listitem: Email mail@dubaipolice.gov.ae\n",
+          "pageSnapshot": "\n    - text: Application Details Appointment Details Review Confirmation Inmate Search By\n    - combobox \"Search By Unified Number\" [disabled]: Unified Number\n    - paragraph\n    - text: Unified Number\n    - spinbutton \"Unified Number\"\n    - button \"Search\"\n    - button \"Back\"\n    - button \"Next\" [disabled]"
+        },
+        {
+          "name": "Night Work Permit",
+          "description": "This service enables users to obtain a temporary permit for night time work to perform specific tasks within shops or banks, whether in enclosed shopping centers or outside of regular working hours.",
+          "audiences": [],
+          "id": "night-work-permit",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "request-a-permit",
+          "fieldObservation": {
+            "file": "guest-fields-1-capture.json",
+            "step": "fields-night-work-permit",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/night-work-permit"
+        },
+        {
+          "name": "HQ Entry Permit",
+          "description": "This service enables users wishing to visit the Dubai Police General Headquarters building to obtain a time-limited entry permit.",
+          "audiences": [],
+          "id": "hq-entry-permit",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "request-a-permit",
+          "fieldObservation": {
+            "file": "guest-fields-1-capture.json",
+            "step": "fields-hq-entry-permit",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/hqvisit"
+        },
+        {
+          "name": "Change Vehicle Color Permit",
+          "description": "This service enables customers wishing to change the color of their vehicles registered in the Emirate of Dubai to obtain a permit to do so.",
+          "audiences": [],
+          "id": "change-vehicle-color-permit",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "request-a-permit",
+          "fieldObservation": {
+            "file": "guest-fields-1-capture.json",
+            "step": "fields-change-vehicle-color-permit",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/vehicle-color-change"
+        },
+        {
+          "name": "Road Closure Permit",
+          "description": "This service enables users who have obtained a street closure permit from the RTA to notify Dubai Police of closure periods, enabling the Command and Control Center to know about closed roads while directing patrols to accident sites and reports.",
+          "audiences": [],
+          "id": "road-closure-permit",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "request-a-permit",
+          "fieldObservation": {
+            "file": "guest-fields-1-capture.json",
+            "step": "fields-road-closure-permit",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/close-road"
+        },
+        {
+          "name": "Police Museum Visit Permit",
+          "description": "This service enables customers to obtain a permit to visit the Dubai Police Museum and view its collections and security history.",
+          "audiences": [],
+          "id": "police-museum-visit-permit",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "request-a-permit",
+          "fieldObservation": {
+            "file": "guest-fields-2-capture.json",
+            "step": "fields-police-museum-visit-permit",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/museum-visit"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "Pay Traffic Fines",
+      "description": "Manage and pay traffic violations on your vehicle or license",
+      "audiences": [
+        "Individuals"
+      ],
+      "id": "pay-traffic-fines",
+      "category": "traffic",
+      "services": [
+        {
+          "name": "Fines Inquiry and Payment",
+          "description": "A service to inquire about traffic violations, including the following: • Traffic Fines Payment : A service that enables the settlement of traffic violations registered against a vehicle plate, driving licence, or traffic code. • Traffic Fines Instalments : A service that allows for the payment of traffic violations in monthly instalments via direct debit or credit card, subject to applicable terms and conditions. • Pay Against Impound : A service that allows for the payment of a daily fee to waive a vehicle’s impoundment period, provided no legal restrictions apply. • Smart Impound : A service that allows a vehicle to be kept at a designated private location during an impoundment period using a smart device linked to the operations centre, with movement permitted only in emergencies. • Black Points Transfer : A service that enables the transfer of black points from a vehicle’s record to a driver’s record, thereby allowing the fine to be settled. • Violation Review : A service that allows for a formal request to review a traffic violation and reassess the accuracy of the recorded details. • Violation Evidence Images : A service that enables the viewing of radar-captured images provided as evidence for traffic violations issued against their record. • Traffic Fines Statement Dispatch : A service that enables the provision of a comprehensive statement of traffic violations to a specified email address.",
+          "audiences": [],
+          "id": "fines-inquiry-and-payment",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "guest-fields",
+          "fields": [
+            {
+              "id": "plateAuthority",
+              "label": "Plate Issuing Authority",
+              "type": "select",
+              "options": [
+                "AbuDhabi",
+                "Dubai",
+                "Sharjah",
+                "Ajman",
+                "Um Al Quwain",
+                "RAK",
+                "Fujairah",
+                "Oman",
+                "Qatar",
+                "Kuwait",
+                "Bahrain",
+                "KSA"
+              ],
+              "required": true,
+              "provenance": "observed-guest-label",
+              "requiredProvenance": "demo-validation"
+            },
+            {
+              "id": "plateNumber",
+              "label": "Plate Number",
+              "type": "text",
+              "options": [],
+              "required": true,
+              "provenance": "observed-guest-label",
+              "requiredProvenance": "demo-validation"
+            },
+            {
+              "id": "plateCode",
+              "label": "Plate Code",
+              "type": "text",
+              "options": [],
+              "required": false,
+              "provenance": "observed-guest-label",
+              "note": "Available after selecting the issuing authority.",
+              "requiredProvenance": "demo-validation"
+            }
+          ],
+          "groupId": "pay-traffic-fines",
+          "fieldObservation": {
+            "file": "fines-guest-capture.json",
+            "step": "guest-fields",
+            "evidenceId": "ev_fb1c4ea0c2df4d397dea8a0f6308c6562453254feb42234f0f3c1887a5b3ae70",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/fine-payment/search",
+          "informationSnapshot": "\n    - heading \"Fines Inquiry and Payment\" [level=1]\n    - button \"Close\"\n    - text: Fees Required AED Duration Instant\n    - paragraph:\n      - text: \"A service to inquire about traffic violations, including the following: •\"\n      - strong: Traffic Fines Payment\n      - text: \": A service that enables the settlement of traffic violations registered against a vehicle plate, driving licence, or traffic code. •\"\n      - strong: Traffic Fines Instalments\n      - text: \": A service that allows for the payment of traffic violations in monthly instalments via direct debit or credit card, subject to applicable terms and conditions. •\"\n      - strong: Pay Against Impound\n      - text: \": A service that allows for the payment of a daily fee to waive a vehicle’s impoundment period, provided no legal restrictions apply. •\"\n      - strong: Smart Impound\n      - text: \": A service that allows a vehicle to be kept at a designated private location during an impoundment period using a smart device linked to the operations centre, with movement permitted only in emergencies. •\"\n      - strong: Black Points Transfer\n      - text: \": A service that enables the transfer of black points from a vehicle’s record to a driver’s record, thereby allowing the fine to be settled. •\"\n      - strong: Violation Review\n      - text: \": A service that allows for a formal request to review a traffic violation and reassess the accuracy of the recorded details. •\"\n      - strong: Violation Evidence Images\n      - text: \": A service that enables the viewing of radar-captured images provided as evidence for traffic violations issued against their record. •\"\n      - strong: Traffic Fines Statement Dispatch\n      - text: \": A service that enables the provision of a comprehensive statement of traffic violations to a specified email address.\"\n    - img \"Working Hours\"\n    - heading \"Service Fees\" [level=2]\n    - text: Amount depends on the fines issued knowledge fee (per violation) 10 AED innovation fee (per violation) 10 AED\n    - img \"Payment Methods\"\n    - heading \"Payment Methods\" [level=2]\n    - text: Cash or Debit Card At service centres and Smart Police Stations\n    - img \"Cash\"\n    - img \"Debit Card\"\n    - text: Debit or Credit Card\n    - img \"Credit Card\"\n    - img \"Debit Card\"\n    - text: Apple Pay\n    - img \"Apple Pay\"\n    - img \"Beneficiaries\"\n    - heading \"Beneficiaries\" [level=2]\n    - list:\n      - listitem:  Individuals\n      - listitem:  Business Sector\n      - listitem:  Government Entities\n    - img \"Service Channels\"\n    - heading \"Service Channels\" [level=2]\n    - list:\n      - listitem:  Dubai Police App\n      - listitem:  Dubai Police Website\n      - listitem:  Call Centre\n    - img \"Working Hours\"\n    - heading \"Working Hours\" [level=2]\n    - text: \"Digital Channels 24/7 Smart Police Stations 24/7 Others General Traffic Department (Deira - Bur Dubai) from Monday to Thursday 07:30 - 15:30 and on Friday from 07:30 - 12:00 Warsan Impound (Emirates Parking) Saturday to Thursday: 7:30 AM to 9:00 PM Friday: 7:00 AM to 11:30 AM, and 2:00 PM to 9:00 PM\"\n    - img \"Beneficiaries\"\n    - heading \"Terms and Conditions\" [level=2]\n    - list:\n      - listitem: Online payments are accepted from within UAE and GCC countries only using local proxies\n      - listitem: Credit and Debit Cards issued from outside UAE and GCC countries are not accepted for online payments\n    - img \"Contact Details\"\n    - heading \"Contact Details\" [level=2]\n    - list:\n      - listitem: Call Center 901\n      - listitem: Email mail@dubaipolice.gov.ae\n      - listitem: P.O. Box 1493 Dubai- United Arab Emirates\n",
+          "pageSnapshot": "\n    - tablist:\n      - tab \"Plate\" [selected]\n      - tab \"Licence\"\n      - tab \"TC Number\"\n      - tab \"Fines\"\n    - text: Plate Issuing Authority\n    - combobox \"Plate Issuing Authority\"\n    - button \"Open\"\n    - text: Plate Number\n    - textbox \"Plate Number\"\n    - text: Plate Code\n    - combobox \"Plate Code\" [disabled]\n    - button \"Open\" [disabled]\n    - button \"Back\"\n    - button \"Verify Fines\"",
+          "variants": [
+            {
+              "id": "plate",
+              "name": "Plate",
+              "fields": [
+                {
+                  "id": "plateAuthority",
+                  "label": "Plate Issuing Authority",
+                  "type": "select",
+                  "options": [
+                    "AbuDhabi",
+                    "Dubai",
+                    "Sharjah",
+                    "Ajman",
+                    "Um Al Quwain",
+                    "RAK",
+                    "Fujairah",
+                    "Oman",
+                    "Qatar",
+                    "Kuwait",
+                    "Bahrain",
+                    "KSA"
+                  ],
+                  "required": true,
+                  "provenance": "observed-guest-label",
+                  "requiredProvenance": "demo-validation"
+                },
+                {
+                  "id": "plateNumber",
+                  "label": "Plate Number",
+                  "type": "text",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label",
+                  "requiredProvenance": "demo-validation"
+                },
+                {
+                  "id": "plateCode",
+                  "label": "Plate Code",
+                  "type": "text",
+                  "options": [],
+                  "required": false,
+                  "provenance": "observed-guest-label",
+                  "note": "Available after selecting the issuing authority.",
+                  "requiredProvenance": "demo-validation"
+                }
+              ]
+            },
+            {
+              "id": "licence",
+              "name": "Licence",
+              "fields": [
+                {
+                  "id": "licenceAuthority",
+                  "label": "Licence Issuing Authority",
+                  "type": "text",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label",
+                  "note": "Enter the value.",
+                  "sourceType": "combobox",
+                  "requiredProvenance": "demo-validation"
+                },
+                {
+                  "id": "licenceNumber",
+                  "label": "Licence Number",
+                  "type": "text",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label",
+                  "requiredProvenance": "demo-validation"
+                }
+              ]
+            },
+            {
+              "id": "tc-number",
+              "name": "TC Number",
+              "fields": [
+                {
+                  "id": "tcNumber",
+                  "label": "TC Number",
+                  "type": "number",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label",
+                  "requiredProvenance": "demo-validation"
+                }
+              ]
+            },
+            {
+              "id": "fines",
+              "name": "Fines",
+              "fields": [
+                {
+                  "id": "fineSource",
+                  "label": "Fine Source",
+                  "type": "text",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label",
+                  "note": "Enter the value.",
+                  "sourceType": "combobox",
+                  "requiredProvenance": "demo-validation"
+                },
+                {
+                  "id": "ticketNumber",
+                  "label": "Ticket Number",
+                  "type": "text",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label",
+                  "requiredProvenance": "demo-validation"
+                },
+                {
+                  "id": "fineYear",
+                  "label": "Fine Year",
+                  "type": "number",
+                  "options": [],
+                  "required": true,
+                  "provenance": "observed-guest-label",
+                  "note": "Enter the value.",
+                  "sourceType": "combobox",
+                  "requiredProvenance": "demo-validation"
+                }
+              ]
+            }
+          ],
+          "variantEvidenceId": "ev_82923c74a0b52adeca609efc293985a08799688e2020a5816fa62ba11d8c5347"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "Report a Vehicle or Driver",
+      "description": "Report obstructing vehicles and misuse of traffic rules",
+      "audiences": [
+        "Individuals"
+      ],
+      "id": "report-a-vehicle-or-driver",
+      "category": "traffic",
+      "services": [
+        {
+          "name": "Reporting Vehicle Obstruction",
+          "description": "This service enables customers to report vehicles obstructing their movement, with the vehicle owner automatically notified via a warning SMS to move the vehicle immediately.",
+          "audiences": [],
+          "id": "reporting-vehicle-obstruction",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "mobile-only",
+          "fields": [],
+          "groupId": "report-a-vehicle-or-driver",
+          "fieldObservation": {
+            "file": "guest-fields-2-capture.json",
+            "step": "fields-reporting-vehicle-obstruction",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/vehicle-obstruction"
+        },
+        {
+          "name": "Report Traffic Offences or Irresponsible Driver",
+          "description": "Report dangerous driving, improper lane changes, or aggressive behavior on the road.",
+          "audiences": [],
+          "id": "report-traffic-offences-or-irresponsible-driver",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "mobile-only",
+          "fields": [],
+          "groupId": "report-a-vehicle-or-driver",
+          "fieldObservation": {
+            "file": "guest-fields-2-capture.json",
+            "step": "fields-report-traffic-offences-or-irresponsible-driver",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/reckless-driver"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "Faris",
+      "description": "A centralised digital platform enabling rapid, coordinated response between public and private sectors to minimise financial fraud losses and protect customer funds.",
+      "audiences": [],
+      "id": "faris",
+      "category": "business_organization",
+      "services": [
+        {
+          "id": "faris",
+          "name": "Faris",
+          "description": "A centralised digital platform enabling rapid, coordinated response between public and private sectors to minimise financial fraud losses and protect customer funds.",
+          "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "faris",
+          "fieldObservation": {
+            "file": "guest-fields-2-capture.json",
+            "step": "fields-faris",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/faris"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "Sport Facilities Booking",
+      "description": "This service allows customers to book and use sports facilities at the Dubai Police Officers Club, such as (Artificial Turf Football Field - Turf Football field - Track - Field.)",
+      "audiences": [
+        "Individuals"
+      ],
+      "id": "sport-facilities-booking",
+      "category": "business_organization",
+      "services": [
+        {
+          "id": "sport-facilities-booking",
+          "name": "Sport Facilities Booking",
+          "description": "This service allows customers to book and use sports facilities at the Dubai Police Officers Club, such as (Artificial Turf Football Field - Turf Football field - Track - Field.)",
+          "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "sport-facilities-booking",
+          "fieldObservation": {
+            "file": "guest-fields-2-capture.json",
+            "step": "fields-sport-facilities-booking",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/request-sports-facility"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "Suppliers Services",
+      "description": "A service for business suppliers, allows registration for police's tenders",
+      "audiences": [
+        "Business"
+      ],
+      "id": "suppliers-services",
+      "category": "business_organization",
+      "services": [
+        {
+          "name": "Public Tenders",
+          "description": "The service is for companies wishing to register as one of the suppliers in the Dubai Police Supplier Registry, which will allow them to access tenders, receive tender award notices, and deal with Dubai Police electronically",
+          "audiences": [],
+          "id": "public-tenders",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "guest-page",
+          "fields": [],
+          "groupId": "suppliers-services",
+          "fieldObservation": {
+            "file": "guest-fields-2-capture.json",
+            "step": "fields-public-tenders",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/public-tender",
+          "pageSnapshot": "\n    - table \"dynamic-table\":\n      - rowgroup:\n        - row \"Tender Title Open Close Price\":\n          - columnheader \"Tender\"\n          - columnheader \"Title\"\n          - columnheader \"Open\"\n          - columnheader \"Close\"\n          - columnheader \"Price\"\n      - rowgroup:\n        - row \"818206-2 طرح مناقصة شراء جهاز رحلة المتعامل الذكية12609639 2026-11-02 2026-11-12 250\":\n          - cell \"818206-2\"\n          - cell \"طرح مناقصة شراء جهاز رحلة المتعامل الذكية12609639\"\n          - cell \"2026-11-02\"\n          - cell \"2026-11-12\"\n          - cell \"250\"\n        - row \"807902,1 مشروع - CRIMINAL INTELLIGENCE CENTER OF EXCELLENCE 2026-07-31 2026-12-31 0\":\n          - cell \"807902,1\"\n          - cell \"مشروع - CRIMINAL INTELLIGENCE CENTER OF EXCELLENCE\"\n          - cell \"2026-07-31\"\n          - cell \"2026-12-31\"\n          - cell \"0\"\n        - row \"812880 حر م الأكاديمية الذكية 2026-09-02 2026-11-19 0\":\n          - cell \"812880\"\n          - cell \"حر م الأكاديمية الذكية\"\n          - cell \"2026-09-02\"\n          - cell \"2026-11-19\"\n          - cell \"0\"\n        - row \"817032 ترقية بدالة القيادة وشراء رخص الكترونية مع نظام LPS لمواقع مختلفة 2026-10-08 2026-11-12 500\":\n          - cell \"817032\"\n          - cell \"ترقية بدالة القيادة وشراء رخص الكترونية مع نظام LPS لمواقع مختلفة\"\n          - cell \"2026-10-08\"\n          - cell \"2026-11-12\"\n          - cell \"500\"\n        - row \"817092 طرح مناقصة هدايا كبار الشخصيات لحفل التخريج العام 2027 2026-10-13 2026-11-05 250\":\n          - cell \"817092\"\n          - cell \"طرح مناقصة هدايا كبار الشخصيات لحفل التخريج العام 2027\"\n          - cell \"2026-10-13\"\n          - cell \"2026-11-05\"\n          - cell \"250\"\n        - row \"817088 طرح مناقصة هدية راعي الحفل لتخريج العام 2027 2026-10-13 2026-11-05 250\":\n          - cell \"817088\"\n          - cell \"طرح مناقصة هدية راعي الحفل لتخريج العام 2027\"\n          - cell \"2026-10-13\"\n          - cell \"2026-11-05\"\n          - cell \"250\"\n        - row \"818691 طرح مناقصة هدايا أمهات الطالبات والطلبة المرشحين والدورات لتخريجات العام 2027 2026-11-02 2026-11-18 500\":\n          - cell \"818691\"\n          - cell \"طرح مناقصة هدايا أمهات الطالبات والطلبة المرشحين والدورات لتخريجات العام 2027\"\n          - cell \"2026-11-02\"\n          - cell \"2026-11-18\"\n          - cell \"500\"\n        - row \"808851-2 تقديم خدمة الحواجز الحديدية الأمنية لتعزيز الوضع الأمني 2026-10-15 2026-11-05 0\":\n          - cell \"808851-2\"\n          - cell \"تقديم خدمة الحواجز الحديدية الأمنية لتعزيز الوضع الأمني\"\n          - cell \"2026-10-15\"\n          - cell \"2026-11-05\"\n          - cell \"0\"\n        - row \"820144 توريد وتركيب أنظمة تبريد المياه وثلاجات مياه الشرب بمواقع مختلفة بالقوة 2026-11-04 2026-11-18 250\":\n          - cell \"820144\"\n          - cell \"توريد وتركيب أنظمة تبريد المياه وثلاجات مياه الشرب بمواقع مختلفة بالقوة\"\n          - cell \"2026-11-04\"\n          - cell \"2026-11-18\"\n          - cell \"250\"\n        - row \"820041 معاطف مطر للضباط والافراد 2026-11-02 2026-11-09 250\":\n          - cell \"820041\"\n          - cell \"معاطف مطر للضباط والافراد\"\n          - cell \"2026-11-02\"\n          - cell \"2026-11-09\"\n          - cell \"250\"\n    - navigation \"pagination navigation\":\n      - list:\n        - listitem:\n          - button \"Go to previous page\" [disabled]\n        - listitem:\n          - button \"page 1\": \"1\"\n        - listitem:\n          - button \"Go to page 2\": \"2\"\n        - listitem:\n          - button \"Go to page 3\": \"3\"\n        - listitem:\n          - button \"Go to page 4\": \"4\"\n        - listitem\n        - listitem:\n          - button \"Go to next page\""
+        },
+        {
+          "name": "Supplier Application",
+          "description": "This service aims to enable users to register in the Dubai Police's approved suppliers directory and conduct transactions electronically.",
+          "audiences": [],
+          "id": "supplier-application",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "suppliers-services",
+          "fieldObservation": {
+            "file": "guest-fields-2-capture.json",
+            "step": "fields-supplier-application",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/supplier-application"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "Diplomatic Affairs Services",
+      "description": "A service that provides security support and facilities to diplomatic entities",
+      "audiences": [
+        "Business"
+      ],
+      "id": "diplomatic-affairs-services",
+      "category": "business_organization",
+      "services": [
+        {
+          "name": "Diplomatic Services",
+          "description": "This service enables diplomatic corps to get information related to their citizens, through the General Department of Criminal Investigation of the Dubai Police.",
+          "audiences": [],
+          "id": "diplomatic-services",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "diplomatic-affairs-services",
+          "fieldObservation": {
+            "file": "guest-fields-2-capture.json",
+            "step": "fields-diplomatic-services",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/diplomatic-services"
+        },
+        {
+          "name": "Diplomatic Information Exchange",
+          "description": "This service enables diplomatic corps to get information related to their citizens, through the General Department of Criminal Investigation of the Dubai Police.",
+          "audiences": [],
+          "id": "diplomatic-information-exchange",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "diplomatic-affairs-services",
+          "fieldObservation": {
+            "file": "guest-fields-2-capture.json",
+            "step": "fields-diplomatic-information-exchange",
+            "evidenceId": null,
+            "partial": true
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/diplomatic-exchange"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "On-Site Police Support",
+      "description": "Serving various events and requests that require on-site police support",
+      "audiences": [
+        "Individuals",
+        "Visitors",
+        "Business"
+      ],
+      "id": "on-site-police-support",
+      "category": "business_organization",
+      "services": [
+        {
+          "name": "Security Barriers Rental",
+          "description": "This service enables individuals, institutions, and government entities to rent security barriers from Dubai Police, in accordance with the fees and conditions specified in the rental agreement.",
+          "audiences": [],
+          "id": "security-barriers-rental",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "on-site-police-support",
+          "fieldObservation": {
+            "file": "guest-fields-3-capture.json",
+            "step": "fields-security-barriers-rental",
+            "evidenceId": "ev_b98df7e630b06d37638b7c239f9eee8605a7ea5d8dd64cf366640402eeb962a6",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/barriers-request"
+        },
+        {
+          "name": "Destroy Explosive Materials",
+          "description": "This service aims to enable the business sector to submit an official request to Dubai Police for the safe disposal of expired explosives, ammunition, and fireworks, in accordance with approved procedures.",
+          "audiences": [],
+          "id": "destroy-explosive-materials",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "on-site-police-support",
+          "fieldObservation": {
+            "file": "guest-fields-3-capture.json",
+            "step": "fields-destroy-explosive-materials",
+            "evidenceId": "ev_b98df7e630b06d37638b7c239f9eee8605a7ea5d8dd64cf366640402eeb962a6",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/destroy-explosives"
+        },
+        {
+          "name": "Gold Trade Security Audit",
+          "description": "This service enables gold traders to submit security verification requests for gold purchase transactions, to ensure that the gold being sold is not linked to any criminal cases or offenses.",
+          "audiences": [],
+          "id": "gold-trade-security-audit",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "on-site-police-support",
+          "fieldObservation": {
+            "file": "guest-fields-3-capture.json",
+            "step": "fields-gold-trade-security-audit",
+            "evidenceId": "ev_b98df7e630b06d37638b7c239f9eee8605a7ea5d8dd64cf366640402eeb962a6",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/gold-management"
+        },
+        {
+          "name": "Events Security",
+          "description": "This service allows government authorities or the businesses to request police presence at their events to ensure effectiveness by providing all security procedures and facilitating traffic, preventive measures and security and safety procedures.",
+          "audiences": [],
+          "id": "events-security",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "on-site-police-support",
+          "fieldObservation": {
+            "file": "guest-fields-3-capture.json",
+            "step": "fields-events-security",
+            "evidenceId": "ev_b98df7e630b06d37638b7c239f9eee8605a7ea5d8dd64cf366640402eeb962a6",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/event-security"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "Bounce Cheque Report for Banks",
+      "description": "This service enables users to report bounced checks, settle the dispute amicably if possible, or refer the case directly to the competent authorities.",
+      "audiences": [],
+      "id": "bounce-cheque-report-for-banks",
+      "category": "business_organization",
+      "services": [
+        {
+          "id": "bounce-cheque-report-for-banks",
+          "name": "Bounce Cheque Report for Banks",
+          "description": "This service enables users to report bounced checks, settle the dispute amicably if possible, or refer the case directly to the competent authorities.",
+          "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "bounce-cheque-report-for-banks",
+          "fieldObservation": {
+            "file": "guest-fields-3-capture.json",
+            "step": "fields-bounce-cheque-report-for-banks",
+            "evidenceId": "ev_b98df7e630b06d37638b7c239f9eee8605a7ea5d8dd64cf366640402eeb962a6",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/report-bounce-cheques-bank"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "Request a Lecture or Training Course",
+      "description": "To arrange lectures, courses, and specialised workshops in various fields",
+      "audiences": [
+        "Individuals",
+        "Business",
+        "Students"
+      ],
+      "id": "request-a-lecture-or-training-course",
+      "category": "business_organization",
+      "services": [
+        {
+          "name": "Traffic Training Courses",
+          "description": "This service aims to enable drivers holding driving licenses issued from Dubai, and who have accumulated traffic points on their licenses to enroll in specialized traffic safety training courses to benefit from a reduction in the points recorded against them.",
+          "audiences": [],
+          "id": "traffic-training-courses",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "request-a-lecture-or-training-course",
+          "fieldObservation": {
+            "file": "guest-missing-0-capture.json",
+            "step": "fields-traffic-training-courses",
+            "evidenceId": "ev_f8432312f94c33ff6d43c5e0aec6c2ecdb728c1b00d381bedb51379aa17737d9",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/traffic-training-courses"
+        },
+        {
+          "name": "Drug Awareness Lecture",
+          "description": "This service aims to enable organizations involved in drug control to meet their needs by conducting training courses or organizing specialized field workshops on drug control.",
+          "audiences": [],
+          "id": "drug-awareness-lecture",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "request-a-lecture-or-training-course",
+          "fieldObservation": {
+            "file": "guest-missing-0-capture.json",
+            "step": "fields-drug-awareness-lecture",
+            "evidenceId": "ev_f8432312f94c33ff6d43c5e0aec6c2ecdb728c1b00d381bedb51379aa17737d9",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/drug-awareness-lecture"
+        },
+        {
+          "name": "Student Awareness",
+          "description": "This service enables educational institutions to request awareness programs for students, delivered by specialists from Dubai Police, to enhance their security and social awareness.",
+          "audiences": [],
+          "id": "student-awareness",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "request-a-lecture-or-training-course",
+          "fieldObservation": {
+            "file": "guest-missing-0-capture.json",
+            "step": "fields-student-awareness",
+            "evidenceId": "ev_f8432312f94c33ff6d43c5e0aec6c2ecdb728c1b00d381bedb51379aa17737d9",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/student-awareness"
+        },
+        {
+          "name": "Public Lecture",
+          "description": "This service discusses the most critical issues, challenges and developments in drug control. It examines the topic from multiple perspectives with a team of specialists, aiming to develop solutions and recommendations for these concerns.",
+          "audiences": [],
+          "id": "public-lecture",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "request-a-lecture-or-training-course",
+          "fieldObservation": {
+            "file": "guest-missing-1-capture.json",
+            "step": "fields-public-lecture",
+            "evidenceId": "ev_624c0f0c045554a62b9ae5390aa93f58d35c980a6e2482957ec6986a8151b298",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/seminar-request"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "OCEC",
+      "description": "This service enables police officers and financial institutions to handle banking information through the Economic Crimes Operations Center, which serves as a vital link between the victim and the banking sector, with the aim of halting fraudulent transactions and identifying the perpetrators.",
+      "audiences": [
+        "Individuals",
+        "Business"
+      ],
+      "id": "ocec",
+      "category": "business_organization",
+      "services": [
+        {
+          "id": "ocec",
+          "name": "OCEC",
+          "description": "This service enables police officers and financial institutions to handle banking information through the Economic Crimes Operations Center, which serves as a vital link between the victim and the banking sector, with the aim of halting fraudulent transactions and identifying the perpetrators.",
+          "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "ocec",
+          "fieldObservation": {
+            "file": "guest-missing-1-capture.json",
+            "step": "fields-ocec",
+            "evidenceId": "ev_624c0f0c045554a62b9ae5390aa93f58d35c980a6e2482957ec6986a8151b298",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/ecocrime"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "Registration of law firms",
+      "description": "This service enables law firms to register with Dubai Police, granting authorized access to the Lawyers’ Dashboard and its suite of specialized legal services",
+      "audiences": [
+        "Business"
+      ],
+      "id": "registration-of-law-firms",
+      "category": "business_organization",
+      "services": [
+        {
+          "id": "registration-of-law-firms",
+          "name": "Registration of law firms",
+          "description": "This service enables law firms to register with Dubai Police, granting authorized access to the Lawyers’ Dashboard and its suite of specialized legal services",
+          "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "registration-of-law-firms",
+          "fieldObservation": {
+            "file": "guest-remaining-4-capture.json",
+            "step": "fields-registration-of-law-firms",
+            "evidenceId": "ev_85af4b85c6e2befbf21b06ab0120ac497872817a430c9453746057ee97c03696",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/law-office-registration"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "Share Information",
+      "description": "Share information with police to support public and community safety",
+      "audiences": [
+        "Individuals"
+      ],
+      "id": "share-information",
+      "category": "community",
+      "services": [
+        {
+          "name": "Neighborhood Police",
+          "description": "This service aims to strengthen community policing by enabling residents to communicate directly with police officers through an interactive neighborhood platform, report concerns and suggestions, and collaborate in addressing local issues, thereby enhancing security, safety, and quality of life within the community.",
+          "audiences": [],
+          "id": "neighborhood-police",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "share-information",
+          "fieldObservation": {
+            "file": "guest-remaining-4-capture.json",
+            "step": "fields-neighborhood-police",
+            "evidenceId": "ev_85af4b85c6e2befbf21b06ab0120ac497872817a430c9453746057ee97c03696",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/volunteer-platform/225177000288/neighborhood-police"
+        },
+        {
+          "name": "Police Eye",
+          "description": "This service enables users to provide security or sensitive information and report any activities or incidents suspected of posing a threat to public safety and community security",
+          "audiences": [],
+          "id": "police-eye",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "guest-choice",
+          "fields": [],
+          "groupId": "share-information",
+          "fieldObservation": {
+            "file": "guest-remaining-4-capture.json",
+            "step": "fields-police-eye",
+            "evidenceId": "ev_85af4b85c6e2befbf21b06ab0120ac497872817a430c9453746057ee97c03696",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/share-security-information"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "Community Activities Participation",
+      "description": "Service to join volunteering initiatives or other Dubai Police's initiatives",
+      "audiences": [
+        "Individuals"
+      ],
+      "id": "community-activities-participation",
+      "category": "community",
+      "services": [
+        {
+          "name": "Volunteer Platform",
+          "description": "This service enables members of the community, whether Dubai Police employees or the public, to volunteer with Dubai Police by registering for available opportunities on the Dubai Police Volunteer Platform.",
+          "audiences": [],
+          "id": "volunteer-platform",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "guest-page",
+          "fields": [],
+          "groupId": "community-activities-participation",
+          "fieldObservation": {
+            "file": "guest-remaining-4-capture.json",
+            "step": "fields-volunteer-platform",
+            "evidenceId": "ev_85af4b85c6e2befbf21b06ab0120ac497872817a430c9453746057ee97c03696",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/volunteer-platform",
+          "pageSnapshot": "\n    - heading \"Volunteer Opportunities\" [level=2]\n    - paragraph: A service for Dubai Police staff and the public to register and volunteer.\n    - button \"Discover\":\n      - paragraph: Discover\n    - heading \"Volunteer with Neighbourhood Police\" [level=2]\n    - paragraph: A community policing approach built on strengthening the relationship between police and the public.\n    - button \"Start Now\" [disabled]:\n      - paragraph: Start Now"
+        },
+        {
+          "name": "Request Dubai Police Activities",
+          "description": "This service enables individuals, entities, and organizations to request the participation of Dubai Police specialized units, such as the Mounted Police, Music Band, K9 Unit, and Luxury Patrols in official events, festivals, and public parades held across the Emirate of Dubai.",
+          "audiences": [],
+          "id": "request-dubai-police-activities",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "community-activities-participation",
+          "fieldObservation": {
+            "file": "guest-remaining-4-capture.json",
+            "step": "fields-request-dubai-police-activities",
+            "evidenceId": "ev_85af4b85c6e2befbf21b06ab0120ac497872817a430c9453746057ee97c03696",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/activity-request"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "DP Personnel Welfare and Support",
+      "description": "A medical and social care service for Dubai Police's employees",
+      "audiences": [
+        "Individuals"
+      ],
+      "id": "dp-personnel-welfare-and-support",
+      "category": "community",
+      "services": [
+        {
+          "name": "Medical Treatment Extension",
+          "description": "This service enables health authorities and medical centers to submit requests for extending the treatment period of Dubai Police patients receiving medical care abroad, ensuring the continuity of care in accordance with approved medical reports and recommendations.",
+          "audiences": [],
+          "id": "medical-treatment-extension",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "dp-personnel-welfare-and-support",
+          "fieldObservation": {
+            "file": "guest-remaining-4-capture.json",
+            "step": "fields-medical-treatment-extension",
+            "evidenceId": "ev_85af4b85c6e2befbf21b06ab0120ac497872817a430c9453746057ee97c03696",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/medical-treatment-extension"
+        },
+        {
+          "name": "Retirees Support",
+          "description": "This service enables Dubai Police retirees to access a comprehensive package of dedicated services designed to strengthen communication and facilitate their access to various benefits. The services include the issuance and renewal of military and civil identification cards, issuance and renewal of the “Esaad” card, military health insurance, medical treatment and equipment requests, issuance of different types of service certificates, and home visit arrangements for senior citizens and individuals unable to attend in person.",
+          "audiences": [],
+          "id": "retirees-support",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "dp-personnel-welfare-and-support",
+          "fieldObservation": {
+            "file": "guest-missing-1-capture.json",
+            "step": "fields-retirees-support",
+            "evidenceId": "ev_624c0f0c045554a62b9ae5390aa93f58d35c980a6e2482957ec6986a8151b298",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/retirees-services"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "Request to Contact The Police",
+      "description": "Connect with DP leadership or relevant specialists in related fields",
+      "audiences": [
+        "Individuals"
+      ],
+      "id": "request-to-contact-the-police",
+      "category": "community",
+      "services": [
+        {
+          "name": "Contact Police Scientists Council",
+          "description": "This service allows users to submit a request to hire a lecturer or request to give a lecture with the help of a lecturer from Dubai Police.",
+          "audiences": [],
+          "id": "contact-police-scientists-council",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "request-to-contact-the-police",
+          "fieldObservation": {
+            "file": "guest-missing-1-capture.json",
+            "step": "fields-contact-police-scientists-council",
+            "evidenceId": "ev_624c0f0c045554a62b9ae5390aa93f58d35c980a6e2482957ec6986a8151b298",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/contact-police-scientists-council"
+        },
+        {
+          "name": "DP Leaders At Your Service",
+          "description": "This service aims to enhance direct communication between Dubai Police senior leadership and the public, allowing leaders to respond to inquiries and feedback within their functional and administrative responsibilities",
+          "audiences": [],
+          "id": "dp-leaders-at-your-service",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "request-to-contact-the-police",
+          "fieldObservation": {
+            "file": "guest-missing-1-capture.json",
+            "step": "fields-dp-leaders-at-your-service",
+            "evidenceId": "ev_624c0f0c045554a62b9ae5390aa93f58d35c980a6e2482957ec6986a8151b298",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/leaders-at-your-service"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "Apply for a Job",
+      "description": "A service enables job seekers to apply to vacancies at Dubai Police",
+      "audiences": [
+        "Individuals"
+      ],
+      "id": "apply-for-a-job",
+      "category": "community",
+      "services": [
+        {
+          "name": "Job Seekers",
+          "description": "A service through which job seekers can learn about vacancies in Dubai Police and apply accordingly.",
+          "audiences": [],
+          "id": "job-seekers",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "navigation-unresolved",
+          "fields": [],
+          "groupId": "apply-for-a-job",
+          "fieldObservation": {
+            "file": "guest-missing-2-capture.json",
+            "step": "fields-job-seekers",
+            "evidenceId": "ev_31f6f417f351641a3e4b2670d687eb1ace9377629725edce3fdc35df033a5ff6",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    },
+    {
+      "name": "Support and Emergency Response",
+      "description": "A Service to request immediate support from specialized teams",
+      "audiences": [
+        "Individuals",
+        "Visitors",
+        "Students"
+      ],
+      "id": "support-and-emergency-response",
+      "category": "emergency",
+      "services": [
+        {
+          "name": "Smart Home Security",
+          "description": "This service aims to enhance home security in Dubai through a smart monitoring system that operates 24/7, connected with the strategic partner “e& (Etisalat)” to provide instant alerts supported by a unified cellular network.",
+          "audiences": [],
+          "id": "smart-home-security",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "support-and-emergency-response",
+          "fieldObservation": {
+            "file": "guest-remaining-5-capture.json",
+            "step": "fields-smart-home-security",
+            "evidenceId": "ev_1e506d4d75c1c3ac9e1d1b26f7002b5824aa90971df993a1f4738c7149ff0e73",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/smart-home-security"
+        },
+        {
+          "name": "Child Protection",
+          "description": "This service aims to provide an immediate and comprehensive response to cases involving children exposed to any form of physical or psychological abuse or neglect, by offering the necessary protection and support to ensure their safety and safeguard their rights in accordance with applicable laws.",
+          "audiences": [],
+          "id": "child-protection",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "guest-page",
+          "fields": [],
+          "groupId": "support-and-emergency-response",
+          "fieldObservation": {
+            "file": "child-form-capture.json",
+            "step": "visible-fields",
+            "evidenceId": "ev_77fdb8b4483971f386055689248e66ea3a417897514e61bdae2a43bd7239a3e5",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/child-protection",
+          "pageSnapshot": "\n    - paragraph: Use this option for non-emergency situations. If you are in immediate danger, tap the\n    - text: SOS\n    - paragraph: button at the top of the screen. Don't hesitate!\n    - heading \"Get Help\" [level=2]\n    - paragraph: A simple way to ask for help if you feel unsafe or need support.\n    - button \"Start Now\":\n      - paragraph: Start Now\n    - heading \"My Rights & Responsibilities\" [level=2]\n    - paragraph: Learn about your rights and what you should do to stay safe.\n    - button \"Discover\":\n      - paragraph: Discover",
+          "informationSnapshot": "\n    - heading \"Child Protection\" [level=1]\n    - button \"Close\"\n    - text: Fees Free of Charge Duration 1 Months\n    - paragraph: This service aims to provide an immediate and comprehensive response to cases involving children exposed to any form of physical or psychological abuse or neglect, by offering the necessary protection and support to ensure their safety and safeguard their rights in accordance with applicable laws.\n    - img \"Beneficiaries\"\n    - heading \"Beneficiaries\" [level=2]\n    - list:\n      - listitem:  Individuals\n    - img \"Service Channels\"\n    - heading \"Service Channels\" [level=2]\n    - list:\n      - listitem:  Dubai Police App\n      - listitem:  Dubai Police Website\n      - listitem:  Call Centre\n      - listitem:  Smart Police Stations\n      - listitem:  Police Stations\n    - img \"Working Hours\"\n    - heading \"Working Hours\" [level=2]\n    - text: Digital Channels 24/7 Smart Police Stations 24/7\n    - img \"Beneficiaries\"\n    - heading \"Terms and Conditions\" [level=2]\n    - list:\n      - listitem: The service is only available to children under 18 years old only.\n      - listitem: Incident must occur in the geographical boundaries of Dubai.\n      - listitem: There must be no existing court rulings on the same case.\n      - listitem: There must be no dispute about the case with the relevant authorities.\n      - listitem: The complaint must be irrelevant to the custody, financial support or visitations.\n    - img \"Contact Details\"\n    - heading \"Contact Details\" [level=2]\n    - list:\n      - listitem: Call Center 901\n      - listitem: Email mail@dubaipolice.gov.ae\n      - listitem: P.O. Box 1493 Dubai- United Arab Emirates\n"
+        },
+        {
+          "name": "Women Protection",
+          "description": "This service aims to protect and support women at risk of, or experiencing, psychological or physical violence, neglect, or rights violations, ensuring their legal, social, and human rights are fully safeguarded. It is delivered by the Women’s Protection Section under the Child and Women's Protection Department, a dedicated unit offering support, guidance, and comprehensive investigations into all forms of violence against women.",
+          "audiences": [],
+          "id": "women-protection",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "support-and-emergency-response",
+          "fieldObservation": {
+            "file": "guest-remaining-5-capture.json",
+            "step": "fields-women-protection",
+            "evidenceId": "ev_1e506d4d75c1c3ac9e1d1b26f7002b5824aa90971df993a1f4738c7149ff0e73",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/women-protection"
+        },
+        {
+          "name": "People of Determination Support",
+          "description": "This service aims to enable People of Determination with physical, hearing, or visual disabilities across all Emirates to register and subscribe, ensuring they granted priority in ambulance dispatch and provided with a fast and appropriate response in emergency situations.",
+          "audiences": [],
+          "id": "people-of-determination-support",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "support-and-emergency-response",
+          "fieldObservation": {
+            "file": "guest-remaining-5-capture.json",
+            "step": "fields-people-of-determination-support",
+            "evidenceId": "ev_1e506d4d75c1c3ac9e1d1b26f7002b5824aa90971df993a1f4738c7149ff0e73",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/people-of-determination"
+        },
+        {
+          "name": "Worker’s Voice",
+          "description": "This service aims to enable workers in the business sector to submit individual or collective complaints against the companies or institutions they work for, related to wages, working conditions, labor accommodation, or health and safety requirement.",
+          "audiences": [],
+          "id": "worker-s-voice",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "support-and-emergency-response",
+          "fieldObservation": {
+            "file": "guest-remaining-5-capture.json",
+            "step": "fields-worker-s-voice",
+            "evidenceId": "ev_1e506d4d75c1c3ac9e1d1b26f7002b5824aa90971df993a1f4738c7149ff0e73",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/labour-complaint"
+        },
+        {
+          "name": "Critical Care Response",
+          "description": "This service aims to enable heart patients and those with critical medical conditions in the Emirate of Dubai to register for priority ambulance dispatch and receive prompt and appropriate medical attention in case of an emergency.",
+          "audiences": [],
+          "id": "critical-care-response",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "loading-unresolved",
+          "fields": [],
+          "groupId": "support-and-emergency-response",
+          "fieldObservation": {
+            "file": "guest-remaining-5-capture.json",
+            "step": "fields-critical-care-response",
+            "evidenceId": "ev_1e506d4d75c1c3ac9e1d1b26f7002b5824aa90971df993a1f4738c7149ff0e73",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/critical-care-response"
+        },
+        {
+          "name": "Tourists Support",
+          "description": "This service provides dedicated support to tourists visiting Dubai's Emirate by receiving and addressing tourism-related inquiries, reports, and complaints. As it ensures guidance, coordination, and assistance through official Dubai Police channels to help maintain a safe and positive tourism experience.",
+          "audiences": [],
+          "id": "tourists-support",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "guest-choice",
+          "fields": [],
+          "groupId": "support-and-emergency-response",
+          "fieldObservation": {
+            "file": "guest-remaining-5-capture.json",
+            "step": "fields-tourists-support",
+            "evidenceId": "ev_1e506d4d75c1c3ac9e1d1b26f7002b5824aa90971df993a1f4738c7149ff0e73",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/tourist-police"
+        },
+        {
+          "name": "Provide Care for Human Trafficking Victims",
+          "description": "This service enables individuals to report suspected cases or practices related to human trafficking such as labor exploitation, sexual exploitation, or organ trafficking. It also aims to protect the privacy of individuals and ensure that information reaches the competent authorities in a secure and safe manner.",
+          "audiences": [],
+          "id": "provide-care-for-human-trafficking-victims",
+          "evidenceId": "ev_943a6c4cabb37fe29415996a5f1ed353297370053427eb8984d1491d7cf870b0",
+          "coverage": "sign-in-required",
+          "fields": [],
+          "groupId": "support-and-emergency-response",
+          "fieldObservation": {
+            "file": "guest-remaining-5-capture.json",
+            "step": "fields-provide-care-for-human-trafficking-victims",
+            "evidenceId": "ev_1e506d4d75c1c3ac9e1d1b26f7002b5824aa90971df993a1f4738c7149ff0e73",
+            "partial": false
+          },
+          "sourcePath": "https://www.dubaipolice.gov.ae/app/services/human-trafficking"
+        }
+      ],
+      "evidenceId": "ev_125b89de4bf1281874bb4aa8d008fa89f6324f0895586136bcb560b480bb9abf"
+    }
+  ],
+  "coverageSummary": {
+    "serviceCount": 60,
+    "guestFieldServices": [
+      "document-verification",
+      "police-clearance-certificate",
+      "visit-a-detainee-or-inmate-permit",
+      "fines-inquiry-and-payment"
+    ],
+    "signInGated": 46,
+    "notFullyObserved": 10
+  }
+}

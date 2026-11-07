@@ -1,0 +1,78 @@
+/* Measured against the reference screenshot (1568px wide, 1:1 scale). */
+.ico{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;display:block}
+#ecrime-nav,#reports-nav{display:none!important}
+.sidebar-brand button{display:grid;place-items:center;width:32px;height:32px;padding:0;color:#4b4c4d}
+.sidebar-brand button .collapse{width:24px;height:24px;stroke-width:1.8}
+.top-actions button.header-icon .ico{width:22px;height:22px}
+.top-actions button.header-pill .ico{width:22px;height:22px;stroke-width:1.8}
+.contact-nav .ico{width:26px;height:26px;color:#6b706d}
+.help-badge{display:flex;align-items:center;gap:5px;grid-template-columns:none;height:57px;padding:0 14px 0 11px;border-radius:30px;background:#dcefe7;color:#00734f;border:0;flex-shrink:0}
+.help-badge .help-left{display:flex;flex-direction:column;align-items:center;gap:1px;line-height:1;font-size:inherit;grid-column:auto}
+.help-badge .help-phone{width:20px;height:20px;stroke-width:2.2}
+.help-badge .help-left strong{font:700 20px/1 ReferenceBukra,Arial,sans-serif;grid-column:auto}
+.help-badge>span.help-text{display:flex;flex-direction:column;text-align:left;font:700 13px/1.25 ReferenceBukra,Arial,sans-serif;grid-column:auto;grid-row:auto}
+.help-badge .help-text b{font-weight:700}
+.featured-actions .ico{width:18px;height:18px;stroke-width:1.8}
+.featured-actions .secondary{display:inline-flex;align-items:center;justify-content:center;gap:7px}
+.featured-actions .secondary{padding-left:22px!important;padding-right:22px!important;gap:8px}
+
+@media(min-width:1251px){
+ /* sidebar */
+ /* Live official drawer measures 336 CSS pixels at desktop widths. */
+ .sidebar{width:336px;margin:17px 0 17px 12px;top:calc(var(--banner-h) + 17px);height:calc(100dvh - var(--banner-h) - 34px);border-radius:28px;background:linear-gradient(180deg,#eefaf5 0,#fff 90px)}
+ .sidebar-brand{height:90px;padding:0 18px;border-bottom:1px solid #dde5e1;display:flex;align-items:center;justify-content:space-between;gap:0}
+ .sidebar-brand .brand{display:block;padding:0;flex:none}
+ .brand-logo{width:133px;height:47px}
+ .sidebar nav{padding:18px 22px 10px;gap:0}
+ .sidebar nav #home-nav,.sidebar nav #dashboard-nav,.sidebar nav #services-toggle{height:48px;margin:0 0 5px;padding:0 24px;gap:19px;font:700 15px/1 ReferenceBukra,Arial,sans-serif;color:#121212;border-radius:14px;background:transparent}
+ .sidebar nav #services-toggle{color:#00734f;padding-right:38px}
+ .contact-nav{font-size:15px}
+ .sidebar nav #services-toggle strong{flex:1;text-align:left;font-weight:700}
+ .sidebar nav #home-nav .ico,.sidebar nav #dashboard-nav .ico{width:24px;height:24px;color:#6b706d}
+ .sidebar nav #services-toggle .ico{width:24px;height:24px;color:#00734f}
+ .sidebar nav #services-toggle .chev{width:20px;height:20px;stroke-width:2.2;margin-right:-6px}
+ .sidebar nav #home-nav>span:first-child,.sidebar nav #dashboard-nav>span:first-child{width:auto}
+ .sidebar nav a.page-active{background:#e5f3ed;color:#00734f}
+ #category-nav{margin:6px 0 10px;gap:4px;display:grid}
+ #category-nav a{height:36px;min-height:0;padding:0 16px;gap:17px;border-radius:12px;border:1px solid transparent;font:500 13.3px/1.2 ReferenceDubai,Arial,sans-serif;color:#4b4c4d;align-items:center}
+ #category-nav a svg{width:20px;height:20px;color:#7b807d}
+ #category-nav a.active{background:#dff3ea;border-color:#8bd0b4;color:#2c3e35}
+ #category-nav a.active svg{color:#007a52}
+ .contact-nav{height:64px;padding:0 28px;gap:14px;font:700 16px/1 ReferenceBukra,Arial,sans-serif;color:#4b4c4d}
+ /* header */
+ .topbar{height:75px;padding:0 60px 0 0;border-bottom:1px solid #dbe3e0;background:#f2f7f5}
+ .top-actions{gap:17px}
+ .top-actions button.header-icon{width:41px;height:41px}
+ .top-actions button.header-pill{height:41px;padding:0 14px;gap:12px;font:700 12.5px/1 ReferenceBukra,Arial,sans-serif;color:#121212;background:#e6ede9}
+ .top-actions button.header-sos{width:41px;height:41px;font:700 13px/1 ReferenceBukra,Arial,sans-serif}
+ /* content */
+ main{padding:33px 72px 48px 60px;max-width:none;margin:0}
+ .welcome-row{margin-bottom:54px;min-height:57px;align-items:center}
+ .welcome-row h1{font-size:43px;line-height:1.2;margin:0}
+ .featured-section{margin-bottom:64px}
+ .featured-heading{height:36px;margin-bottom:27px;align-items:center}
+ .featured-heading h2{font:700 24.5px/1.2 ReferenceBukra,Arial,sans-serif;color:#121212}
+ .carousel-controls{gap:24px}
+ .carousel-arrow{font-size:34px;line-height:.8;font-weight:700;color:#121212;width:20px;height:30px;display:grid;place-items:center}
+ .carousel-dots{gap:18px}
+ .carousel-dot{width:9px;height:9px;background:#cfd5d2}
+ .carousel-dot.selected{background:#121212}
+ .featured-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+ .featured-card{padding:24px 25px 25px 24px;border-radius:32px;min-height:0;display:flex;flex-direction:column;box-shadow:none}
+ .featured-summary{gap:16px;min-height:78px;margin-bottom:12px;align-items:flex-start}
+ .featured-summary .tile-icon{width:66px;height:66px;border-radius:17px;flex-shrink:0}
+ .featured-summary h3{font:700 18px/1.15 ReferenceDubai,Arial,sans-serif;margin:0 0 2px;color:#121212}
+ .featured-summary p{font:400 13.25px/1.3 ReferenceDubai,Arial,sans-serif;color:#4b4c4d;min-height:0;-webkit-line-clamp:2}
+ .featured-actions{margin-top:auto;justify-content:space-between;gap:10px}
+ .featured-actions .primary,.featured-actions .secondary{flex:none;height:33px;padding:0 18px;border-radius:17px;font:700 14px/1 ReferenceDubai,Arial,sans-serif;white-space:nowrap}
+}
+
+@media(max-width:760px){
+ .welcome-row{flex-wrap:wrap;row-gap:14px}
+ .welcome-row>div:first-child{min-width:0;flex:1 1 150px}
+ .home-subtitle{max-width:none}
+ .help-badge{height:46px;padding:0 12px 0 9px;gap:4px;max-width:100%}
+ .help-badge .help-left strong{font-size:17px}
+ .help-badge .help-phone{width:16px;height:16px}
+ .help-badge>span.help-text{font-size:11.5px}
+}

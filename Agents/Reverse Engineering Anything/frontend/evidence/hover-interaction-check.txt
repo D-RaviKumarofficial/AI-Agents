@@ -1,0 +1,29 @@
+{
+  "before": {
+    "background": "rgb(217, 237, 230)",
+    "color": "rgb(0, 115, 75)",
+    "arrow": "0",
+    "arrowTransform": "matrix(1.25, 0, 0, 1.25, 20, 0)",
+    "width": 199,
+    "height": 62
+  },
+  "after": {
+    "background": "rgb(196, 223, 213)",
+    "color": "rgb(0, 115, 75)",
+    "arrow": "1",
+    "arrowTransform": "matrix(1, 0, 0, 1, 0, 0)",
+    "width": 199,
+    "height": 62
+  },
+  "checks": [
+    "mouse enter/leave",
+    "no layout shift",
+    "keyboard focus",
+    "reduced motion",
+    "language chevron",
+    "sidebar navigation",
+    "featured start and information",
+    "chooser start"
+  ]
+}
+Hover interaction checks passed.

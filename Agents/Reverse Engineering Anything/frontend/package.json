@@ -1,0 +1,24 @@
+{
+  "name": "ecrime-agent-demo-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:widget": "npm --prefix ../chatbot install --no-audit --no-fund && npm --prefix ../chatbot run build",
+    "predev": "npm run build:widget",
+    "dev": "vite",
+    "prebuild": "npm run build:widget",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rea-chat-widget": "file:../chatbot"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "vite": "^7.0.0"
+  }
+}

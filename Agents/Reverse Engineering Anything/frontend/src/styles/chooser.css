@@ -1,0 +1,32 @@
+/* Screenshot-inspired service chooser; the demo label stays visible. */
+#service-dialog.service-chooser{width:calc(100vw - 28px);max-width:1120px;height:calc(100dvh - 28px);max-height:980px;padding:0;border:1px solid #e7e9ec;border-radius:32px;background:linear-gradient(180deg,#fff 0,#f0f2f8 180px);overflow:hidden;box-shadow:0 20px 100px #162d2940;color:#171a18}
+#service-dialog.service-chooser::backdrop{background:#20262666;backdrop-filter:blur(2px)}
+.service-chooser #service-dialog-content{height:100%;position:relative}
+.chooser-tools{position:absolute;top:32px;right:30px;display:flex;gap:12px;z-index:2}
+.chooser-tool{height:66px;width:66px;background:#e9e9eb;border:0;border-radius:50%;font-size:30px;font-weight:400;line-height:1;color:#535658;display:grid;place-items:center}
+.chooser-tool svg{width:25px;height:25px;fill:currentColor}
+.chooser-tool:hover{background:#dddfe1}.chooser-scroll{height:100%;overflow-y:auto;overscroll-behavior:contain;padding:82px 65px 55px;scrollbar-width:thin;scrollbar-color:#c4c5c7 transparent}
+.chooser-heading{margin-bottom:55px;padding-right:65px}.chooser-mark{display:block;width:52px;height:46px;color:#00664c;margin-bottom:7px}.chooser-mark svg{width:100%;height:100%}
+.chooser-heading h2{font-size:clamp(30px,4.5vw,54px);font-weight:700;letter-spacing:-1.3px;line-height:1.15;margin:0 0 24px;color:#101512;overflow-wrap:anywhere}
+.chooser-heading>p{font-size:clamp(16px,2.2vw,23px);line-height:1.6;color:#171d19;margin:0 0 12px}
+.chooser-demo-note{font-size:10px;letter-spacing:.7px;color:#587065;display:block}
+.chooser-section-title{font-size:25px;margin:0 0 24px;font-weight:600;color:#161b18}
+.chooser-services{display:grid;gap:18px}
+.chooser-service{display:flex;gap:21px;align-items:center;min-width:0;border-radius:30px;background:#fff;padding:30px;min-height:147px}
+.chooser-service-icon{height:78px;width:78px;border-radius:20px;background:#e5f5ef;display:grid;place-items:center;color:#00664c;flex-shrink:0}
+.chooser-service-icon svg{height:46px;width:46px}.chooser-service-copy{min-width:0;flex:1}.chooser-service-copy h3{font-size:20px;line-height:1.4;font-weight:600;color:#202522;margin:0 0 7px}
+.chooser-service-copy p{font-size:13px;line-height:1.5;color:#5d655f;margin:0;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.chooser-coverage{font-size:9px;color:#7a8b81;display:block;margin-top:7px}
+.chooser-service-actions{display:grid;gap:9px;width:180px;flex-shrink:0}.chooser-service-actions .primary,.chooser-service-actions .secondary{border:0;border-radius:26px;font-size:14px;font-weight:600;padding:11px 14px;white-space:nowrap}
+.chooser-service-actions .primary{background:#d9eee5;color:#006a49}.chooser-service-actions .primary:hover{background:#c5e6d7}.chooser-service-actions .secondary{background:#ebebed;color:#555c57}.chooser-service-actions .secondary:hover{background:#dedfe2}
+.chooser-share-feedback{border:1px solid #cee1d6;background:#edf6f1;border-radius:12px;padding:14px;margin:-20px 0 25px}.chooser-share-feedback p{font-size:12px;line-height:1.6;margin:0 0 10px}.chooser-share-feedback label{font-size:11px;color:#587065}.chooser-share-feedback input{margin-top:7px;font-size:12px}
+.home-service-groups{margin:38px 0}.home-service-groups .service-tile h3{font-size:17px;line-height:1.5;margin:16px 0 8px}.home-service-groups .service-tile>button{border-radius:22px;align-self:flex-start;min-width:100px}
+.sidebar-brand .brand{display:flex;flex-direction:column;align-items:flex-start;gap:7px}.brand-logo{display:block;width:165px;height:auto;max-width:100%}.sidebar-brand .brand-demo{font-size:8px;letter-spacing:1.4px;color:#678c78;border:1px solid #b9d2c4;padding:3px 6px;border-radius:4px}
+.header-home img{width:133px;height:auto}.header-home small{font-size:8px;letter-spacing:.8px;border:1px solid #a9caba;color:#39604b;border-radius:3px;padding:2px 4px}.sidebar-hidden .header-home{display:flex;gap:8px;align-items:center}
+.route-loader{position:fixed;inset:0;z-index:10;background:#f6fbf8f7;backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:24px;color:#146447}
+.route-loader[hidden]{display:none!important}.loader-orbit{width:235px;height:235px;position:relative;display:grid;place-items:center}.loader-orbit:before{content:'';position:absolute;inset:0;border:2px solid #dbece2;border-top:3px solid #008755;border-right:3px solid #7dc7a7;border-radius:50%;animation:logo-orbit 1.15s linear infinite}.loader-orbit img{width:185px;height:auto;position:relative}
+.route-loader p{font-size:13px;letter-spacing:.4px;margin:0}.route-loader small{font-size:9px;letter-spacing:.8px;color:#688276}.is-transitioning{overflow:hidden}.demo-banner{z-index:12}
+@keyframes logo-orbit{to{transform:rotate(360deg)}}
+body.reduce-motion .loader-orbit:before{animation:none}
+@media(max-width:760px){#service-dialog.service-chooser{width:calc(100vw - 16px);height:calc(100dvh - 16px);border-radius:24px}.chooser-tools{top:18px;right:18px;gap:8px}.chooser-tool{width:43px;height:43px;font-size:24px}.chooser-tool svg{width:20px;height:20px}.chooser-scroll{padding:76px 18px 24px}.chooser-heading{padding-right:0;margin-bottom:30px}.chooser-heading h2{font-size:30px;letter-spacing:-.6px;margin-bottom:14px}.chooser-mark{width:40px;height:38px}.chooser-heading>p{font-size:16px}.chooser-demo-note{font-size:8px}.chooser-section-title{font-size:21px;margin-bottom:18px}.chooser-service{padding:19px;gap:13px;flex-wrap:wrap;border-radius:23px}.chooser-service-icon{height:53px;width:53px;border-radius:14px}.chooser-service-icon svg{height:34px;width:34px}.chooser-service-copy{flex:1;min-width:140px}.chooser-service-copy h3{font-size:16px}.chooser-service-copy p{font-size:11px}.chooser-service-actions{width:100%;display:flex;gap:8px}.chooser-service-actions button{flex:1;font-size:12px!important;padding:10px!important}.brand-logo{width:155px}.topbar{flex-wrap:wrap}.topbar .header-home{display:flex!important;align-items:center;gap:8px;margin-right:auto}.header-home img{width:105px}.top-actions{width:100%;justify-content:flex-end}.loader-orbit{width:190px;height:190px}.loader-orbit img{width:150px}.route-loader small{max-width:270px;text-align:center;line-height:1.7}.home-service-groups .featured-heading{align-items:flex-start;flex-direction:column;gap:10px}}
+@media(prefers-reduced-motion:reduce){.loader-orbit:before{animation:none}}

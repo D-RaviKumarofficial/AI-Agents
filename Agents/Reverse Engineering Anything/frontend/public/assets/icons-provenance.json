@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Report Criminal Complaint",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/File_Criminal_Complaint_6c8f8362a5.svg",
+    "file": "reference-icon-1.svg",
+    "sha256": "fdda4313030384888cb3df312b6b7159add8e252fcf4efc0215c3526dfaffc86"
+  },
+  {
+    "name": "Lost & Found",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/dp-service-icons/lost_certificate_f6c8ff6401.svg",
+    "file": "reference-icon-2.svg",
+    "sha256": "dcfb3bd56ca6a3a2d01e834a320061e407d584343df997002d92eaffaa30a195"
+  },
+  {
+    "name": "Request a Certificate",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/dp-service-icons/certificate_03_f313b64874.svg",
+    "file": "reference-icon-3.svg",
+    "sha256": "b48df94e2a7845e4089971d8a4f16907b9f8218cb5ff7d9e3e7e96c1d49c42c9"
+  },
+  {
+    "name": "Request a Permit",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/check_circle_d5572fb638.svg",
+    "file": "reference-icon-4.svg",
+    "sha256": "3ae3e2c1cdc3bbf6a52b5197315ac33f229351b1543daefa1fcafd600c874fd3"
+  },
+  {
+    "name": "Pay Traffic Fines",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/Fines_Inquiry_and_Payment_0246e1de39.svg",
+    "file": "reference-icon-5.svg",
+    "sha256": "3ef988e972ee3cacb4218ac238cdd01b0843d9f8e76fbfbcb9ff9b8f20629a3a"
+  },
+  {
+    "name": "Report a Vehicle or Driver",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/dp-service-icons/Drive_Mode_06c6e352cd.svg",
+    "file": "reference-icon-6.svg",
+    "sha256": "a40474d71171a13f014b9503fbe0fd6c4299d8c769810beb9beab97e73341dcf"
+  },
+  {
+    "name": "Sport Facilities Booking",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/dp-service-icons/Stadium_df3ed93753.svg",
+    "file": "reference-icon-8.svg",
+    "sha256": "14df6d5ea541b6e63d35aa75a78e0bf8331a9a04c2a5654e85203b2c09f67db6"
+  },
+  {
+    "name": "Suppliers Services",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/dp-service-icons/Supplier_Application_afad57eaa1.svg",
+    "file": "reference-icon-9.svg",
+    "sha256": "07d6380277bdbbd09905acaf012afe74495c84bf33dfc71472bcf81923270f41"
+  },
+  {
+    "name": "Diplomatic Affairs Services",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/dp-service-icons/Diplomatic_Services_6f3f72b7ad.svg",
+    "file": "reference-icon-10.svg",
+    "sha256": "2a12c9ba80ac14b6490a501e1e7b733f44abf68d9696d9d28e4e67e7e92214be"
+  },
+  {
+    "name": "On-Site Police Support",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/dp-service-icons/shield_01_00cf6986f7.svg",
+    "file": "reference-icon-11.svg",
+    "sha256": "f0d27fb07298ccf47525f8301127cdc69469f38eddb7be0d409005d7868a7b85"
+  },
+  {
+    "name": "Bounce Cheque Report for Banks",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/Bounce_Cheque_165e772a89.svg",
+    "file": "reference-icon-12.svg",
+    "sha256": "0ccd4c8a6cdec96cfa990f009db5aa8c3b6e1c0b4fc1d4497b12e3a416a533dc"
+  },
+  {
+    "name": "Request a Lecture or Training Course",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/dp-service-icons/Lecturer_Request_b03d644e76.svg",
+    "file": "reference-icon-13.svg",
+    "sha256": "f30a856d6176b29cd5f22b98b1e395c93925b8b10cb2662c6eebb6e091b80fff"
+  },
+  {
+    "name": "OCEC",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/dp-service-icons/bank_fraud_a176537989.svg",
+    "file": "reference-icon-14.svg",
+    "sha256": "3e0e7fc095414fbc1c368d1c53a3a8145aa0373a222bd2020470a04d744677b7"
+  },
+  {
+    "name": "Registration of law firms",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/group_question_35b57ce706.svg",
+    "file": "reference-icon-15.svg",
+    "sha256": "96e9cbb4926d00bc61c3887e38aaedaaa2aa8f67b04e99a2e4efd555fce0d3c2"
+  },
+  {
+    "name": "Share Information",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/dp-service-icons/annotation_info_cbdb1c609a.svg",
+    "file": "reference-icon-16.svg",
+    "sha256": "1f94004889c070f27ba7497d4bcc169c2ba6f63a53317d47589d862145cb0baa"
+  },
+  {
+    "name": "Community Activities Participation",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/dp-service-icons/heart_hand_42ce275b5e.svg",
+    "file": "reference-icon-17.svg",
+    "sha256": "285012198ada39dffd2e95e886f78d7e53c637b5ca3161ee7d3f72b0cb0fbad3"
+  },
+  {
+    "name": "DP Personnel Welfare and Support",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/dp-service-icons/annotation_question_d2b37949a1.svg",
+    "file": "reference-icon-18.svg",
+    "sha256": "692d2bbcfe15307e61fc8dff599a31a1c192c0e5a8c30a80629b22da28da13c6"
+  },
+  {
+    "name": "Request to Contact The Police",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/dp-service-icons/phone_call_01_213e34a666.svg",
+    "file": "reference-icon-19.svg",
+    "sha256": "812d04ef6dab025eb309fc9415ff149e1e687dc977e8efe943f4da5170ecfd77"
+  },
+  {
+    "name": "Apply for a Job",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/dp-service-icons/Job_Vacancies_669d2ddb05.svg",
+    "file": "reference-icon-20.svg",
+    "sha256": "74a7fc6753d392dd247aa9208f9a6039b8b179dd0b5cdf51a0072b3dd75a5210"
+  },
+  {
+    "name": "Support and Emergency Response",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/clock_02_91dd009d37.svg",
+    "file": "reference-icon-21.svg",
+    "sha256": "4ad2ea8d279d051ba08ca6b9fb559f520e60519c69e0c6f489f375ff567bc6e4"
+  },
+  {
+    "name": "Circulars and travel bans",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/dp-service-icons/travel_ban_01_fb0f99e99d.svg",
+    "file": "reference-icon-22.svg",
+    "sha256": "e214c0e7742a410af974e9168a99be922310e0684710c8340de4d6707293b1cf"
+  },
+  {
+    "name": "Submit an Inquiry",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/dp-service-icons/search_check_bafbebb43d.svg",
+    "file": "reference-icon-23.svg",
+    "sha256": "b6469d206ccfae240164bcb5b14d4bd1beafb68698e671719c6f8d1572f87d85"
+  },
+  {
+    "name": "Police Clearance Certificate",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/Police_Clearance_Certificate_bb8c35a2bd.svg",
+    "file": "reference-icon-24.svg",
+    "sha256": "9c6b16b670b5f66491fd0d3b58b16609749f7555fde5f647fd8c08a5e991b813"
+  },
+  {
+    "name": "HQ Entry Permit",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/HQ_Entry_Permit_7fe3b7ba22.svg",
+    "file": "reference-icon-25.svg",
+    "sha256": "33370616cee1ed9dcccce845056f6a5f1dd6e6d866ae30bde39b513354e615b1"
+  },
+  {
+    "name": "Fines Inquiry and Payment",
+    "source": "https://www.dubaipolice.gov.ae/dpcms/cmsUploads/Fines_Inquiry_and_Payment_bc442f6ecd.svg",
+    "file": "reference-icon-26.svg",
+    "sha256": "ce5f5d3d54785079a5c2c5ab31f9b6d9ad8e8397b98064b0c50615e027546a92"
+  }
+]

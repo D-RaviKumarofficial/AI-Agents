@@ -1,0 +1,33 @@
+{
+  "observedAt": "2026-11-06",
+  "source": "https://www.dubaipolice.gov.ae/app/services",
+  "note": "Initial form access only. Later steps (payment, verification) were not tested. Services not listed here were not verified.",
+  "uaePassRequired": [
+    "application-status",
+    "attaching-documents",
+    "change-vehicle-color-permit",
+    "circulars-and-travel-bans",
+    "contact-police-scientists-council",
+    "corpse-entry-permit",
+    "hq-entry-permit",
+    "police-museum-visit-permit",
+    "provide-care-for-human-trafficking-victims",
+    "reporting-e-crime",
+    "retirees-support",
+    "road-closure-permit",
+    "smart-home-security",
+    "submit-an-inquiry",
+    "supplier-application",
+    "traffic-clearance-certificate",
+    "traffic-status-certificate",
+    "twimc-inmate-certificate",
+    "worker-s-voice"
+  ],
+  "guestAvailable": [
+    "document-verification",
+    "fines-inquiry-and-payment",
+    "police-clearance-certificate",
+    "tourists-support",
+    "visit-a-detainee-or-inmate-permit"
+  ]
+}

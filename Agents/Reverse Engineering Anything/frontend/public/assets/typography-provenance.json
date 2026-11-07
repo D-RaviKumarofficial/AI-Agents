@@ -1,0 +1,31 @@
+{
+  "observedAt": "2026-11-04",
+  "note": "Publicly served reference assets for local demo; no license grant or redistribution rights asserted.",
+  "files": [
+    {
+      "source": "https://www.dubaipolice.gov.ae/app/assets/DubaiRegular-2P0hdaro.woff2",
+      "file": "dubai-400.woff2",
+      "sha256": "79b0c7324f9f8d02df45ffcabaf9d4bfcdbda3836211c3f7c4aa3b48fc1b1927"
+    },
+    {
+      "source": "https://www.dubaipolice.gov.ae/app/assets/DubaiMedium-CoCZpEtO.woff2",
+      "file": "dubai-500.woff2",
+      "sha256": "b7757403868516c6593433e5ab732f8e49142fb17ae3a1ee6ce3bb995bb2a305"
+    },
+    {
+      "source": "https://www.dubaipolice.gov.ae/app/assets/DubaiBold-DGICrerd.woff2",
+      "file": "dubai-700.woff2",
+      "sha256": "879bd2a6e224151bf07079fd0cbc33c25479bd77c12d9b6ef6797c8ef6b91ce4"
+    },
+    {
+      "source": "https://www.dubaipolice.gov.ae/app/assets/29ltbukraregular-CCSWQHLL.woff2",
+      "file": "bukra-400.woff2",
+      "sha256": "496f01c176a4bb3fb67f44040bffb17b9bc9b8bc3fcf2ec9836222bb1468c45c"
+    },
+    {
+      "source": "https://www.dubaipolice.gov.ae/app/assets/29ltbukrabold-CFYNoSzH.woff2",
+      "file": "bukra-700.woff2",
+      "sha256": "f71780029437eba604fd69e68db456364a0ffd56272805b48eb039ddbeddc9b6"
+    }
+  ]
+}
