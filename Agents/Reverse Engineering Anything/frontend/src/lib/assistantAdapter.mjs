@@ -8,7 +8,6 @@ const ACCESS_LABELS = {
 
 export const ASSISTANT_COPY = {
   title: 'Services Assistant',
-  subtitle: 'AI-written answers from a saved copy of the services directory. Demo only.',
   placeholder: 'Ask about a service, fees or UAE PASS',
   labels: { openLauncher: 'Open services assistant', closeLauncher: 'Close services assistant', close: 'Close assistant' },
 };
