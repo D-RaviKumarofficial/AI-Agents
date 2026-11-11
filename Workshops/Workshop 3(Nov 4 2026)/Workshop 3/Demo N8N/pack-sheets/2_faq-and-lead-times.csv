@@ -1,0 +1,19 @@
+type,topic,question,answer,lead_time_min_working_days,lead_time_max_working_days,last_updated
+LEAD_TIME,Stationery (SG-NB-01),Lead time for notebooks,10 to 12 working days. Indicative lead time counted from approved artwork and received payment. It is not a delivery date and must never be promised as one.,10,12,2026-10-01
+LEAD_TIME,Drinkware (SG-BT-02),Lead time for bottles,12 to 15 working days. Indicative lead time counted from approved artwork and received payment. It is not a delivery date and must never be promised as one.,12,15,2026-10-01
+LEAD_TIME,Bags (SG-TB-03),Lead time for tote bags,15 to 18 working days. Indicative lead time counted from approved artwork and received payment. It is not a delivery date and must never be promised as one.,15,18,2026-10-01
+LEAD_TIME,Gift sets (SG-GB-04),Lead time for executive gift boxes,7 to 10 working days. Indicative lead time counted from approved artwork and received payment. It is not a delivery date and must never be promised as one.,7,10,2026-10-01
+LEAD_TIME,Accessories (SG-CH-05),Lead time for card holders,12 to 15 working days. Indicative lead time counted from approved artwork and received payment. It is not a delivery date and must never be promised as one.,12,15,2026-10-01
+LEAD_TIME,Tech (SG-PB-06),Lead time for power banks,14 to 18 working days. Indicative lead time counted from approved artwork and received payment. It is not a delivery date and must never be promised as one.,14,18,2026-10-01
+LEAD_TIME,Office (SG-DO-07),Lead time for desk organisers,12 to 15 working days. Indicative lead time counted from approved artwork and received payment. It is not a delivery date and must never be promised as one.,12,15,2026-10-01
+LEAD_TIME,Eid hamper (SG-HP-08),Lead time for Eid hampers,10 to 14 working days. Orders for Eid must be confirmed by 2027-01-31. Indicative lead time counted from approved artwork and received payment. It is not a delivery date and must never be promised as one.,10,14,2026-10-01
+FAQ,Minimum order,What is the minimum order?,The minimum depends on the product and is given in the price list (column min_order_qty).,,,2026-10-01
+FAQ,Artwork,Which logo file do you need?,"Vector files (AI, EPS or PDF). A PNG of at least 1000 px is accepted for a first quote; the sales person confirms print quality before production.",,,2026-10-01
+FAQ,Samples,Can we get a sample?,One sample per product can be prepared on request. The cost and the delay are confirmed by the sales person.,,,2026-10-01
+FAQ,Payment,What are the payment terms?,"50% deposit on order confirmation, balance before delivery. Payment by bank transfer.",,,2026-10-01
+FAQ,VAT,Are prices with VAT?,Prices in the price list are in AED and exclude 5% VAT.,,,2026-10-01
+FAQ,Delivery area,Where do you deliver?,"Delivery in all emirates of the UAE is included for orders above 3,000 AED. Other cases: ask the sales person.",,,2026-10-01
+FAQ,Volume prices,Do you have volume prices?,"Yes. The price list has three tiers: up to 99, 100 to 499, and 500 or more. These tiers are the only price reductions in the sources.",,,2026-10-01
+FAQ,Discounts,Can you do a special discount?,Not answered by the agent. Management approves discounts and exceptions. Hand over to the sales person.,,,2026-10-01
+FAQ,Complaints and refunds,What if there is a problem with an order?,Not answered by the agent. A complaint or refund request is a case for management. Hand over to the sales person.,,,2026-10-01
+FAQ,Rush orders,Can you go faster than the usual lead time?,Not answered by the agent. A faster delay is confirmed by the sales person only.,,,2026-10-01

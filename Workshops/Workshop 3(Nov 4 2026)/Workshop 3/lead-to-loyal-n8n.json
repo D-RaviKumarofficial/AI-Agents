@@ -1,0 +1,189 @@
+{
+  "name": "Lead to Loyal · starter workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "agent-input",
+        "options": {}
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000001",
+      "name": "Message in",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 300],
+      "webhookId": "5b1c0a10-0000-4000-8000-0000000000a1"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f1000001-0000-4000-8000-000000000001",
+              "name": "message",
+              "value": "={{ $json.body.message }}",
+              "type": "string"
+            },
+            {
+              "id": "f1000001-0000-4000-8000-000000000002",
+              "name": "channel",
+              "value": "={{ $json.body.channel }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000002",
+      "name": "Prepare fields",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [220, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": false,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "c1000001-0000-4000-8000-000000000001",
+              "leftValue": "={{ $json.message }}",
+              "rightValue": "discount|refund|complaint",
+              "operator": {
+                "type": "string",
+                "operation": "regex"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000003",
+      "name": "Stop rule check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [440, 300]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f1000001-0000-4000-8000-000000000003",
+              "name": "status",
+              "value": "handover",
+              "type": "string"
+            },
+            {
+              "id": "f1000001-0000-4000-8000-000000000004",
+              "name": "reason",
+              "value": "Stop rule: discount, refund or complaint keyword found. A person decides, management approves discounts and exceptions.",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000004",
+      "name": "Hand over to a person",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [680, 160]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.message }}",
+        "options": {
+          "systemMessage": "You are Lead to Loyal, an assistant for a sales person. Mission: for each incoming message or open quote, prepare a sourced draft reply, a lead score and the next follow-up date, for the sales person to approve.\n\nJobs, in order:\n1. Score the lead.\n2. Draft the reply.\n3. Propose the follow-up date.\n\nApproved sources: the catalogue, the dated price list, the lead times and the FAQ. Use only these sources and name the source of every fact in your draft. If a source you need is missing, stop and tell the sales person.\n\nPermitted actions: look up, compare, draft, score, propose a follow-up date. Once the sales person confirms the reply is sent, a reminder may be created for the sales person.\n\nForbidden actions: send anything to the client, change a price or any existing record, promise a discount or a delivery date.\n\nNever:\n1. Send alone.\n2. Promise a discount or a date.\n3. Invent a price.\n\nScoring rule: never give a high score without both a quantity and a date. If the quantity or the date is missing, ask the sales person for it first and never guess. Do not quote a price until both are known.\n\nStop and hand over to the sales person, without writing a draft that settles the matter, when: the source is missing; a discount is requested (management approves discounts and exceptions); the message is a complaint (a refund is a case for management). Say which trigger applies and promise nothing.\n\nOutput format, always:\n1. Draft reply.\n2. Source of each fact.\n3. Lead score with its reason.\n4. Proposed follow-up date.\n5. Open question for the sales person, if any.\n\nYou only prepare. A person approves and sends."
+        }
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000005",
+      "name": "Lead to Loyal",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [680, 440]
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "id",
+          "value": "claude-sonnet-5-5"
+        },
+        "options": {}
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000006",
+      "name": "Chat model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
+      "typeVersion": 1.3,
+      "position": [660, 660]
+    },
+    {
+      "parameters": {
+        "resume": "webhook",
+        "options": {}
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000007",
+      "name": "Wait for person approval",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1040, 440],
+      "webhookId": "5b1c0a10-0000-4000-8000-0000000000a2"
+    },
+    {
+      "parameters": {},
+      "id": "5b1c0a10-0000-4000-8000-000000000008",
+      "name": "Person sends the reply",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [1260, 440]
+    },
+    {
+      "parameters": {
+        "content": "TO COMPLETE: connect your own accounts (model key, inbox, CRM) in n8n. This file contains no credentials. Add the tools of the agent sheet to the agent node: read the price list, read the inbox, read the lead sheet, create a reminder for the sales person. Connect the real incoming channel to the webhook (channels not listed yet). Wire the approval step: the sales person resumes the flow. The lead record from Reach is not defined yet. NOT RUN: replay the three tests (normal, incomplete, out of scope) before any real use.",
+        "height": 260,
+        "width": 420
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000009",
+      "name": "Note · to complete",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [400, 560]
+    }
+  ],
+  "connections": {
+    "Message in": {
+      "main": [[{ "node": "Prepare fields", "type": "main", "index": 0 }]]
+    },
+    "Prepare fields": {
+      "main": [[{ "node": "Stop rule check", "type": "main", "index": 0 }]]
+    },
+    "Stop rule check": {
+      "main": [
+        [{ "node": "Hand over to a person", "type": "main", "index": 0 }],
+        [{ "node": "Lead to Loyal", "type": "main", "index": 0 }]
+      ]
+    },
+    "Chat model": {
+      "ai_languageModel": [[{ "node": "Lead to Loyal", "type": "ai_languageModel", "index": 0 }]]
+    },
+    "Lead to Loyal": {
+      "main": [[{ "node": "Wait for person approval", "type": "main", "index": 0 }]]
+    },
+    "Wait for person approval": {
+      "main": [[{ "node": "Person sends the reply", "type": "main", "index": 0 }]]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false
+}

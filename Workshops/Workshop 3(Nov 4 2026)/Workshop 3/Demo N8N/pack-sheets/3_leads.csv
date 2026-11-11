@@ -1,0 +1,9 @@
+lead_id,company,contact_name,email,source,channel,first_contact_date,product_interest,quantity,needed_by_date,status,quote_ref,quote_amount_aed,quote_sent_date,last_follow_up_date,marketing_consent,notes
+LD-001,Al Noor Dental Clinic,Layla Haddad,layla.haddad@alnoor-dental.example,Reach,email,2026-10-20,SG-NB-01,200,2026-12-15,quoted,Q-214,5950,2026-10-22,,yes,"Quote sent, never followed up. Gone cold."
+LD-002,Marina Peak Real Estate,Omar Qureshi,omar@marinapeak.example,Reach,web form,2026-11-02,SG-BT-02,150,2027-01-20,new,,,,,yes,"First message, quantity and date known."
+LD-003,Gulf Harbour Logistics,Priya Nair,priya.nair@gulfharbour.example,Reach,email,2026-10-10,SG-TB-03,300,2026-12-05,quoted,Q-209,4980,2026-10-14,2026-10-28,yes,Followed up once. Waiting for a decision.
+LD-004,Desert Rose Hotels,Karim Aziz,karim.aziz@desertrose.example,Reach,WhatsApp,2026-10-28,SG-HP-08,80,2027-02-25,quoted,Q-218,19500,2026-11-02,,yes,Eid hampers. Quote sent two days ago.
+LD-005,BrightPath Academy,Sara Mansoor,sara@brightpath.example,Reach,email,2026-11-03,SG-NB-01,,,new,,,,,yes,Interested in notebooks. Quantity and date not given.
+LD-006,Falcon Tech FZE,Daniel Brooks,d.brooks@falcontech.example,Reach,email,2026-09-10,SG-PB-06,500,2026-10-20,won,Q-201,34220,2026-09-18,2026-10-25,yes,Delivered 2026-10-20. Repeat order possible.
+LD-007,Blue Dune Events,Mariam Saleh,mariam@bluedune.example,Reach,web form,2026-11-03,SG-GB-04,40,,new,,,,,yes,"Quantity known, date missing."
+LD-008,Skyline Auditors,Jonas Weber,j.weber@skylineaudit.example,Reach,email,2026-10-27,SG-CH-05,120,2026-12-18,quoted,Q-220,4800,2026-10-30,,yes,"Quote sent, no follow-up yet."

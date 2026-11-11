@@ -1,0 +1,355 @@
+{
+  "name": "Lead to Loyal · workflow complet",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "agent-input",
+        "options": {}
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000001",
+      "name": "Message in",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 300],
+      "webhookId": "5b1c0a10-0000-4000-8000-0000000000a1"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f1000001-0000-4000-8000-000000000001",
+              "name": "message",
+              "value": "={{ $json.body.message }}",
+              "type": "string"
+            },
+            {
+              "id": "f1000001-0000-4000-8000-000000000002",
+              "name": "channel",
+              "value": "={{ $json.body.channel }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000002",
+      "name": "Prepare fields",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [220, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": false,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "c1000001-0000-4000-8000-000000000001",
+              "leftValue": "={{ $json.message }}",
+              "rightValue": "discount|refund|complaint|remise|rabais|réduction|reduction|remboursement|réclamation|reclamation|plainte|litige",
+              "operator": {
+                "type": "string",
+                "operation": "regex"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000003",
+      "name": "Stop rule check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [440, 300]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f1000001-0000-4000-8000-000000000003",
+              "name": "status",
+              "value": "handover",
+              "type": "string"
+            },
+            {
+              "id": "f1000001-0000-4000-8000-000000000004",
+              "name": "reason",
+              "value": "Stop rule: discount, refund or complaint keyword found. A person decides, management approves discounts and exceptions.",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000004",
+      "name": "Hand over to a person",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [680, 160]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "sendTo": "REMPLACER@votre-entreprise.com",
+        "subject": "Passage de relais : un humain doit traiter ce message",
+        "message": "=Un message a déclenché la règle d'arrêt (remise, remboursement ou réclamation).\n\nCanal : {{ $json.channel }}\n\nMessage du client :\n{{ $json.message }}\n\nMotif : {{ $json.reason }}\n\nAucun brouillon n'a été préparé. La décision revient à une personne (la direction valide les remises et les exceptions).",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000010",
+      "name": "Alert sales person (handover)",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [900, 160],
+      "webhookId": "5b1c0a10-0000-4000-8000-0000000000a3"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.message }}",
+        "options": {
+          "systemMessage": "You are Lead to Loyal, an assistant for a sales person. Mission: for each incoming message or open quote, prepare a sourced draft reply, a lead score and the next follow-up date, for the sales person to approve.\n\nJobs, in order:\n1. Score the lead.\n2. Draft the reply.\n3. Propose the follow-up date.\n\nApproved sources: the catalogue, the dated price list, the lead times and the FAQ. Read them only with the tools provided (price list tool, FAQ tool, lead sheet tool, inbox tool). Use only these sources and name the source of every fact in your draft. If a source you need is missing, stop and tell the sales person.\n\nPermitted actions: look up, compare, draft, score, propose a follow-up date. Once the sales person confirms the reply is sent, a reminder may be created for the sales person.\n\nForbidden actions: send anything to the client, change a price or any existing record, promise a discount or a delivery date.\n\nNever:\n1. Send alone.\n2. Promise a discount or a date.\n3. Invent a price.\n\nScoring rule: never give a high score without both a quantity and a date. If the quantity or the date is missing, ask the sales person for it first and never guess. Do not quote a price until both are known.\n\nStop and hand over to the sales person, without writing a draft that settles the matter, when: the source is missing; a discount is requested (management approves discounts and exceptions); the message is a complaint (a refund is a case for management). Say which trigger applies and promise nothing.\n\nLanguage: write the draft reply in the language of the incoming message.\n\nOutput format, always:\n1. Draft reply.\n2. Source of each fact.\n3. Lead score with its reason.\n4. Proposed follow-up date.\n5. Open question for the sales person, if any.\n\nYou only prepare. A person approves and sends."
+        }
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000005",
+      "name": "Lead to Loyal",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [680, 440]
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "id",
+          "value": "claude-sonnet-5-5"
+        },
+        "options": {}
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000006",
+      "name": "Chat model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
+      "typeVersion": 1.3,
+      "position": [560, 700]
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Reads the catalogue and the DATED price list. The only approved source for any price. Always quote the date of the price list.",
+        "operation": "read",
+        "documentId": {
+          "__rl": true,
+          "mode": "url",
+          "value": ""
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        }
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000011",
+      "name": "Read price list",
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.5,
+      "position": [720, 700]
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Reads the FAQ and the lead times. Approved source for answers to common questions and for lead times. Never turn a lead time into a promised delivery date.",
+        "operation": "read",
+        "documentId": {
+          "__rl": true,
+          "mode": "url",
+          "value": ""
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        }
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000012",
+      "name": "Read FAQ and lead times",
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.5,
+      "position": [900, 700]
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Reads the lead sheet: previous contacts, open quotes, history of each client. Read only, never modify.",
+        "operation": "read",
+        "documentId": {
+          "__rl": true,
+          "mode": "url",
+          "value": ""
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        }
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000013",
+      "name": "Read lead sheet",
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.5,
+      "position": [1080, 700]
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Reads recent emails from the inbox, to find the earlier exchange with this client. Read only, never send.",
+        "resource": "message",
+        "operation": "getAll",
+        "returnAll": false,
+        "limit": 10,
+        "simple": true,
+        "filters": {}
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000014",
+      "name": "Read inbox",
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.1,
+      "position": [1260, 700],
+      "webhookId": "5b1c0a10-0000-4000-8000-0000000000a4"
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Creates a reminder for the sales person in the calendar. Use ONLY after the sales person has confirmed that the reply was sent.",
+        "resource": "event",
+        "operation": "create",
+        "calendar": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        },
+        "start": "={{ $fromAI('start_date_time', 'Follow-up date and time, ISO 8601', 'string') }}",
+        "end": "={{ $fromAI('end_date_time', 'End of the reminder, 30 minutes after the start, ISO 8601', 'string') }}",
+        "additionalFields": {
+          "summary": "={{ $fromAI('title', 'Short reminder title: follow up with the client name', 'string') }}",
+          "description": "={{ $fromAI('notes', 'What to follow up on, with the lead score', 'string') }}"
+        }
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000015",
+      "name": "Create reminder",
+      "type": "n8n-nodes-base.googleCalendarTool",
+      "typeVersion": 1.3,
+      "position": [1440, 700]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "sendTo": "REMPLACER@votre-entreprise.com",
+        "subject": "Brouillon à valider : Lead to Loyal",
+        "message": "=Bonjour,\n\nUn brouillon est prêt. Rien n'a été envoyé au client.\n\nMessage reçu ({{ $('Prepare fields').item.json.channel }}) :\n{{ $('Prepare fields').item.json.message }}\n\n----- Proposition de l'agent -----\n{{ $json.output }}\n\n----------------------------------\nPour valider et reprendre le flux, cliquez sur ce lien :\n{{ $execution.resumeUrl }}\n\nPuis envoyez vous-même la réponse au client.",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000016",
+      "name": "Notify sales person",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [900, 440],
+      "webhookId": "5b1c0a10-0000-4000-8000-0000000000a5"
+    },
+    {
+      "parameters": {
+        "resume": "webhook",
+        "options": {}
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000007",
+      "name": "Wait for person approval",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1120, 440],
+      "webhookId": "5b1c0a10-0000-4000-8000-0000000000a2"
+    },
+    {
+      "parameters": {},
+      "id": "5b1c0a10-0000-4000-8000-000000000008",
+      "name": "Person sends the reply",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [1340, 440]
+    },
+    {
+      "parameters": {
+        "content": "## A COMPLETER (une seule fois)\n\n1. **Chat model** : créer l'identifiant Anthropic (clé API).\n2. **Read price list / Read FAQ and lead times / Read lead sheet** : connecter Google Sheets, choisir le fichier et l'onglet.\n3. **Read inbox**, **Notify sales person**, **Alert sales person** : connecter Gmail, remplacer REMPLACER@votre-entreprise.com par l'adresse du commercial.\n4. **Create reminder** : connecter Google Calendar, choisir l'agenda.\n5. **Message in** : brancher le vrai canal d'entrée sur l'URL du webhook.\n\nCe fichier ne contient aucun identifiant.\n\n**NON TESTE** : rejouer les trois tests (normal, incomplet, hors périmètre) avant tout usage réel.",
+        "height": 340,
+        "width": 460
+      },
+      "id": "5b1c0a10-0000-4000-8000-000000000009",
+      "name": "Note · to complete",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [360, 760]
+    }
+  ],
+  "connections": {
+    "Message in": {
+      "main": [[{ "node": "Prepare fields", "type": "main", "index": 0 }]]
+    },
+    "Prepare fields": {
+      "main": [[{ "node": "Stop rule check", "type": "main", "index": 0 }]]
+    },
+    "Stop rule check": {
+      "main": [
+        [{ "node": "Hand over to a person", "type": "main", "index": 0 }],
+        [{ "node": "Lead to Loyal", "type": "main", "index": 0 }]
+      ]
+    },
+    "Hand over to a person": {
+      "main": [[{ "node": "Alert sales person (handover)", "type": "main", "index": 0 }]]
+    },
+    "Chat model": {
+      "ai_languageModel": [[{ "node": "Lead to Loyal", "type": "ai_languageModel", "index": 0 }]]
+    },
+    "Read price list": {
+      "ai_tool": [[{ "node": "Lead to Loyal", "type": "ai_tool", "index": 0 }]]
+    },
+    "Read FAQ and lead times": {
+      "ai_tool": [[{ "node": "Lead to Loyal", "type": "ai_tool", "index": 0 }]]
+    },
+    "Read lead sheet": {
+      "ai_tool": [[{ "node": "Lead to Loyal", "type": "ai_tool", "index": 0 }]]
+    },
+    "Read inbox": {
+      "ai_tool": [[{ "node": "Lead to Loyal", "type": "ai_tool", "index": 0 }]]
+    },
+    "Create reminder": {
+      "ai_tool": [[{ "node": "Lead to Loyal", "type": "ai_tool", "index": 0 }]]
+    },
+    "Lead to Loyal": {
+      "main": [[{ "node": "Notify sales person", "type": "main", "index": 0 }]]
+    },
+    "Notify sales person": {
+      "main": [[{ "node": "Wait for person approval", "type": "main", "index": 0 }]]
+    },
+    "Wait for person approval": {
+      "main": [[{ "node": "Person sends the reply", "type": "main", "index": 0 }]]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false
+}
