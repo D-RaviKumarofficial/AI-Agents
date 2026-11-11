@@ -1,0 +1,7 @@
+agent-browser
+Publisher: Community (vercel-labs/agent-browser)
+Licence: Apache 2.0
+Source: https://github.com/vercel-labs/agent-browser/tree/main/skills/agent-browser
+Install: npx skills add vercel-labs/agent-browser --skill agent-browser
+Commit: 5868f7c
+Downloaded from the Skills Library, snapshot of Nov 2026.

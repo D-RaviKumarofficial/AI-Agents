@@ -1,0 +1,7 @@
+react-native-architecture
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/frontend-mobile-development/skills/react-native-architecture
+Install: npx skills add wshobson/agents --skill react-native-architecture
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

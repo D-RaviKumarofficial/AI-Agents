@@ -1,0 +1,7 @@
+api-design-principles
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/backend-development/skills/api-design-principles
+Install: npx skills add wshobson/agents --skill api-design-principles
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

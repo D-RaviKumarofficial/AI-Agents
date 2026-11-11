@@ -1,0 +1,7 @@
+wrap-up
+Publisher: Community (alirezarezvani/claude-skills)
+Licence: MIT
+Source: https://github.com/alirezarezvani/claude-skills/tree/main/agent-launcher/skills/wrap-up
+Install: npx skills add alirezarezvani/claude-skills --skill wrap-up
+Commit: e4a1dc3
+Downloaded from the Skills Library, snapshot of Nov 2026.

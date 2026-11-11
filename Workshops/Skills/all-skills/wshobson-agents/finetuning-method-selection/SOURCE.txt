@@ -1,0 +1,7 @@
+finetuning-method-selection
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/llm-finetuning/skills/finetuning-method-selection
+Install: npx skills add wshobson/agents --skill finetuning-method-selection
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

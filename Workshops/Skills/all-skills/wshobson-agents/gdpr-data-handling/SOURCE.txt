@@ -1,0 +1,7 @@
+gdpr-data-handling
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/hr-legal-compliance/skills/gdpr-data-handling
+Install: npx skills add wshobson/agents --skill gdpr-data-handling
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

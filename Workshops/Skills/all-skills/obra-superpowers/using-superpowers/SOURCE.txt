@@ -1,0 +1,7 @@
+using-superpowers
+Publisher: Community (obra/superpowers)
+Licence: MIT
+Source: https://github.com/obra/superpowers/tree/main/skills/using-superpowers
+Install: npx skills add obra/superpowers --skill using-superpowers
+Commit: 2ce8aa1
+Downloaded from the Skills Library, snapshot of Nov 2026.

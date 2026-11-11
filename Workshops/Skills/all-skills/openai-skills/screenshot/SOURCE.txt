@@ -1,0 +1,15 @@
+screenshot
+Publisher: Community (openai/skills)
+Licence: Apache 2.0
+Source: https://github.com/openai/skills/tree/main/skills/.curated/screenshot
+Install: npx skills add openai/skills --skill screenshot
+Commit: 49f948f
+Downloaded from the Skills Library, snapshot of Nov 2026.
+
+Not included (binary or very large files, get them from the source):
+- assets/screenshot-small.svg
+- assets/screenshot.png
+- scripts/macos_display_info.swift
+- scripts/macos_permissions.swift
+- scripts/macos_window_info.swift
+- scripts/take_screenshot.ps1

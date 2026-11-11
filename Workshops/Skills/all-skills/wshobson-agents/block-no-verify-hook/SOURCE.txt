@@ -1,0 +1,7 @@
+block-no-verify-hook
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/block-no-verify/skills/block-no-verify-hook
+Install: npx skills add wshobson/agents --skill block-no-verify-hook
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

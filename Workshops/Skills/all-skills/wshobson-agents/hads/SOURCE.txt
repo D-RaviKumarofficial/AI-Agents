@@ -1,0 +1,7 @@
+hads
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/documentation-standards/skills/hads
+Install: npx skills add wshobson/agents --skill hads
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

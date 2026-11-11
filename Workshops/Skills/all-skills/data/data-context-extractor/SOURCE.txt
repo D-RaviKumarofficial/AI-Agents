@@ -1,0 +1,6 @@
+data-context-extractor
+Publisher: Anthropic role plugins (Data)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/data/skills/data-context-extractor
+Install: claude plugin install data@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

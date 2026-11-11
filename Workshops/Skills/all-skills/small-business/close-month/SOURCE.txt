@@ -1,0 +1,6 @@
+close-month
+Publisher: Anthropic role plugins (Small Business)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/small-business/skills/close-month
+Install: claude plugin install small-business@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

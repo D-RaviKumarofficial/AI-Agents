@@ -1,0 +1,1 @@
+MIT License. Source: vercel-labs/agent-skills. See the repository for the full licence text.

@@ -1,0 +1,6 @@
+campaign-plan
+Publisher: Anthropic role plugins (Marketing)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/marketing/skills/campaign-plan
+Install: claude plugin install marketing@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

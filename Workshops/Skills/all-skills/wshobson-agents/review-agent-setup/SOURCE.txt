@@ -1,0 +1,7 @@
+review-agent-setup
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/review-agent-governance/skills/review-agent-setup
+Install: npx skills add wshobson/agents --skill review-agent-setup
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

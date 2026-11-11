@@ -1,0 +1,11 @@
+executing-plans
+Publisher: Community (obra/superpowers)
+Licence: MIT
+Source: https://github.com/obra/superpowers/tree/main/skills/executing-plans
+Install: npx skills add obra/superpowers --skill executing-plans
+Commit: 2ce8aa1
+Downloaded from the Skills Library, snapshot of Nov 2026.
+
+Not included (binary or very large files, get them from the source):
+- scripts/task-done
+- scripts/task-start

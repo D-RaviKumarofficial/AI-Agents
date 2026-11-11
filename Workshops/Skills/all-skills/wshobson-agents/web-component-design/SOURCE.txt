@@ -1,0 +1,7 @@
+web-component-design
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/ui-design/skills/web-component-design
+Install: npx skills add wshobson/agents --skill web-component-design
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

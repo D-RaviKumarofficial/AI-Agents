@@ -1,0 +1,7 @@
+gitops-workflow
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/kubernetes-operations/skills/gitops-workflow
+Install: npx skills add wshobson/agents --skill gitops-workflow
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

@@ -1,0 +1,7 @@
+prototype
+Publisher: Community (mattpocock/skills)
+Licence: MIT
+Source: https://github.com/mattpocock/skills/tree/main/skills/engineering/prototype
+Install: npx skills add mattpocock/skills --skill prototype
+Commit: 4ae2317
+Downloaded from the Skills Library, snapshot of Nov 2026.

@@ -1,0 +1,7 @@
+market-sizing-analysis
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/startup-business-analyst/skills/market-sizing-analysis
+Install: npx skills add wshobson/agents --skill market-sizing-analysis
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

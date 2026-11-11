@@ -1,0 +1,6 @@
+stripe-projects
+Publisher: Stripe (Stripe)
+Licence: MIT
+Source: https://github.com/stripe/ai/tree/main/skills/stripe-projects
+Install: npx skills add stripe/ai --skill stripe-projects
+Downloaded from the Skills Library, snapshot of Nov 2026.

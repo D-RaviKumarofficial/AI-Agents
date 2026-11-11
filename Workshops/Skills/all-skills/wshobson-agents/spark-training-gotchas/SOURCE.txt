@@ -1,0 +1,7 @@
+spark-training-gotchas
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/dgx-spark-ops/skills/spark-training-gotchas
+Install: npx skills add wshobson/agents --skill spark-training-gotchas
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

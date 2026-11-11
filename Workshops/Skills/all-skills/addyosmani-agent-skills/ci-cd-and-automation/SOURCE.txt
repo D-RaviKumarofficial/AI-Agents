@@ -1,0 +1,7 @@
+ci-cd-and-automation
+Publisher: Community (addyosmani/agent-skills)
+Licence: MIT
+Source: https://github.com/addyosmani/agent-skills/tree/main/skills/ci-cd-and-automation
+Install: npx skills add addyosmani/agent-skills --skill ci-cd-and-automation
+Commit: 8bfcc1f
+Downloaded from the Skills Library, snapshot of Nov 2026.

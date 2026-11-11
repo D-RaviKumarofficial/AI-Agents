@@ -1,0 +1,6 @@
+prospect
+Publisher: Partner (in Anthropic plugins) (Common Room)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/partner-built/common-room/skills/prospect
+Install: claude plugin install common-room@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

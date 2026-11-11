@@ -1,0 +1,7 @@
+web3-testing
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/blockchain-web3/skills/web3-testing
+Install: npx skills add wshobson/agents --skill web3-testing
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

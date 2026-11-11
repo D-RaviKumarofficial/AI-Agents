@@ -1,0 +1,7 @@
+slo-implementation
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/observability-monitoring/skills/slo-implementation
+Install: npx skills add wshobson/agents --skill slo-implementation
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

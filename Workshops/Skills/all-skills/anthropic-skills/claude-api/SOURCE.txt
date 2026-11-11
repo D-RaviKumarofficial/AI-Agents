@@ -1,0 +1,6 @@
+claude-api
+Publisher: Anthropic (Anthropic skills)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/skills/tree/main/skills/claude-api
+Install: npx skills add anthropics/skills --skill claude-api
+Downloaded from the Skills Library, snapshot of Nov 2026.

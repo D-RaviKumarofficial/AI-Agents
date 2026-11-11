@@ -1,0 +1,7 @@
+pr-labeling
+Publisher: Community (vercel-labs/skills)
+Licence: MIT
+Source: https://github.com/vercel-labs/skills/tree/main/.automations/pr-labeling/skills/pr-labeling
+Install: npx skills add vercel-labs/skills --skill pr-labeling
+Commit: 92a9a34
+Downloaded from the Skills Library, snapshot of Nov 2026.

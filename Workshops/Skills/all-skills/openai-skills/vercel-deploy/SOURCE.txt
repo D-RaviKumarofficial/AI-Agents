@@ -1,0 +1,11 @@
+vercel-deploy
+Publisher: Community (openai/skills)
+Licence: MIT
+Source: https://github.com/openai/skills/tree/main/skills/.curated/vercel-deploy
+Install: npx skills add openai/skills --skill vercel-deploy
+Commit: 49f948f
+Downloaded from the Skills Library, snapshot of Nov 2026.
+
+Not included (binary or very large files, get them from the source):
+- assets/vercel-small.svg
+- assets/vercel.png

@@ -1,0 +1,7 @@
+planning-and-task-breakdown
+Publisher: Community (addyosmani/agent-skills)
+Licence: MIT
+Source: https://github.com/addyosmani/agent-skills/tree/main/skills/planning-and-task-breakdown
+Install: npx skills add addyosmani/agent-skills --skill planning-and-task-breakdown
+Commit: 8bfcc1f
+Downloaded from the Skills Library, snapshot of Nov 2026.

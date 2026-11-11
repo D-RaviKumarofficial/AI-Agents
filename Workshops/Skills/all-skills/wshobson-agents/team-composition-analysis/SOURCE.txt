@@ -1,0 +1,7 @@
+team-composition-analysis
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/startup-business-analyst/skills/team-composition-analysis
+Install: npx skills add wshobson/agents --skill team-composition-analysis
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

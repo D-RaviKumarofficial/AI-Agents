@@ -1,0 +1,7 @@
+competitive-landscape
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/startup-business-analyst/skills/competitive-landscape
+Install: npx skills add wshobson/agents --skill competitive-landscape
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

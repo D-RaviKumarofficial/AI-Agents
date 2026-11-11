@@ -1,0 +1,7 @@
+pptx-reference-deck-analysis
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/pptx-deck-creation/skills/pptx-reference-deck-analysis
+Install: npx skills add wshobson/agents --skill pptx-reference-deck-analysis
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

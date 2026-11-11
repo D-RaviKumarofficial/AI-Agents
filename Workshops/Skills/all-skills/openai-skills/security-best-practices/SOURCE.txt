@@ -1,0 +1,10 @@
+security-best-practices
+Publisher: Community (openai/skills)
+Licence: Apache 2.0
+Source: https://github.com/openai/skills/tree/main/skills/.curated/security-best-practices
+Install: npx skills add openai/skills --skill security-best-practices
+Commit: 49f948f
+Downloaded from the Skills Library, snapshot of Nov 2026.
+
+Not included (binary or very large files, get them from the source):
+- references/python-flask-web-server-security.md

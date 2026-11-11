@@ -1,0 +1,7 @@
+visual-design-foundations
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/ui-design/skills/visual-design-foundations
+Install: npx skills add wshobson/agents --skill visual-design-foundations
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

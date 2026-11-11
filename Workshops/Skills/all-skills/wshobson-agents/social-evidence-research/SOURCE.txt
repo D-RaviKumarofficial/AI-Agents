@@ -1,0 +1,7 @@
+social-evidence-research
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/content-marketing/skills/social-evidence-research
+Install: npx skills add wshobson/agents --skill social-evidence-research
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

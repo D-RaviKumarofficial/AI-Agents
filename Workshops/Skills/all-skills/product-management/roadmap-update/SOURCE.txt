@@ -1,0 +1,6 @@
+roadmap-update
+Publisher: Anthropic role plugins (Product Management)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/product-management/skills/roadmap-update
+Install: claude plugin install product-management@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

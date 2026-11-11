@@ -1,0 +1,6 @@
+scientific-problem-selection
+Publisher: Anthropic role plugins (Bio Research)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/bio-research/skills/scientific-problem-selection
+Install: claude plugin install bio-research@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

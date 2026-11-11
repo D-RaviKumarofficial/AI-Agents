@@ -1,0 +1,7 @@
+employment-contract-templates
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/hr-legal-compliance/skills/employment-contract-templates
+Install: npx skills add wshobson/agents --skill employment-contract-templates
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

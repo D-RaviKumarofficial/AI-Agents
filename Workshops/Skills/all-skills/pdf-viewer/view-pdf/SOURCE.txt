@@ -1,0 +1,6 @@
+view-pdf
+Publisher: Anthropic role plugins (Pdf Viewer)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/pdf-viewer/skills/view-pdf
+Install: claude plugin install pdf-viewer@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

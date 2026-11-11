@@ -1,0 +1,7 @@
+distributed-tracing
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/observability-monitoring/skills/distributed-tracing
+Install: npx skills add wshobson/agents --skill distributed-tracing
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

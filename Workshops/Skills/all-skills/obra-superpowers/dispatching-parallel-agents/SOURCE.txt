@@ -1,0 +1,7 @@
+dispatching-parallel-agents
+Publisher: Community (obra/superpowers)
+Licence: MIT
+Source: https://github.com/obra/superpowers/tree/main/skills/dispatching-parallel-agents
+Install: npx skills add obra/superpowers --skill dispatching-parallel-agents
+Commit: 2ce8aa1
+Downloaded from the Skills Library, snapshot of Nov 2026.

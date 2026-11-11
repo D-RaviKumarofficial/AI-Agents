@@ -1,0 +1,7 @@
+systematic-debugging
+Publisher: Community (obra/superpowers)
+Licence: MIT
+Source: https://github.com/obra/superpowers/tree/main/skills/systematic-debugging
+Install: npx skills add obra/superpowers --skill systematic-debugging
+Commit: 2ce8aa1
+Downloaded from the Skills Library, snapshot of Nov 2026.

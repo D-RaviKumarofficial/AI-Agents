@@ -1,0 +1,7 @@
+doubt-driven-development
+Publisher: Community (addyosmani/agent-skills)
+Licence: MIT
+Source: https://github.com/addyosmani/agent-skills/tree/main/skills/doubt-driven-development
+Install: npx skills add addyosmani/agent-skills --skill doubt-driven-development
+Commit: 8bfcc1f
+Downloaded from the Skills Library, snapshot of Nov 2026.

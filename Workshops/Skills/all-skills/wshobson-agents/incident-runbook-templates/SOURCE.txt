@@ -1,0 +1,7 @@
+incident-runbook-templates
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/incident-response/skills/incident-runbook-templates
+Install: npx skills add wshobson/agents --skill incident-runbook-templates
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

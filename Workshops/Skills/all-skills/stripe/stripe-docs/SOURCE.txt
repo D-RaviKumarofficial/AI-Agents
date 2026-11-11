@@ -1,0 +1,6 @@
+stripe-docs
+Publisher: Stripe (Stripe)
+Licence: MIT
+Source: https://github.com/stripe/ai/tree/main/skills/stripe-docs
+Install: npx skills add stripe/ai --skill stripe-docs
+Downloaded from the Skills Library, snapshot of Nov 2026.

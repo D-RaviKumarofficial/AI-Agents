@@ -1,0 +1,7 @@
+hermes-tweet
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/hermes-tweet/skills/hermes-tweet
+Install: npx skills add wshobson/agents --skill hermes-tweet
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

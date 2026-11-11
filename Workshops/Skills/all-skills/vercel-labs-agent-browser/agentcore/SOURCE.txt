@@ -1,0 +1,7 @@
+agentcore
+Publisher: Community (vercel-labs/agent-browser)
+Licence: Apache 2.0
+Source: https://github.com/vercel-labs/agent-browser/tree/main/skill-data/agentcore
+Install: npx skills add vercel-labs/agent-browser --skill agentcore
+Commit: 5868f7c
+Downloaded from the Skills Library, snapshot of Nov 2026.

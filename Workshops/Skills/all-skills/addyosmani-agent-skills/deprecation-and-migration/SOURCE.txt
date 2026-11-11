@@ -1,0 +1,7 @@
+deprecation-and-migration
+Publisher: Community (addyosmani/agent-skills)
+Licence: MIT
+Source: https://github.com/addyosmani/agent-skills/tree/main/skills/deprecation-and-migration
+Install: npx skills add addyosmani/agent-skills --skill deprecation-and-migration
+Commit: 8bfcc1f
+Downloaded from the Skills Library, snapshot of Nov 2026.

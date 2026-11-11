@@ -1,0 +1,7 @@
+spark-optimization
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/data-engineering/skills/spark-optimization
+Install: npx skills add wshobson/agents --skill spark-optimization
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

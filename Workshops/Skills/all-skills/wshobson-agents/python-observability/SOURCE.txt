@@ -1,0 +1,7 @@
+python-observability
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/python-development/skills/python-observability
+Install: npx skills add wshobson/agents --skill python-observability
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

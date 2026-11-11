@@ -1,0 +1,7 @@
+using-agent-skills
+Publisher: Community (addyosmani/agent-skills)
+Licence: MIT
+Source: https://github.com/addyosmani/agent-skills/tree/main/skills/using-agent-skills
+Install: npx skills add addyosmani/agent-skills --skill using-agent-skills
+Commit: 8bfcc1f
+Downloaded from the Skills Library, snapshot of Nov 2026.

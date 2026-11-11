@@ -1,0 +1,7 @@
+evaluation-methodology
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/plugin-eval/skills/evaluation-methodology
+Install: npx skills add wshobson/agents --skill evaluation-methodology
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

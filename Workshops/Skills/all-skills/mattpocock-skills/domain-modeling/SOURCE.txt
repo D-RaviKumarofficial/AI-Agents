@@ -1,0 +1,7 @@
+domain-modeling
+Publisher: Community (mattpocock/skills)
+Licence: MIT
+Source: https://github.com/mattpocock/skills/tree/main/skills/engineering/domain-modeling
+Install: npx skills add mattpocock/skills --skill domain-modeling
+Commit: 4ae2317
+Downloaded from the Skills Library, snapshot of Nov 2026.

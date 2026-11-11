@@ -1,0 +1,7 @@
+unity-ecs-patterns
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/game-development/skills/unity-ecs-patterns
+Install: npx skills add wshobson/agents --skill unity-ecs-patterns
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

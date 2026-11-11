@@ -1,0 +1,6 @@
+academy-guide
+Publisher: Anthropic (Anthropic skills)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/skills/tree/main/skills/academy-guide
+Install: npx skills add anthropics/skills --skill academy-guide
+Downloaded from the Skills Library, snapshot of Nov 2026.

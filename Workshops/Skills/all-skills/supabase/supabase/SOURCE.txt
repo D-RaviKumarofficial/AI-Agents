@@ -1,0 +1,6 @@
+supabase
+Publisher: Supabase (Supabase)
+Licence: MIT
+Source: https://github.com/supabase/agent-skills/tree/main/skills/supabase
+Install: npx skills add supabase/agent-skills --skill supabase
+Downloaded from the Skills Library, snapshot of Nov 2026.

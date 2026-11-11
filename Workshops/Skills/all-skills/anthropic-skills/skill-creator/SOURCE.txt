@@ -1,0 +1,6 @@
+skill-creator
+Publisher: Anthropic (Anthropic skills)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/skills/tree/main/skills/skill-creator
+Install: npx skills add anthropics/skills --skill skill-creator
+Downloaded from the Skills Library, snapshot of Nov 2026.

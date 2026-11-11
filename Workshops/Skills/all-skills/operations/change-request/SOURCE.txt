@@ -1,0 +1,6 @@
+change-request
+Publisher: Anthropic role plugins (Operations)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/operations/skills/change-request
+Install: claude plugin install operations@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

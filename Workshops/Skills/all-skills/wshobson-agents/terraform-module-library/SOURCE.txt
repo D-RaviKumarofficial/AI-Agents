@@ -1,0 +1,7 @@
+terraform-module-library
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/cloud-infrastructure/skills/terraform-module-library
+Install: npx skills add wshobson/agents --skill terraform-module-library
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

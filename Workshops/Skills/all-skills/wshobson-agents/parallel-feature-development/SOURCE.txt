@@ -1,0 +1,7 @@
+parallel-feature-development
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/agent-teams/skills/parallel-feature-development
+Install: npx skills add wshobson/agents --skill parallel-feature-development
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

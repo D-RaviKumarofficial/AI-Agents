@@ -1,0 +1,6 @@
+internal-comms
+Publisher: Anthropic (Anthropic skills)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/skills/tree/main/skills/internal-comms
+Install: npx skills add anthropics/skills --skill internal-comms
+Downloaded from the Skills Library, snapshot of Nov 2026.

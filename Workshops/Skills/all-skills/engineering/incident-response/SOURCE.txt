@@ -1,0 +1,6 @@
+incident-response
+Publisher: Anthropic role plugins (Engineering)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/engineering/skills/incident-response
+Install: claude plugin install engineering@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

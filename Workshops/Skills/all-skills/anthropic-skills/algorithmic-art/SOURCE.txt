@@ -1,0 +1,6 @@
+algorithmic-art
+Publisher: Anthropic (Anthropic skills)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/skills/tree/main/skills/algorithmic-art
+Install: npx skills add anthropics/skills --skill algorithmic-art
+Downloaded from the Skills Library, snapshot of Nov 2026.

@@ -1,0 +1,7 @@
+backtesting-frameworks
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/quantitative-trading/skills/backtesting-frameworks
+Install: npx skills add wshobson/agents --skill backtesting-frameworks
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

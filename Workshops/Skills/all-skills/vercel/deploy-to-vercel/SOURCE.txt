@@ -1,0 +1,6 @@
+deploy-to-vercel
+Publisher: Vercel (Vercel)
+Licence: MIT
+Source: https://github.com/vercel-labs/agent-skills/tree/main/skills/deploy-to-vercel
+Install: npx skills add vercel-labs/agent-skills --skill deploy-to-vercel
+Downloaded from the Skills Library, snapshot of Nov 2026.

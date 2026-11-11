@@ -1,0 +1,6 @@
+vercel-react-native-skills
+Publisher: Vercel (Vercel)
+Licence: MIT
+Source: https://github.com/vercel-labs/agent-skills/tree/main/skills/react-native-skills
+Install: npx skills add vercel-labs/agent-skills --skill react-native-skills
+Downloaded from the Skills Library, snapshot of Nov 2026.

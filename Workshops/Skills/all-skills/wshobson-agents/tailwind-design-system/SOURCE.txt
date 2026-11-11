@@ -1,0 +1,7 @@
+tailwind-design-system
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/frontend-mobile-development/skills/tailwind-design-system
+Install: npx skills add wshobson/agents --skill tailwind-design-system
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

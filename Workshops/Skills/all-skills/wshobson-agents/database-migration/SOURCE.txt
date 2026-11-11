@@ -1,0 +1,7 @@
+database-migration
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/framework-migration/skills/database-migration
+Install: npx skills add wshobson/agents --skill database-migration
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

@@ -1,0 +1,11 @@
+dotnet-backend-patterns
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/dotnet-contribution/skills/dotnet-backend-patterns
+Install: npx skills add wshobson/agents --skill dotnet-backend-patterns
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.
+
+Not included (binary or very large files, get them from the source):
+- assets/repository-template.cs
+- assets/service-template.cs

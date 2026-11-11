@@ -1,0 +1,7 @@
+attack-tree-construction
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/security-scanning/skills/attack-tree-construction
+Install: npx skills add wshobson/agents --skill attack-tree-construction
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

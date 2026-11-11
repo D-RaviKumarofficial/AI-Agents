@@ -1,0 +1,6 @@
+signature-request
+Publisher: Anthropic role plugins (Legal)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/legal/skills/signature-request
+Install: claude plugin install legal@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

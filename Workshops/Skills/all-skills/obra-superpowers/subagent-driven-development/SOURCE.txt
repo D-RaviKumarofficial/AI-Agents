@@ -1,0 +1,12 @@
+subagent-driven-development
+Publisher: Community (obra/superpowers)
+Licence: MIT
+Source: https://github.com/obra/superpowers/tree/main/skills/subagent-driven-development
+Install: npx skills add obra/superpowers --skill subagent-driven-development
+Commit: 2ce8aa1
+Downloaded from the Skills Library, snapshot of Nov 2026.
+
+Not included (binary or very large files, get them from the source):
+- scripts/review-package
+- scripts/sdd-workspace
+- scripts/task-brief

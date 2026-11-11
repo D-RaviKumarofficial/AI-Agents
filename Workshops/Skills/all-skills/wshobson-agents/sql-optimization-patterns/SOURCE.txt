@@ -1,0 +1,7 @@
+sql-optimization-patterns
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/developer-essentials/skills/sql-optimization-patterns
+Install: npx skills add wshobson/agents --skill sql-optimization-patterns
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

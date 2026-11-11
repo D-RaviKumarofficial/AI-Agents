@@ -1,0 +1,6 @@
+connect-required-verification-information
+Publisher: Stripe (Stripe)
+Licence: MIT
+Source: https://github.com/stripe/ai/tree/main/skills/connect-required-verification-information
+Install: npx skills add stripe/ai --skill connect-required-verification-information
+Downloaded from the Skills Library, snapshot of Nov 2026.

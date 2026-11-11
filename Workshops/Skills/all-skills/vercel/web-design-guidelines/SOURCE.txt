@@ -1,0 +1,6 @@
+web-design-guidelines
+Publisher: Vercel (Vercel)
+Licence: MIT
+Source: https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines
+Install: npx skills add vercel-labs/agent-skills --skill web-design-guidelines
+Downloaded from the Skills Library, snapshot of Nov 2026.

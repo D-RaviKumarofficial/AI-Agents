@@ -1,0 +1,7 @@
+receiving-code-review
+Publisher: Community (obra/superpowers)
+Licence: MIT
+Source: https://github.com/obra/superpowers/tree/main/skills/receiving-code-review
+Install: npx skills add obra/superpowers --skill receiving-code-review
+Commit: 2ce8aa1
+Downloaded from the Skills Library, snapshot of Nov 2026.

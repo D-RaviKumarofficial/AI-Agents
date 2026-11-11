@@ -1,0 +1,7 @@
+lora-qlora-recipes
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/llm-finetuning/skills/lora-qlora-recipes
+Install: npx skills add wshobson/agents --skill lora-qlora-recipes
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

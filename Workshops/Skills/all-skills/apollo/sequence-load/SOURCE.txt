@@ -1,0 +1,6 @@
+sequence-load
+Publisher: Partner (in Anthropic plugins) (Apollo)
+Licence: MIT
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/partner-built/apollo/skills/sequence-load
+Install: claude plugin install apollo@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

@@ -1,0 +1,7 @@
+idea-refine
+Publisher: Community (addyosmani/agent-skills)
+Licence: MIT
+Source: https://github.com/addyosmani/agent-skills/tree/main/skills/idea-refine
+Install: npx skills add addyosmani/agent-skills --skill idea-refine
+Commit: 8bfcc1f
+Downloaded from the Skills Library, snapshot of Nov 2026.

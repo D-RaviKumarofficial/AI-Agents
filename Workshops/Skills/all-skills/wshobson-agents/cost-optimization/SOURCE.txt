@@ -1,0 +1,7 @@
+cost-optimization
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/cloud-infrastructure/skills/cost-optimization
+Install: npx skills add wshobson/agents --skill cost-optimization
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

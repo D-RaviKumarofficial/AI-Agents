@@ -1,0 +1,7 @@
+angular-migration
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/framework-migration/skills/angular-migration
+Install: npx skills add wshobson/agents --skill angular-migration
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

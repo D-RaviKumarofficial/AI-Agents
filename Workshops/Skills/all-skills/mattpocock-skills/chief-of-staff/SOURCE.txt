@@ -1,0 +1,7 @@
+chief-of-staff
+Publisher: Community (mattpocock/skills)
+Licence: MIT
+Source: https://github.com/mattpocock/skills/tree/main/skills/in-progress/chief-of-staff
+Install: npx skills add mattpocock/skills --skill chief-of-staff
+Commit: 4ae2317
+Downloaded from the Skills Library, snapshot of Nov 2026.

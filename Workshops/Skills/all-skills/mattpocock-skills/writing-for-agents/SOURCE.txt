@@ -1,0 +1,7 @@
+writing-for-agents
+Publisher: Community (mattpocock/skills)
+Licence: MIT
+Source: https://github.com/mattpocock/skills/tree/main/skills/productivity/writing-for-agents
+Install: npx skills add mattpocock/skills --skill writing-for-agents
+Commit: 4ae2317
+Downloaded from the Skills Library, snapshot of Nov 2026.

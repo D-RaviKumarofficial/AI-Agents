@@ -1,0 +1,6 @@
+debug-zoom-integration
+Publisher: Partner (in Anthropic plugins) (Zoom)
+Licence: MIT
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/partner-built/zoom-plugin/skills/debug-zoom-integration
+Install: claude plugin install zoom-plugin@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

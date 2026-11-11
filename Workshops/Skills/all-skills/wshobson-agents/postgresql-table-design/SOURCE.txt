@@ -1,0 +1,7 @@
+postgresql-table-design
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/database-design/skills/postgresql-table-design
+Install: npx skills add wshobson/agents --skill postgresql-table-design
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

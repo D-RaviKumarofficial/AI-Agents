@@ -1,0 +1,7 @@
+caveman-review
+Publisher: Community (JuliusBrussee/caveman)
+Licence: Apache 2.0
+Source: https://github.com/JuliusBrussee/caveman/tree/main/skills/caveman-review
+Install: npx skills add JuliusBrussee/caveman --skill caveman-review
+Commit: 9b68f7e
+Downloaded from the Skills Library, snapshot of Nov 2026.

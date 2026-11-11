@@ -1,0 +1,7 @@
+cli-creator
+Publisher: Community (openai/skills)
+Licence: Apache 2.0
+Source: https://github.com/openai/skills/tree/main/skills/.curated/cli-creator
+Install: npx skills add openai/skills --skill cli-creator
+Commit: 49f948f
+Downloaded from the Skills Library, snapshot of Nov 2026.

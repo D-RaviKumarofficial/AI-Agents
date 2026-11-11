@@ -1,0 +1,6 @@
+memory-management
+Publisher: Anthropic role plugins (Productivity)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/productivity/skills/memory-management
+Install: claude plugin install productivity@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

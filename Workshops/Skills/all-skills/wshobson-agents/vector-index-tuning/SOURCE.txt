@@ -1,0 +1,7 @@
+vector-index-tuning
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/llm-application-dev/skills/vector-index-tuning
+Install: npx skills add wshobson/agents --skill vector-index-tuning
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

@@ -1,0 +1,6 @@
+knowledge-synthesis
+Publisher: Anthropic role plugins (Enterprise Search)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/enterprise-search/skills/knowledge-synthesis
+Install: claude plugin install enterprise-search@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

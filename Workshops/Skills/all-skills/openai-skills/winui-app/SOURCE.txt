@@ -1,0 +1,10 @@
+winui-app
+Publisher: Community (openai/skills)
+Licence: Apache 2.0
+Source: https://github.com/openai/skills/tree/main/skills/.curated/winui-app
+Install: npx skills add openai/skills --skill winui-app
+Commit: 49f948f
+Downloaded from the Skills Library, snapshot of Nov 2026.
+
+Not included (binary or very large files, get them from the source):
+- assets/winui.png

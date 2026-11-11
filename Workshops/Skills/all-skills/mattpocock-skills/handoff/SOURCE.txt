@@ -1,0 +1,7 @@
+handoff
+Publisher: Community (mattpocock/skills)
+Licence: MIT
+Source: https://github.com/mattpocock/skills/tree/main/skills/productivity/handoff
+Install: npx skills add mattpocock/skills --skill handoff
+Commit: 4ae2317
+Downloaded from the Skills Library, snapshot of Nov 2026.

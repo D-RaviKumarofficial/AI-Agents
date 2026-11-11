@@ -1,0 +1,6 @@
+vercel-react-best-practices
+Publisher: Vercel (Vercel)
+Licence: MIT
+Source: https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices
+Install: npx skills add vercel-labs/agent-skills --skill react-best-practices
+Downloaded from the Skills Library, snapshot of Nov 2026.

@@ -1,0 +1,7 @@
+skill-creator
+Publisher: Community (openai/skills)
+Licence: Apache 2.0
+Source: https://github.com/openai/skills/tree/main/skills/.system/skill-creator
+Install: npx skills add openai/skills --skill skill-creator
+Commit: 49f948f
+Downloaded from the Skills Library, snapshot of Nov 2026.

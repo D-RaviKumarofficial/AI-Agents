@@ -1,0 +1,6 @@
+brand-guidelines
+Publisher: Anthropic (Anthropic skills)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/skills/tree/main/skills/brand-guidelines
+Install: npx skills add anthropics/skills --skill brand-guidelines
+Downloaded from the Skills Library, snapshot of Nov 2026.

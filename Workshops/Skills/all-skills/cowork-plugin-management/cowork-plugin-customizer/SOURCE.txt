@@ -1,0 +1,6 @@
+cowork-plugin-customizer
+Publisher: Anthropic role plugins (Cowork Plugin Management)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/cowork-plugin-management/skills/cowork-plugin-customizer
+Install: claude plugin install cowork-plugin-management@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

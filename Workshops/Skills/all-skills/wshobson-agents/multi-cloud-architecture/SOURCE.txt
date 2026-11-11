@@ -1,0 +1,7 @@
+multi-cloud-architecture
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/cloud-infrastructure/skills/multi-cloud-architecture
+Install: npx skills add wshobson/agents --skill multi-cloud-architecture
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

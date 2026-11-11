@@ -1,0 +1,7 @@
+marketing-council
+Publisher: Community (coreyhaines31/marketingskills)
+Licence: MIT
+Source: https://github.com/coreyhaines31/marketingskills/tree/main/skills/marketing-council
+Install: npx skills add coreyhaines31/marketingskills --skill marketing-council
+Commit: 88c79f6
+Downloaded from the Skills Library, snapshot of Nov 2026.

@@ -1,0 +1,10 @@
+writing-skills
+Publisher: Community (obra/superpowers)
+Licence: MIT
+Source: https://github.com/obra/superpowers/tree/main/skills/writing-skills
+Install: npx skills add obra/superpowers --skill writing-skills
+Commit: 2ce8aa1
+Downloaded from the Skills Library, snapshot of Nov 2026.
+
+Not included (binary or very large files, get them from the source):
+- references/graphviz-conventions.dot

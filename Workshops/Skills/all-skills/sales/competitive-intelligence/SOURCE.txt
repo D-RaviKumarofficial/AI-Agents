@@ -1,0 +1,6 @@
+competitive-intelligence
+Publisher: Anthropic role plugins (Sales)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/sales/skills/competitive-intelligence
+Install: claude plugin install sales@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

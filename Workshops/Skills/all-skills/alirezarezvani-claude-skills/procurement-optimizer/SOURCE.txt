@@ -1,0 +1,7 @@
+procurement-optimizer
+Publisher: Community (alirezarezvani/claude-skills)
+Licence: MIT
+Source: https://github.com/alirezarezvani/claude-skills/tree/main/business-operations/skills/procurement-optimizer
+Install: npx skills add alirezarezvani/claude-skills --skill procurement-optimizer
+Commit: e4a1dc3
+Downloaded from the Skills Library, snapshot of Nov 2026.

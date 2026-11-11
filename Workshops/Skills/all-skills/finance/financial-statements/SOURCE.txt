@@ -1,0 +1,6 @@
+financial-statements
+Publisher: Anthropic role plugins (Finance)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/finance/skills/financial-statements
+Install: claude plugin install finance@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

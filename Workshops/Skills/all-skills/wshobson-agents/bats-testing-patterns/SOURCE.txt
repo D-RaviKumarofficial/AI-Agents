@@ -1,0 +1,7 @@
+bats-testing-patterns
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/shell-scripting/skills/bats-testing-patterns
+Install: npx skills add wshobson/agents --skill bats-testing-patterns
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

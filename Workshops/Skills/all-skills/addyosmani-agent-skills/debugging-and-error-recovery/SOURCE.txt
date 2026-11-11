@@ -1,0 +1,7 @@
+debugging-and-error-recovery
+Publisher: Community (addyosmani/agent-skills)
+Licence: MIT
+Source: https://github.com/addyosmani/agent-skills/tree/main/skills/debugging-and-error-recovery
+Install: npx skills add addyosmani/agent-skills --skill debugging-and-error-recovery
+Commit: 8bfcc1f
+Downloaded from the Skills Library, snapshot of Nov 2026.

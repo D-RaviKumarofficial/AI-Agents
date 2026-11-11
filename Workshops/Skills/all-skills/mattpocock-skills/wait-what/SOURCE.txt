@@ -1,0 +1,7 @@
+wait-what
+Publisher: Community (mattpocock/skills)
+Licence: MIT
+Source: https://github.com/mattpocock/skills/tree/main/skills/productivity/wait-what
+Install: npx skills add mattpocock/skills --skill wait-what
+Commit: 4ae2317
+Downloaded from the Skills Library, snapshot of Nov 2026.

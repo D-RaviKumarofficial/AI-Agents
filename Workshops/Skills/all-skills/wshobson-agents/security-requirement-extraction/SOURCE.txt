@@ -1,0 +1,7 @@
+security-requirement-extraction
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/security-scanning/skills/security-requirement-extraction
+Install: npx skills add wshobson/agents --skill security-requirement-extraction
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

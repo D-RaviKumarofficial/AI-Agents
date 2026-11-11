@@ -1,0 +1,6 @@
+people-report
+Publisher: Anthropic role plugins (Human Resources)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/human-resources/skills/people-report
+Install: claude plugin install human-resources@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

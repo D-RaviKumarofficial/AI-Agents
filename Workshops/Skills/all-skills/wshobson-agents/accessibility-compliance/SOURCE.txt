@@ -1,0 +1,7 @@
+accessibility-compliance
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/ui-design/skills/accessibility-compliance
+Install: npx skills add wshobson/agents --skill accessibility-compliance
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

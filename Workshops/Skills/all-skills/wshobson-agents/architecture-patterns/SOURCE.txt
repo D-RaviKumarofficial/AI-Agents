@@ -1,0 +1,7 @@
+architecture-patterns
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/backend-development/skills/architecture-patterns
+Install: npx skills add wshobson/agents --skill architecture-patterns
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

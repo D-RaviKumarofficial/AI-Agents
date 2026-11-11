@@ -1,0 +1,6 @@
+stripe-best-practices
+Publisher: Stripe (Stripe)
+Licence: MIT
+Source: https://github.com/stripe/ai/tree/main/skills/stripe-best-practices
+Install: npx skills add stripe/ai --skill stripe-best-practices
+Downloaded from the Skills Library, snapshot of Nov 2026.

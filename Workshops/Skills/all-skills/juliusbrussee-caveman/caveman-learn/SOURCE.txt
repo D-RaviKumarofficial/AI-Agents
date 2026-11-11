@@ -1,0 +1,7 @@
+caveman-learn
+Publisher: Community (JuliusBrussee/caveman)
+Licence: Apache 2.0
+Source: https://github.com/JuliusBrussee/caveman/tree/main/skills/caveman-learn
+Install: npx skills add JuliusBrussee/caveman --skill caveman-learn
+Commit: 9b68f7e
+Downloaded from the Skills Library, snapshot of Nov 2026.

@@ -1,0 +1,6 @@
+slack-search
+Publisher: Partner (in Anthropic plugins) (Slack)
+Licence: MIT
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/partner-built/slack/skills/slack-search
+Install: claude plugin install slack@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

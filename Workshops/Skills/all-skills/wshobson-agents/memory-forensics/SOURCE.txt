@@ -1,0 +1,7 @@
+memory-forensics
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/reverse-engineering/skills/memory-forensics
+Install: npx skills add wshobson/agents --skill memory-forensics
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

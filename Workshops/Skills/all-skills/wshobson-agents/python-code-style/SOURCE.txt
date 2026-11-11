@@ -1,0 +1,7 @@
+python-code-style
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/python-development/skills/python-code-style
+Install: npx skills add wshobson/agents --skill python-code-style
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

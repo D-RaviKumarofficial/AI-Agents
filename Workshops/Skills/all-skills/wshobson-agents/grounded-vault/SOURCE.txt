@@ -1,0 +1,7 @@
+grounded-vault
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/documentation-standards/skills/grounded-vault
+Install: npx skills add wshobson/agents --skill grounded-vault
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

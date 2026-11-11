@@ -1,0 +1,7 @@
+risk-metrics-calculation
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/quantitative-trading/skills/risk-metrics-calculation
+Install: npx skills add wshobson/agents --skill risk-metrics-calculation
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

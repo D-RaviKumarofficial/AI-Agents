@@ -1,0 +1,7 @@
+avoid-ai-writing
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/avoid-ai-writing/skills/avoid-ai-writing
+Install: npx skills add wshobson/agents --skill avoid-ai-writing
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

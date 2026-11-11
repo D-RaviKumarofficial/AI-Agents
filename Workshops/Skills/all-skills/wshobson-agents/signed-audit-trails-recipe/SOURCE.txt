@@ -1,0 +1,7 @@
+signed-audit-trails-recipe
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/signed-audit-trails/skills/signed-audit-trails-recipe
+Install: npx skills add wshobson/agents --skill signed-audit-trails-recipe
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

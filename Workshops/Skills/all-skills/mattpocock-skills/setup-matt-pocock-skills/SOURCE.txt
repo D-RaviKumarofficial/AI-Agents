@@ -1,0 +1,7 @@
+setup-matt-pocock-skills
+Publisher: Community (mattpocock/skills)
+Licence: MIT
+Source: https://github.com/mattpocock/skills/tree/main/skills/engineering/setup-matt-pocock-skills
+Install: npx skills add mattpocock/skills --skill setup-matt-pocock-skills
+Commit: 4ae2317
+Downloaded from the Skills Library, snapshot of Nov 2026.

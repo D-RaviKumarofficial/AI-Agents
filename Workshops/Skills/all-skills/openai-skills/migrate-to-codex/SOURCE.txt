@@ -1,0 +1,7 @@
+migrate-to-codex
+Publisher: Community (openai/skills)
+Licence: Apache 2.0
+Source: https://github.com/openai/skills/tree/main/skills/.curated/migrate-to-codex
+Install: npx skills add openai/skills --skill migrate-to-codex
+Commit: 49f948f
+Downloaded from the Skills Library, snapshot of Nov 2026.

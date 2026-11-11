@@ -1,0 +1,9 @@
+web-artifacts-builder
+Publisher: Anthropic (Anthropic skills)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder
+Install: npx skills add anthropics/skills --skill web-artifacts-builder
+Downloaded from the Skills Library, snapshot of Nov 2026.
+
+Not included (binary or very large files, get them from the source):
+- scripts/shadcn-components.tar.gz

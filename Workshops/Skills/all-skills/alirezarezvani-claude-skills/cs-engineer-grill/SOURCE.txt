@@ -1,0 +1,7 @@
+cs-engineer-grill
+Publisher: Community (alirezarezvani/claude-skills)
+Licence: MIT
+Source: https://github.com/alirezarezvani/claude-skills/tree/main/.gemini/skills/cs-engineer-grill
+Install: npx skills add alirezarezvani/claude-skills --skill cs-engineer-grill
+Commit: e4a1dc3
+Downloaded from the Skills Library, snapshot of Nov 2026.

@@ -1,0 +1,7 @@
+before-you-build
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/before-you-build/skills/before-you-build
+Install: npx skills add wshobson/agents --skill before-you-build
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

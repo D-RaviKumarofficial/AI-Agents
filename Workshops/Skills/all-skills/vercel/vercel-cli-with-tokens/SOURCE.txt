@@ -1,0 +1,6 @@
+vercel-cli-with-tokens
+Publisher: Vercel (Vercel)
+Licence: MIT
+Source: https://github.com/vercel-labs/agent-skills/tree/main/skills/vercel-cli-with-tokens
+Install: npx skills add vercel-labs/agent-skills --skill vercel-cli-with-tokens
+Downloaded from the Skills Library, snapshot of Nov 2026.

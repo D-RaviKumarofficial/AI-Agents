@@ -1,0 +1,7 @@
+python-packaging
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/python-development/skills/python-packaging
+Install: npx skills add wshobson/agents --skill python-packaging
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

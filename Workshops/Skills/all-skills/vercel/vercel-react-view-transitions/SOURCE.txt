@@ -1,0 +1,6 @@
+vercel-react-view-transitions
+Publisher: Vercel (Vercel)
+Licence: MIT
+Source: https://github.com/vercel-labs/agent-skills/tree/main/skills/react-view-transitions
+Install: npx skills add vercel-labs/agent-skills --skill react-view-transitions
+Downloaded from the Skills Library, snapshot of Nov 2026.

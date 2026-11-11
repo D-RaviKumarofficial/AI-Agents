@@ -1,0 +1,7 @@
+marketing-ideas
+Publisher: Community (coreyhaines31/marketingskills)
+Licence: MIT
+Source: https://github.com/coreyhaines31/marketingskills/tree/main/skills/marketing-ideas
+Install: npx skills add coreyhaines31/marketingskills --skill marketing-ideas
+Commit: 88c79f6
+Downloaded from the Skills Library, snapshot of Nov 2026.

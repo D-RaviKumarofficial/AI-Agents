@@ -1,0 +1,7 @@
+hybrid-search-implementation
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/llm-application-dev/skills/hybrid-search-implementation
+Install: npx skills add wshobson/agents --skill hybrid-search-implementation
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

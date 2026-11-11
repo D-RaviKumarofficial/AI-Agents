@@ -1,0 +1,6 @@
+supabase-postgres-best-practices
+Publisher: Supabase (Supabase)
+Licence: MIT
+Source: https://github.com/supabase/agent-skills/tree/main/skills/supabase-postgres-best-practices
+Install: npx skills add supabase/agent-skills --skill supabase-postgres-best-practices
+Downloaded from the Skills Library, snapshot of Nov 2026.

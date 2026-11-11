@@ -1,0 +1,6 @@
+customer-research
+Publisher: Anthropic role plugins (Customer Support)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/customer-support/skills/customer-research
+Install: claude plugin install customer-support@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

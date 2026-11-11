@@ -1,0 +1,7 @@
+spark-memory-thermal-ops
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/dgx-spark-ops/skills/spark-memory-thermal-ops
+Install: npx skills add wshobson/agents --skill spark-memory-thermal-ops
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

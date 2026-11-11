@@ -1,0 +1,7 @@
+dbt-transformation-patterns
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/data-engineering/skills/dbt-transformation-patterns
+Install: npx skills add wshobson/agents --skill dbt-transformation-patterns
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

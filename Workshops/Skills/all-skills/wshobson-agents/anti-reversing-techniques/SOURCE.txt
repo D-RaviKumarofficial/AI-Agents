@@ -1,0 +1,7 @@
+anti-reversing-techniques
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/reverse-engineering/skills/anti-reversing-techniques
+Install: npx skills add wshobson/agents --skill anti-reversing-techniques
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

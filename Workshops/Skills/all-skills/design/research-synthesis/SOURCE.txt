@@ -1,0 +1,6 @@
+research-synthesis
+Publisher: Anthropic role plugins (Design)
+Licence: Apache 2.0
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/design/skills/research-synthesis
+Install: claude plugin install design@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

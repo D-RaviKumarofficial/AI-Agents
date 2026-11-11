@@ -1,0 +1,7 @@
+grill-with-docs
+Publisher: Community (mattpocock/skills)
+Licence: MIT
+Source: https://github.com/mattpocock/skills/tree/main/skills/engineering/grill-with-docs
+Install: npx skills add mattpocock/skills --skill grill-with-docs
+Commit: 4ae2317
+Downloaded from the Skills Library, snapshot of Nov 2026.

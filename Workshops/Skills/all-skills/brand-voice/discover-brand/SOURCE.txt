@@ -1,0 +1,6 @@
+discover-brand
+Publisher: Partner (in Anthropic plugins) (Brand Voice)
+Licence: MIT
+Source: https://github.com/anthropics/knowledge-work-plugins/tree/main/partner-built/brand-voice/skills/discover-brand
+Install: claude plugin install brand-voice@knowledge-work-plugins
+Downloaded from the Skills Library, snapshot of Nov 2026.

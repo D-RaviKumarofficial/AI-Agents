@@ -1,0 +1,7 @@
+changelog-automation
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/documentation-generation/skills/changelog-automation
+Install: npx skills add wshobson/agents --skill changelog-automation
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

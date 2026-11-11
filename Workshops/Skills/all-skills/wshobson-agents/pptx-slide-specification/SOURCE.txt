@@ -1,0 +1,7 @@
+pptx-slide-specification
+Publisher: Community (wshobson/agents)
+Licence: MIT
+Source: https://github.com/wshobson/agents/tree/main/plugins/pptx-deck-creation/skills/pptx-slide-specification
+Install: npx skills add wshobson/agents --skill pptx-slide-specification
+Commit: 7e2fb55
+Downloaded from the Skills Library, snapshot of Nov 2026.

@@ -1,0 +1,7 @@
+incremental-implementation
+Publisher: Community (addyosmani/agent-skills)
+Licence: MIT
+Source: https://github.com/addyosmani/agent-skills/tree/main/skills/incremental-implementation
+Install: npx skills add addyosmani/agent-skills --skill incremental-implementation
+Commit: 8bfcc1f
+Downloaded from the Skills Library, snapshot of Nov 2026.
